@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Fiebach Lab"
   avatar : "/assets/images/FiebachLabLogo.png"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains. We use modern brain imaging techniques to understand how these uniquely human abilities are organized in the brain."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
