@@ -56,8 +56,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+#theme: minimal-mistakes-jekyll
+#minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 teaser: /assets/images/FiebachLabLogo.png"
 
