@@ -1,8 +1,6 @@
 ---
 title: "ARENA - Team"
-layout: gridlay
 excerpt: "ARENA: Team members"
-sitemap: false
 permalink: /team/
 ---
 
