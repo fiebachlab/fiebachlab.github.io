@@ -8,7 +8,7 @@ header:
     - label: "Download"
       url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "BWelcome to the Laboratory for Cognitive Neuroscience."
+excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
 intro: 
   - excerpt: 'Welcome to the Laboratory for Cognitive Neuroscience `type="center"`'
 feature_row:
