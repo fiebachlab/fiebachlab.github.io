@@ -2,176 +2,22 @@
   photo: fiebach.jpg
   url: http://www.fiebachlab.org/people
   affiliation: Goethe University Frankfurt
-  title: Speaker
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Gemma Roig
-  photo: roig.jpg
-  affiliation:  Goethe University Frankfurt
-  url: http://www.cvai.cs.uni-frankfurt.de/team.html
-  title: Co-Speaker
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Matthias Kaschube
-  photo: kaschube.jpg
-  affiliation: Frankfurt Institute for Advanced Studies
-  url: https://www.fias.science/en/fellows/detail/kaschube-matthias/
   title: Principle Investigator
   number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
+  fon:
+  secretary:
+  office:
+  mail:
+  research_interests:
 
-- name: Yee Lee Shing
-  photo: shing.jpg
-  affiliation: Goethe University Frankfurt
-  number_educ: 0
-  url: https://www.psychologie.uni-frankfurt.de/69824239/005_Prof_-Yee-Lee-Shing
-  title: Principle Investigator
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Mariya Toneva
-  photo: toneva.jpg
-  affiliation: Max Planck Institute for Software Systems
-  url: http://mtoneva.com/
-  title: Principle Investigator
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Jochen Triesch
-  photo: triesch.jpg
-  affiliation: Frankfurt Institute for Advanced Studies and Goethe University Frankfurt 
-  url: https://www.fias.science/en/fellows/detail/triesch-jochen/
-  title: Principle Investigator
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Melissa Vo
-  photo: vo.jpg
-  affiliation: Goethe University Frankfurt
-  url: https://SceneGrammarLab.com
-  title: Principle Investigator
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Tomaso Poggio
-  photo: poggio.jpg
-  affiliation: Eugene McDermott Professor, MIT
-  url: https://poggio-lab.mit.edu/people/tomaso-poggio
-  title: Mercator Fellow
-  number_educ: 0
-  education1: 
-  education2:
-  education3:
-  education4:
-
-- name: Maral Dadvar
-  photo: dadvar.jpg
-  affiliation:  Goethe University Frankfurt
+- name: Sabine Tuchtfeld
+  photo: tuchtfeld.jpeg
   url: http://www.fiebachlab.org/people
-  title: Scientific Coordinator 
+  affiliation: Goethe University Frankfurt
+  title: Secretary and Administrative Lab Coordinator
   number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  
-- name: Arthur Aubret
-  photo: Arthur.jpeg
-  affiliation:  Frankfurt Institute for Advanced Studies and Goethe University Frankfurt
-  url: https://scholar.google.com/citations?user=Bwx5cyAAAAAJ&hl=fr
-  title: Postdoc 
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  
-- name: Iryna Schommartz
-  photo: Iryna.jpg
-  affiliation:  Goethe University Frankfurt
-  url: https://www.psychologie.uni-frankfurt.de/74178156/Iryna_Schommartz__M_Sc
-  title: Postdoc
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  
-- name: Vicky Nicholls
-  photo: Vicky.jpg
-  affiliation:  Goethe University Frankfurt
-  URL: https://www.goethe-university-frankfurt.de/141030991/Dr__Victoria_Nicholls
-  title: Postdoc
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  
-- name: Cosimo Iaia
-  photo: Cosimo.jpg
-  affiliation:  Goethe University Frankfurt
-  url: https://www.researchgate.net/profile/Cosimo-Iaia
-  title: Postdoc
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-  
-- name: Emin Celik
-  photo: Emin.jpg
-  affiliation:  Max Planck Institute for Software Systems
-  url: https://scholar.google.com/citations?user=5lw__nIAAAAJ&hl=en
-  title: Postdoc
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  
-- name: Bhavin Choksi
-  photo: Bhavin.jpeg
-  affiliation:  Goethe University Frankfurt
-  url: http://www.cvai.cs.uni-frankfurt.de/team.html
-  title: Postdoc
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education:
-  
-- name: Timothy Schaumlöffel 
-  photo: schaumloeffel.jpg
-  affiliation:  Goethe University Frankfurt
-  url: http://www.cvai.cs.uni-frankfurt.de/team.html
-  title: PhD Student
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
+  fon:
+  secretary:
+  office:
+  mail:
+  research_interests:
