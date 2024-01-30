@@ -1,5 +1,34 @@
 ---
+title: "Splash Page"
 layout: splash
+permalink: /splash-page/
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/Frankfurt_Skyline_at_Night.jpg
+  actions:
+    - label: "Download"
+      url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "BWelcome to the Laboratory for Cognitive Neuroscience."
+intro: 
+  - excerpt: 'Welcome to the Laboratory for Cognitive Neuroscience `type="center"`'
+feature_row:
+  - image_path: assets/images/Frankfurt_Skyline_at_Night.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/Frankfurt_Skyline_at_Night.jpg
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/Frankfurt_Skyline_at_Night.jpg
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
 
 
