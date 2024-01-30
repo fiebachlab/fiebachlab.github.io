@@ -1,9 +1,9 @@
 main:
-  - title: "Posts"
+  - title: "Research"
     url: /posts/
   - title: "Team"
     url: /team/
-  - title: "Tags"
+  - title: "Publication"
     url: /tags/
-  - title: "About"
+  - title: "Posts"
     url: /about/
