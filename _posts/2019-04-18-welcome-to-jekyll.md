@@ -1,5 +1,5 @@
 ---
-title: "New paper published: Predicting intelligence from cortical gray matter volume "
+title: "New paper published: Predicting intelligence from cortical gray matter volume"
 date: 2020-04-18T15:34:30-04:00
 categories:
   - blog
