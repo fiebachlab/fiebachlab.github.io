@@ -4,7 +4,6 @@ excerpt: "Publications"
 permalink: publications/
 ---
 
-# Publication
 
 ## Submitted / in preparation
 
