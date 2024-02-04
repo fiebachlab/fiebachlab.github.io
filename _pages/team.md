@@ -1,11 +1,8 @@
 ---
-title: "ARENA - Team"
-excerpt: "ARENA: Team members"
+title: "Team"
+excerpt: "Team members"
 permalink: /team/
 ---
-
-# Team
-
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -22,38 +19,8 @@ permalink: /team/
   <h4><b>{{member.name }}</b></h4>
   <h4>{{member.title}}</h4>
   <h5>{{ member.affiliation }}</h5>
-
+  {{ member.about }}
   <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
 
   </ul>
 </div>
