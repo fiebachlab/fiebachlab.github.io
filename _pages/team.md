@@ -14,11 +14,11 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
+    <h4><b>{{member.name }}</b></h4>
   <a href="{{member.url}}">
     <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive center-block" width="25%">
     </a>
   <br>
-    <h4><b>{{member.name }}</b></h4>
     <h4>{{member.title}}</h4>
     <h5>{{ member.affiliation }}</h5>
     <h5>{{ member.about }}</h5>
