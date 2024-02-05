@@ -21,11 +21,11 @@ permalink: /team/
   <br>
     <h4>{{member.title}}</h4>
     <h5>{{ member.affiliation }}</h5>
-    <h5>{{ member.about }}</h5>
-    <h5>{{ member.fon }}</h5>
-    <h5>{{ member.secretary }}</h5>
-    <h5>{{ member.office }}</h5>
-    <h5>{{ member.mail }}</h5>
+    {{member.research_interests }}
+    <small>{{ member.fon }}</small>
+    <small>{{ member.secretary }}</small>
+    <small>{{ member.office }}</small>
+    <small>{{ member.mail }}</small>
 </div>
 
 
