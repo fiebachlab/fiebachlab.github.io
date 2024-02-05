@@ -22,9 +22,13 @@ permalink: /team/
     <h4>{{member.title}}</h4>
     <h5>{{ member.affiliation }}</h5>
     {{member.research_interests }}
+    <br>
     <small>{{ member.fon }}</small>
+    <br>
     <small>{{ member.secretary }}</small>
+    <br>
     <small>{{ member.office }}</small>
+    <br>
     <small>{{ member.mail }}</small>
 </div>
 
