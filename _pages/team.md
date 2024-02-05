@@ -25,13 +25,32 @@ permalink: /team/
       {{ member.affiliation }}
       {{ member.about }}
   </div>
-  <div class="column" align="right">
+  <div class="column">
+   
     {{ member.fon }}
     {{ member.secretary }}
     {{ member.office }}
     {{ member.mail }}
   </div>
 </div> 
+
+
+<style type="text/css">
+  p {
+    .column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  }
+</style>
 
 
 {% assign number_printed = number_printed | plus: 1 %}
