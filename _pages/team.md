@@ -21,8 +21,9 @@ permalink: /team/
 
   <h4>{{member.title}}</h4>
   {{ member.affiliation }}
-  {{ member.about }}
   </div>
+  {{ member.about }}
+  
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
