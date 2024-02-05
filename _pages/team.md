@@ -18,7 +18,8 @@ permalink: /team/
     </a>
   <br>
     <h4><b>{{member.name }}</b></h4>
-    <h4>{{member.title}}</h4>      {{ member.affiliation }}
+    <h4>{{member.title}}</h4>
+    {{ member.affiliation }}
     {{ member.about }}
     {{ member.fon }}
     {{ member.secretary }}
