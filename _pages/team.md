@@ -2,47 +2,50 @@
 title: "Team"
 excerpt: "Team members"
 permalink: /team/
+classes: wide
+author_profile: true
 ---
-{% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
 
-{% assign even_odd = number_printed | modulo: 2 %}
+<style> 
+.teamImage{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
 
-{% if even_odd == 0 %}
+.centeralign {
+  text-align: center;
+}
 
+</style>
 
+<br>
+<div class="container">
 <div class="row">
-{% endif %}
-<div class="col-sm-6 clearfix">
-    <h4><b>{{member.name }}</b></h4>
-  <a href="{{ site.url }}{{ site.baseurl }}/team/fiebach">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive center-block" width="25%" border-radius= 30px>
+  {% for member in site.data.team_members %}
+  <div class="col-md-4" style="height:300px;">
+    <a href="{{ site.url }}{{ site.baseurl }}/team/fiebach">
+    <div class="mask">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="25%" class="image teamImage">
+    </div>
     </a>
-  <br>
-    <h4>{{member.title}}</h4>
-    <h5>{{ member.affiliation }}</h5>
-    {{member.research_interests }}
-    <br>
-    <small>{{ member.fon }}</small>
-    <br>
-    <small>{{ member.secretary }}</small>
-    <br>
-    <small>{{ member.office }}</small>
-    <br>
-    <small>{{ member.mail }}</small>
+      <p class="centeralign"> <b>{{member.name }}</b> 
+      <br>
+      {{member.title}} </p>
+  </div>
+  {% endfor %}
+</div>
 </div>
 
 
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
+<style> 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
