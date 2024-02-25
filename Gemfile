@@ -7,6 +7,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'bootstrap', '~> 5.3.2'
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
@@ -14,8 +15,6 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
-  gem 'dartsass-sprockets'
-  gem 'bootstrap', '~> 5.3.2'
 end
 
 gem "webrick", "~> 1.8"
