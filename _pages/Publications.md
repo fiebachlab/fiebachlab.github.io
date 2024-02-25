@@ -1,17 +1,28 @@
 ---
-title: "Publications"
 excerpt: "Publications"
 permalink: publications/
+classes: wide
 ---
+<style>
+.centeralign {
+  text-align: center;
+  color:#1F416F;
+  font-weight: bold;
+}
+.centeralign2 {
+  color:#1F416F;
+  font-weight: bold;
+}
+</style>
+<h1 class="centeralign" >Publications </h1>
 
-
-## Submitted / in preparation
+<h2 class="centeralign2"> Submitted / in preparation </h2>
 
 - Basten, U., Rammensee, R. A., Weygandt, R., & Fiebach, C. J. (in preparation). Intelligence and the regulation of the brain’s default activity.
 
 - Wehrheim, M., Faskowitz, J., García Alanis, J. C., Schubert, A.-L., & Fiebach, C. J. (preprint). Reliability of Variability and Complexity Measures for Task and Task-Free BOLD fMRI. Preprint DOI: https://osf.io/preprints/psyarxiv/ves2t
   
-### 2023
+<h2 class="centeralign2"> 2023</h2>
 - Wehrheim, M. H., Faskowitz, J., Sporns, O., Fiebach, C. J., Kaschube, M., & Hilger, K. (2023). Few temporally distributed brain connectivity states predict human cognitive abilities. NeuroImage, 277, 120246. https://doi.org/10.1016/j.neuroimage.2023.120246
 
 - Kazanina N., Tavano A. (2023) What neural oscillations can and cannot do for syntactic structure building. Nat Rev Neurosci, 24(2), 113-128. https://doi.org/10.1038/s41583-022-00659-5. See also comments and replies: https://doi.org/10.1038/s41583-023-00739-0 and https://doi.org/10.1038/s41583-023-00735-4 

@@ -4,10 +4,6 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/Frankfurt_Skyline_at_Night.jpg
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
 intro: 
   - excerpt: 'Welcome to the Laboratory for Cognitive Neuroscience `type="center"`'
@@ -30,9 +26,9 @@ feature_row:
 ---
 
 
-<h4><b>Welcome to the Laboratory for Cognitive Neuroscience</b></h4>
+<h4><b>Principle Investigator: Christian Fiebach</b></h4>
 
-Principle Investigator: Christian Fiebach
+
 
 Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains. We use modern brain imaging techniques to understand how these uniquely human abilities are organized in the brain. 
 

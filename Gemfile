@@ -14,6 +14,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem 'dartsass-sprockets'
   gem 'bootstrap', '~> 5.3.2'
 end
 

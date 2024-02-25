@@ -1,8 +1,14 @@
-- name: Christian Fiebach
+- name: Prof. Dr. Christian Fiebach
   photo: fiebach.jpg
-  url: http://www.fiebachlab.org/people
+  url: fiebach
   title: Principle Investigator
-  research_interests: My research focuses on three connected topics 1) predictive processing; 2) neural oscillations in speech and language comprehension; 3) integration of cognitive and bodily rhythms. I am interested in the nature of predictive representations (e.g., sensory or motor?), and their neural implementation (plausibly, via inhibitory interneuronal activity). I think the temporal nature of speech may be dynamically encoded by the activity of neural oscillators (this is the main topic of my DFG Eigene Stelle), but not the ‘atemporal’ information about language structure. Bodily rhythms, especially changes in respiratory, heart-beat rates and eye movements, help optimize higher-order perceptual processes.
+  research_interests: "My research focuses on three connected topics: <br> 
+<ol>
+  <li> Predictive processing </li> 
+  <li> Neural oscillations in speech and language comprehension </li> 
+  <li> Integration of cognitive and bodily rhythms </li>
+</ol>
+  I am interested in the nature of predictive representations (e.g., sensory or motor), and their neural implementation (plausibly, via inhibitory interneuronal activity). I think the temporal nature of speech may be dynamically encoded by the activity of neural oscillators (this is the main topic of my DFG Eigene Stelle), but not the ‘atemporal’ information about language structure. Bodily rhythms, especially changes in respiratory, heart-beat rates and eye movements, help optimize higher-order perceptual processes."
   fon: +49-69-798-35334
   secretary: +49-69-798-35335
   office: 5.G092 (PEG)
@@ -11,7 +17,7 @@
 
 - name: Sabine Tuchtfeld
   photo: tuchtfeld.jpeg
-  url: http://www.fiebachlab.org/people
+  url: tuchtfeld
   title: Secretary and Administrative Lab Coordinator
   research_interests: 
   fon: +49-69-798-35355
@@ -22,7 +28,7 @@
 
 - name: Dr. Maral Dadvar
   photo: dadvar.jpg
-  url: http://www.fiebachlab.org/people
+  url: dadvar
   title: Scientific Coordinator
   research_interests: 
   fon: +49-69-798-35337
@@ -33,7 +39,7 @@
 
 - name: Dr. Alessandro Tavano
   photo: tavano.jpg
-  url: http://www.fiebachlab.org/people
+  url: tavano
   title: Senior Scientist 
   research_interests: My research focuses on three connected topics 1) predictive processing; 2) neural oscillations in speech and language comprehension; 3) integration of cognitive and bodily rhythms. I am interested in the nature of predictive representations (e.g., sensory or motor?), and their neural implementation (plausibly, via inhibitory interneuronal activity). I think the temporal nature of speech may be dynamically encoded by the activity of neural oscillators (this is the main topic of my DFG Eigene Stelle), but not the ‘atemporal’ information about language structure. Bodily rhythms, especially changes in respiratory, heart-beat rates and eye movements, help optimize higher-order perceptual processes.
   secretary: 
@@ -43,7 +49,7 @@
 
 - name: Dr. Jack Taylor
   photo: taylor.jpg
-  url: http://www.fiebachlab.org/people
+  url: taylor
   title: Postdoctoral Researcher
   research_interests: My research currently focuses on the earliest stages of visual word recognition - especially visual and orthographic processing of visual words. I am very interested in early event-related potentials (ERPs) from M/EEG, the information that can be decoded from these signals, and the degree to which these signals may capture or reflect prediction error. I am also very interested in the application of non-traditional statistical models to describe phenomena like ERPs and behaviour, as a way of improving inferences that can be drawn about neuro-cognition.
   fon: 
@@ -53,7 +59,7 @@
 
 - name: Dr. Cosimo Iaia
   photo: iaia.jpg
-  url: http://www.fiebachlab.org/people
+  url: iaia
   title: Postdoctoral Researcher
   research_interests: As a trained linguist, my research interests lie in speech and language processing. Currently, I am part of the ARENA project (Abstract Representations in Neural Architectures) which investigates how the brain encodes different levels of knowledge abstraction by using Large-Language Models and other computational approaches. I am also interested in how the brain encodes/decodes the temporal structure of linguistic information at different timescales.
   fon: 
@@ -64,7 +70,7 @@
 
 - name: Michael Ernst, M.Sc.
   photo: ernst.jpeg
-  url: http://www.fiebachlab.org/people
+  url: ernst
   title: PhD student
   research_interests: As a trained linguist, my research interests lie in speech and language processing. Currently, I am part of the ARENA project (Abstract Representations in Neural Architectures) which investigates how the brain encodes different levels of knowledge abstraction by using Large-Language Models and other computational approaches. I am also interested in how the brain encodes/decodes the temporal structure of linguistic information at different timescales.
   fon: 
@@ -75,7 +81,7 @@
 
 - name: Maren Wehrheim, M.Sc.
   photo: wehrheim.jpeg
-  url: http://www.fiebachlab.org/people
+  url: wehrheim
   title: PhD student
   research_interests: My research focuses on individual differences in cognitive abilities such as intelligence or working memory. I use methods from graph theory to study such differences in fMRI data. I am also very interested in applying different statistical and deep learning algorithms.
   fon: 
