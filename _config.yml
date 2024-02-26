@@ -67,23 +67,27 @@ teaser: /assets/images/FiebachLabLogo.png"
 author:
   name   : "Fiebach Lab"
   avatar : "/assets/images/FiebachLabLogo.png"
-  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains."
+  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br>
+  <b>Postal and Visitor Address </b> <br>
+Department of Psychology<br>
+Theodor-W.-Adorno-Platz 6<br>
+D-60323 Frankfurt am Main"<br>
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/FiebachLab"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/fiebachlab"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/FiebachLab"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/fiebachlab"
 
 defaults:
   # _posts
