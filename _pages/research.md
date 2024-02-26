@@ -27,8 +27,6 @@ author_profile: true
 
 </style>
 
-<h1 class="centeralign2"> Main Research Topics in Our Lab </h1>
-
 <p>Our research group studies the brain bases of higher cognitive functions such as language, working memory, cognitive control, and goal-directed behavior. To this end, we use modern brain imaging techniques such as functional magnetic resonance imaging, electroencephalography, or magnetoencephalography. Our work aims to understand the basic mechanisms of cognition, language processing, and individual differences in cognitive abilities, such as general intelligence or working memory capacity. </p>
 
  
