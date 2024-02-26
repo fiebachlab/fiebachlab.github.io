@@ -48,7 +48,7 @@ classes: wide
     </div>
     <div class="col-md-6">
         <div class="mask">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="25%" class="image teamImage">
+        <img src="/flab-test/assets/images/teampic/{{ member.photo }}" width="25%" class="image teamImage">
         </div>
     </div>
 </div>
