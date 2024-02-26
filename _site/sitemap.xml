@@ -17,9 +17,6 @@
 <loc>http://localhost:4000/categories/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/team/dadvar</loc>
-</url>
-<url>
 <loc>http://localhost:4000/team/ernst</loc>
 </url>
 <url>
@@ -60,6 +57,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/posts/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/Team/dadvar/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/ICDL23_0095_FI.pdf</loc>

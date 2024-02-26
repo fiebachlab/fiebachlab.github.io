@@ -18,21 +18,33 @@ classes: wide
 .centeralign {
   text-align: center;
 }
-
+#boxcolor {
+  background-color: #1F416F ;
+  padding: 50px;
+    border-radius: 3%;
+} 
+.white {
+  color: white;
+}
+.centeralign2 {
+  font-weight: bold;
+  color: white;
+}
 </style>
 
 
 
 {% for member in site.data.team_members %}
 {% if member.name == "Dr. Alessandro Tavano" %}
+<div id="boxcolor">
 <div class="row">
     <div class="col-md-6">
-        <p> <h1>{{member.name }}</h1> 
-        <b>{{member.title}}</b> <br>
+        <h3 class="centeralign2">{{member.name }}</h3> 
+        <p class="white"><b>{{member.title}}</b> <br>
         {{member.fon}}<br>
         {{member.secretary}}<br>
         {{member.office}}<br>
-        {{member.office}}</p><br>
+       </p>
     </div>
     <div class="col-md-6">
         <div class="mask">
@@ -40,7 +52,8 @@ classes: wide
         </div>
     </div>
 </div>
-
+</div>
+<br>
 <div>
     <b> Research Interests:</b>
     <br>

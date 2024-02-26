@@ -43,7 +43,7 @@ classes: wide
         {{member.fon}}<br>
         {{member.secretary}}<br>
         {{member.office}}<br>
-        {{member.office}}</p><br>
+        </p>
     </div>
     <div class="col-md-6">
         <div class="mask">
