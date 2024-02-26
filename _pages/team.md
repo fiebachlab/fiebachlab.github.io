@@ -38,9 +38,9 @@ author_profile: true
 <div class="row">
   {% for member in site.data.team_members %}
   <div class="col-md-4" style="height:300px;">
-    <a href="{{ site.url }}{{ site.baseurl }}/team/{{member.url}}">
+    <a href="flab/team/{{member.url}}">
     <div class="mask">
-      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ member.photo}}" width="25%" class="image teamImage">
+      <img src="flab/assets/images/teampic/{{ member.photo}}" width="25%" class="image teamImage">
     </div>
     </a>
       <p class="centeralign"> <b>{{member.name }}</b>
