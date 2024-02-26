@@ -40,7 +40,7 @@ author_profile: true
   <div class="col-md-4" style="height:300px;">
     <a href="{{ site.url }}{{ site.baseurl }}/team/{{member.url}}">
     <div class="mask">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" width="25%" class="image teamImage">
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ member.photo}}" width="25%" class="image teamImage">
     </div>
     </a>
       <p class="centeralign"> <b>{{member.name }}</b>
