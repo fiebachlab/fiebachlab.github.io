@@ -84,7 +84,8 @@ body {
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 .page__content {
@@ -113,7 +114,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   /* paragraph indents */
