@@ -5,8 +5,8 @@ classes: wide
 ---
 <style> 
 .teamImage{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -40,9 +40,9 @@ classes: wide
     <div class="col-md-6">
         <h3 class="centeralign2">{{member.name }}</h3> 
         <p class="white"><b>{{member.title}}</b> <br>
-        {{member.fon}}<br>
-        {{member.secretary}}<br>
+        {{member.fon}}<br>>
         {{member.office}}<br>
+        {{member.mail}}
         </p>
     </div>
     <div class="col-md-6">

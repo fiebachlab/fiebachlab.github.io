@@ -5,8 +5,8 @@ classes: wide
 <style>
 #boxcolor {
   background-color: #1F416F ;
-  border-radius:10%;
-  padding: 0px;
+  border-radius:5%/10%;
+  padding: 10px;
 } 
 .white {
   color: white;
@@ -20,6 +20,9 @@ classes: wide
     font-weight: bold;
     color: white;
 }
+a.special:visited {
+  color: white;
+}
 .projimage{
     display: block;
     margin-left: auto;
@@ -27,21 +30,32 @@ classes: wide
 } 
 .centeralign2 {
   text-align: center;
-  color:white;
 }
 </style>
+
+
+
 <h1 class="centeralign2"> <b>Projects </b></h1>
-<a href="https://neuroai-arena.github.io/">
-  <div id="boxcolor">
-    <h2 class="projname"> ARENA</h2> 
-      <br>
-    <div class="centeralign2"> DFG Research Unit For 5368 </div>
-  </div> 
-</a>
-<br>
-<div id="boxcolor">
-    <a href="https://gepris.dfg.de/gepris/projekt/510229904" class="projname">DRYHADS </a> 
-      <div class="centeralign2">
-       Deutsche Forschungsgemeinschaft (DFG) - Projektnummer 510229904
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <div id="boxcolor">
+           <h2 class="centeralign"> <a href="https://neuroai-arena.github.io/"  class="special"> <b>ARENA </b></a> </h2>
+          <div class="centeralign">An interdisciplinary research project aimed at better understanding how (conceptual-semantic) knowledge is organized at different levels of abstraction. <br>
+          <br>
+           DFG Research Unit For 5368 </div>
+        </div> 
+      </div> 
+    <div class="col-md-6"> 
+      <div id="boxcolor">
+         <h2 class="centeralign"> <a href="https://gepris.dfg.de/gepris/projekt/510229904"  class="special"><b>DRhyaDS </b></a></h2>
+        <div class="centeralign"> 
+        Das DRhyaDS-Projekts überschreitet die disziplinären Grenzen zwischen Sprachsignalverarbeitung, Psycholinguistik und kognitiver Neurowissenschaft und hat das Potenzial, sowohl die theoretischen Grundlagen erfolgreicher Sprachwahrnehmung als auch die besten Praktiken der Spontansprachanalyse tiefgreifend zu verändern. <br>
+        <br>
+        DFG Research Unit For 510229904 </div>
+      </div> 
+    </div>
   </div>
-</div> 
+</div>
