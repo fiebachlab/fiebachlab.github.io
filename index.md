@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -23,6 +23,8 @@ feature_row:
   - image_path: /assets/images/Frankfurt_Skyline_at_Night.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+
+author_profile: true
 ---
 
 
