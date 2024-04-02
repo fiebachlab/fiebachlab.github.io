@@ -27,7 +27,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -57,6 +57,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - bootstrap
+  - jekyll/scholar
   
 #theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -67,11 +68,7 @@ teaser: /assets/images/FiebachLabLogo.png"
 author:
   name   : "Fiebach Lab"
   avatar : "/assets/images/FiebachLabLogo.png"
-  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br>
-  <br><b>Postal and Visitor Address </b> <br>
-Department of Psychology<br>
-Theodor-W.-Adorno-Platz 6<br>
-D-60323 Frankfurt am Main"
+  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br>"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -117,3 +114,18 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+scholar:
+  style: apa
+  locale: en
+  replace_strings: true
+  join_strings:    true
+  bibliography_template: bibtemplate 
+
+  repository: /publications
+  repository_file_delimiter: "." 
+  sort_by: year
+  order: ascending
+  group_by: year
+
+  source: ./_bibliography
+  query: "@*"

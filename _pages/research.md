@@ -7,6 +7,7 @@ header:
   overlay_filter: "0.5"
   excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
   overlay_image: /images/projpic/title_brain2.jpg
+author_profile: true
 ---
 <style>
 .centeralign2 {

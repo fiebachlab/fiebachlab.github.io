@@ -47,6 +47,9 @@
 <loc>http://localhost:4000/team/taylor</loc>
 </url>
 <url>
+<loc>http://localhost:4000/teaching</loc>
+</url>
+<url>
 <loc>http://localhost:4000/team/</loc>
 </url>
 <url>
@@ -57,9 +60,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/posts/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/_pages/Team/dadvar/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/ICDL23_0095_FI.pdf</loc>

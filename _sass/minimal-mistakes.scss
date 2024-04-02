@@ -5,9 +5,10 @@
 */
 
 /* Variables */
+
 @import "minimal-mistakes/variables";
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+@import "minimal-mistakes/custom";
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
@@ -39,5 +40,6 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
 
 

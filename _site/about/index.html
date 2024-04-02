@@ -97,6 +97,10 @@
   </ul>
 </nav>
 
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
     
 
 
@@ -118,7 +122,7 @@
             </li><li class="masthead__menu-item">
               <a href="/publications/">Publications</a>
             </li><li class="masthead__menu-item">
-              <a href="/blog/">Blog</a>
+              <a href="/teaching/">Teaching</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -140,8 +144,6 @@
 
     <div class="initial-content">
       
-
-
 
 
 
@@ -167,7 +169,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br /> <br /><b>Postal and Visitor Address </b> <br /> Department of Psychology<br /> Theodor-W.-Adorno-Platz 6<br /> D-60323 Frankfurt am Main</p>
+        <p>Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br /></p>
 
       </div>
     
@@ -254,7 +256,7 @@
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     
     
     
@@ -270,7 +272,7 @@
         </header>
       
 
-      <section class="page__content e-content" itemprop="text">
+      <section class="page__content" itemprop="text">
         
         <p>Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.</p>
 
@@ -615,30 +617,56 @@
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
+        <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="page__footer-follow">
+        <ul class="social-icons">
+          
 
-    
-      
-        
-          <li><a href="https://twitter.com/FiebachLab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/fiebachlab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-    
+          
+            
+              
+                <li><a href="https://twitter.com/FiebachLab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+              
+            
+              
+                <li><a href="https://github.com/fiebachlab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+              
+            
+          
 
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
+          
+            <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+          
+        </ul>
+      </div>
+      <div class="page__footer-copyright">&copy; 2024 Fiebach Lab</div>
+    </div>
+    <div class="col-md-6">
+     <div class="smaller">
+      <strong>Postal and Visitor Address </strong> <br></div>
+    <div class="page__footer-copyright">
+      Department of Psychology<br>
+      Theodor-W.-Adorno-Platz 6<br>
+      D-60323 Frankfurt am Main</div>
+    </div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Fiebach Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
+<script>
+  $(document).ready(function(){
+      var str =$(this).attr('id');
+      
+      $(".btnId").click(function(){
+          var str = $(this).attr('id');
+          var ret = str.split("_");
+          var id = ret[1];
+          $('#' + id).toggle();
+      });
+  });
+  </script>
+  
       </footer>
     </div>
 

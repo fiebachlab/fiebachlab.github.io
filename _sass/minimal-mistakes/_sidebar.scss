@@ -32,6 +32,8 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
+      position: -webkit-sticky;
+      position: sticky;
       max-height: calc(100vh - #{$nav-height} - 2em);
     }
   }
@@ -41,7 +43,7 @@
   }
 
   > * {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
   }
 
@@ -62,7 +64,7 @@
   }
 
   img {
-    width: 100%;
+    width: 50%;
 
     &.emoji {
       width: 20px;
@@ -135,11 +137,9 @@
 
   img {
     max-width: 110px;
-    border-radius: 50%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
     }
   }
 }

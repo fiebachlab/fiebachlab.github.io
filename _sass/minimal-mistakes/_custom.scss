@@ -1,0 +1,59 @@
+
+  /* ==========================================================================
+  Add-Ins
+   ========================================================================== */
+   
+$abstract-color                : #009628 !default;  
+$BibTex-color                  : #b201a6 !default;  
+$download-color                : #b51b00 !default;  
+$supplement-color              : #abb500 !default;   
+
+.author__avatar img {
+    max-width: 250px !important;
+}
+   
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}   
+   
+.btnId{
+	display: inline-block;
+}
+
+@mixin btnPub($btnPub-color) {
+	border: 3px solid mix(#252a34, $btnPub-color, 10%);
+}
+
+.btnPub--abstract{
+	@include btnPub($abstract-color);
+}
+
+.btnPub--BibTex{
+	@include btnPub($BibTex-color);
+}
+ 
+.btnPub--download{
+	@include btnPub($download-color);
+}
+ 
+.btnPub--supplement{
+	@include btnPub($supplement-color);
+}
+
+.dropDownAbstract{
+	font-size: $type-size-8;
+	display: none; 
+	position: relative;
+	border-left: 3px solid $primary-color; 
+	padding-left: 3px
+}
+   
+.dropDownBibtex{
+	font-size: $type-size-8;
+	display:none; 
+	position:relative;
+}
+
+.katex { font-size: 1em !important; }

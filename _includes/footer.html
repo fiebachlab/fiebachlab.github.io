@@ -1,21 +1,48 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="page__footer-follow">
+        <ul class="social-icons">
+          {% if site.data.ui-text[site.locale].follow_label %}
+            <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+          {% endif %}
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+          {% if site.footer.links %}
+            {% for link in site.footer.links %}
+              {% if link.label and link.url %}
+                <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
 
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
+          {% unless site.atom_feed.hide %}
+            <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+          {% endunless %}
+        </ul>
+      </div>
+      <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</div>
+    </div>
+    <div class="col-md-6">
+     <div class="smaller">
+      <strong>Postal and Visitor Address </strong> <br></div>
+    <div class="page__footer-copyright">
+      Department of Psychology<br>
+      Theodor-W.-Adorno-Platz 6<br>
+      D-60323 Frankfurt am Main</div>
+    </div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<script>
+  $(document).ready(function(){
+      var str =$(this).attr('id');
+      
+      $(".btnId").click(function(){
+          var str = $(this).attr('id');
+          var ret = str.split("_");
+          var id = ret[1];
+          $('#' + id).toggle();
+      });
+  });
+  </script>
+  

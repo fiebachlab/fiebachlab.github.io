@@ -27,7 +27,7 @@ author_profile: true
 ---
 
 
-<h4><b>Principle Investigator: Christian Fiebach</b></h4>
+<h4><b>Head of Fiebach Lab: Prof. Dr. Christian Fiebach</b></h4>
 
 
 

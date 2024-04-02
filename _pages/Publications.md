@@ -2,7 +2,9 @@
 excerpt: "Publications"
 permalink: publications/
 classes: wide
+years: [2024,2023,2022,2021,2020,2019,2018,2017,2016, 2015, 2013, 2012,2011,2010,2009,2008,2007,2005,2004,2003,2002]
 ---
+
 <style>
 .centeralign {
   text-align: center;
@@ -14,20 +16,17 @@ classes: wide
   font-weight: bold;
 }
 </style>
-<h3 class="centeralign" >Publications </h3>
 
-<h4 class="centeralign2"> Submitted / in preparation </h4>
 
-- Basten, U., Rammensee, R. A., Weygandt, R., & Fiebach, C. J. (in preparation). Intelligence and the regulation of the brain’s default activity.
+<h6 class="centeralign2"> Submitted / in preparation </h6>
+<ol type="1" class="text-justify"> <small>
+<li>Basten, U., Rammensee, R. A., Weygandt, R., & Fiebach, C. J. (in preparation). Intelligence and the regulation of the brain’s default activity. </li>
+<li>Wehrheim, M., Faskowitz, J., García Alanis, J. C., Schubert, A.-L., & Fiebach, C. J. (preprint). Reliability of Variability and Complexity Measures for Task and Task-Free BOLD fMRI. Preprint DOI: https://osf.io/preprints/psyarxiv/ves2t </li>
+</small>
+</ol>   
 
-- Wehrheim, M., Faskowitz, J., García Alanis, J. C., Schubert, A.-L., & Fiebach, C. J. (preprint). Reliability of Variability and Complexity Measures for Task and Task-Free BOLD fMRI. Preprint DOI: https://osf.io/preprints/psyarxiv/ves2t
-  
-<h4 class="centeralign2"> 2023</h4>
-- Wehrheim, M. H., Faskowitz, J., Sporns, O., Fiebach, C. J., Kaschube, M., & Hilger, K. (2023). Few temporally distributed brain connectivity states predict human cognitive abilities. NeuroImage, 277, 120246. https://doi.org/10.1016/j.neuroimage.2023.120246
 
-- Kazanina N., Tavano A. (2023) What neural oscillations can and cannot do for syntactic structure building. Nat Rev Neurosci, 24(2), 113-128. https://doi.org/10.1038/s41583-022-00659-5. See also comments and replies: https://doi.org/10.1038/s41583-023-00739-0 and https://doi.org/10.1038/s41583-023-00735-4 
-
-- Rahal, R. M., Fiedler, S., Adetula, A., Berntsson, R. P., Dirnagl, U., Feld, G. B., Fiebach, C. J., Himi, S. A., Horner, A. J., Lonsdorf, T. B., Schönbrodt, F., Silan, M. A. A., Wenzler, M., & Azevedo, F. (2023). Quality research needs good working conditions. Nature Human Behaviour, 7(2), 164–167. https://doi.org/10.1038/s41562-022-01508-2
-
-- von Werthern, N. M., Ahrens, K. F., Neumann, R. J., Kollmann, B., Kranz, T. M., Tüscher, O., Lieb, K., Reif, A., Fiebach, C. J., & Plichta, M. M. (in press). Loneliness during the Covid-19 pandemic in Germany: Impact of social factors and polygenic risk scores on interpersonal differences in loneliness and mental health. The World Journal of Biological Psychiatry. https://doi.org/10.1080/15622975.2023.2226201 
-
+{% for y in page.years %}
+  <h6 id="{{y}}" class="centeralign2">{{y}}</h6>
+  {% bibliography -f references -q @*[year={{y}}]* %}
+{% endfor %}
