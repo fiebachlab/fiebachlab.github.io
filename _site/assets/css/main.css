@@ -1049,7 +1049,7 @@ figure .fluid-width-video-wrapper {
 }
 figure img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1240,7 +1240,7 @@ select {
   color: #4D4B46;
   background-color: #fff;
   border: #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
 
@@ -1582,7 +1582,7 @@ th {
   text-align: center;
   text-decoration: none;
   border-width: 0;
-  border-radius: 50%;
+  border-radius: 4px;
   cursor: pointer;
   /* button colors */
   /* fills width of parent container */
@@ -1762,7 +1762,7 @@ th {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(189, 193, 196, 0.25);
 }
 .notice h4, .notice .h4 {
@@ -1813,7 +1813,7 @@ blockquote.notice {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #ccdfe9;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 97, 143, 0.25);
 }
 .notice--primary h4, .notice--primary .h4 {
@@ -1864,7 +1864,7 @@ blockquote.notice--primary {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #d8ebf1;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(59, 156, 186, 0.25);
 }
 .notice--info h4, .notice--info .h4 {
@@ -1915,7 +1915,7 @@ blockquote.notice--info {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #f7e5cd;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(214, 127, 5, 0.25);
 }
 .notice--warning h4, .notice--warning .h4 {
@@ -1966,7 +1966,7 @@ blockquote.notice--warning {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #d9edd9;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(63, 166, 63, 0.25);
 }
 .notice--success h4, .notice--success .h4 {
@@ -2017,7 +2017,7 @@ blockquote.notice--success {
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
   background-color: #fcdfde;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(238, 95, 91, 0.25);
 }
 .notice--danger h4, .notice--danger .h4 {
@@ -2274,12 +2274,12 @@ blockquote.notice--danger {
   margin-left: 0;
 }
 .pagination li:first-child a {
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .pagination li:last-child a {
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .pagination--pager {
   display: block;
@@ -2293,7 +2293,7 @@ blockquote.notice--danger {
   text-decoration: none;
   color: #F8F6F5;
   border: 1px solid #b6b6b6;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 .pagination--pager:hover {
   background-color: #F8F6F5;
@@ -2414,7 +2414,7 @@ blockquote.notice--danger {
   margin-top: 15px;
   padding: 5px;
   border: 1px solid #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   background: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -2492,7 +2492,7 @@ blockquote.notice--danger {
     font-size: 0.75em;
     font-weight: bold;
     border: 1px solid #bdc1c4;
-    border-radius: 50%;
+    border-radius: 4px;
     z-index: 20;
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
@@ -2628,7 +2628,7 @@ blockquote.notice--danger {
   color: #7a8288;
   background-color: #fff;
   border: 1px solid #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
@@ -2636,8 +2636,8 @@ blockquote.notice--danger {
   color: #fff;
   font-size: 0.75em;
   background: #00618F;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .toc .active a {
   background-color: #ccdfe9;
@@ -2713,7 +2713,7 @@ blockquote.notice--danger {
   margin-right: auto;
   margin-top: 2em;
   max-width: 100%;
-  padding: 0 1em 2em;
+  padding: 0 1em 0.5em;
 }
 .page__footer footer::after {
   clear: both;
@@ -2904,7 +2904,7 @@ figure.highlight {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 0.75em;
   line-height: 1.8;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 div.highlighter-rouge > pre,
 div.highlighter-rouge pre.highlight,
@@ -3604,7 +3604,7 @@ body:hover .visually-hidden button {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
@@ -3641,7 +3641,7 @@ body:hover .visually-hidden button {
   z-index: 9999;
   background: #fff;
   border: 1px solid #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
 .modal__title {
@@ -3860,7 +3860,7 @@ body {
   padding-bottom: 0.1rem;
   font-size: 0.8em;
   background: #fafafa;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 .page__content :not(pre) > code::before, .page__content :not(pre) > code::after {
   letter-spacing: -0.2em;
@@ -3967,7 +3967,7 @@ body {
   text-align: right;
   z-index: 5;
   opacity: 0.5;
-  border-radius: 50% 0 0 0;
+  border-radius: 4px 0 0 0;
 }
 @media (min-width: 64em) {
   .page__hero-caption {
@@ -4051,7 +4051,7 @@ body {
   padding: 5px 10px;
   text-decoration: none;
   border: 1px solid #b6b6b6;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 .page__taxonomy-item:hover {
   text-decoration: none;
@@ -4362,7 +4362,7 @@ body {
 
 .archive__item-teaser {
   position: relative;
-  border-radius: 50%;
+  border-radius: 4px;
   overflow: hidden;
 }
 .archive__item-teaser img {
@@ -4382,7 +4382,7 @@ body {
   text-align: right;
   z-index: 5;
   opacity: 0.5;
-  border-radius: 50% 0 0 0;
+  border-radius: 4px 0 0 0;
 }
 @media (min-width: 64em) {
   .archive__item-caption {
@@ -4935,7 +4935,7 @@ body {
   padding: 10px;
   list-style-type: none;
   border: 1px solid #f2f3f3;
-  border-radius: 50%;
+  border-radius: 4px;
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: default;
@@ -5367,7 +5367,7 @@ body {
   --bs-border-style: solid;
   --bs-border-color: #f2f3f3;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 50%;
+  --bs-border-radius: 4px;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;
@@ -10546,7 +10546,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-close-color);
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
   border: 0;
-  border-radius: 50%;
+  border-radius: 4px;
   opacity: var(--bs-btn-close-opacity);
 }
 .btn-close:hover {

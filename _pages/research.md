@@ -1,13 +1,18 @@
 ---
 permalink: /research/
-classes: wide
+layout: splash
 title: <b>Main Research Topics in Our Lab</b>
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
   overlay_image: /assets/images/projpic/title_brain2.jpg
-author_profile: true
+author_profile: false
+carousels:
+  - images: 
+    - image: /assets/images/labpic/posterior_poi_partial.png
+    - image: /assets/images/labpic/image2.png
+    - image: /assets/images/labpic/tc_joined_CrI_no_bf.png
 ---
 
 <style>
@@ -52,65 +57,109 @@ a:active {
   text-decoration: none; 
 }
 
+.galleryItem {
+  padding: 30px;
+  box-sizing: border-box;
+  border: 15px solid transparent;
+  background-clip:padding-box;
+  background-color: #e4e3dd ;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;  
+  transition: all 300ms;
+  clear: both;
+  height: 140px;
+	-webkit-transition: line-height 1s, height .5s, opacity 1s, border-radius 3s;
+
+}
+.galleryItem:hover {
+    display: block;
+        height: 450px;
+    line-height:auto;
+}
+.galleryItem ul {
+    display: none;
+}
+.galleryItem:hover ul {
+    display: block;
+}
 </style>
-
-<p>Our research group studies the brain bases of higher cognitive functions such as language, working memory, cognitive control, and goal-directed behavior. To this end, we use modern brain imaging techniques such as functional magnetic resonance imaging, electroencephalography, or magnetoencephalography. Our work aims to understand the basic mechanisms of cognition, language processing, and individual differences in cognitive abilities, such as general intelligence or working memory capacity. </p>
-
-<h5 style="text-align:center"><b>Research Topics </b></h5>
 <div class="container">
   <div class="row">
-    <div class="col-md-5" >
+    <div class="col-md-1" >
+    </div>
+  <div class="col-md-10" >
+
+
+
+<!--{% include carousel.html height="5" unit="%" duration="7" number="1" %}-->
+
+<br>
+<h4 style="text-align:center"><b>Research Topics </b></h4>
+<p>Our research group studies the brain bases of higher cognitive functions such as language, working memory, cognitive control, and goal-directed behavior. To this end, we use modern brain imaging techniques such as functional magnetic resonance imaging, electroencephalography, or magnetoencephalography. Our work aims to understand the basic mechanisms of cognition, language processing, and individual differences in cognitive abilities, such as general intelligence or working memory capacity. </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" >
+    <div class="galleryContainer">
+        <div class="galleryItem">
         <h6 style="text-align:center"> <b>Cognitive Stability and Cognitive Flexibility </b></h6>
         <ul>
-          <li>working memory, working memory capacity, working memory precision</li>
+          <li>working memory, working memory capacity</li>
+          <li>working memory precision</li>
           <li>task switching</li>
           <li>distractor inhibition</li>
           <li>dopaminergic control of stability vs. flexibility</li>
         </ul>
+      </div>  
     </div>
-    <div class="col-md-1" >
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6">
+          <div class="galleryContainer">
+        <div class="galleryItem">
         <h6 style="text-align:center"> <b> Language Processing </b></h6>
         <ul >
-          <li>predictive coding during language processing (L-POP project funded by ERC)</li>
-          <li>word recognition</li>
-          <li>reading and reading disorders</li>
+          <li>predictive coding during language processing</li>
+          <li>word recognition, reading and reading disorders</li>
           <li>Speech dynamics</li>
           <li>Hierarchical information encoding  </li>
           <li>Orthographic processing</li>
           <li>Prediction effects</li>
         </ul>
     </div>
-      <div class="col-md-1" >
-  </div>
-    <div class="col-md-5">
-        <h6 style="text-align:center"> <b>Neurobiological Mechanisms underlying Individual Differences </b></h6>
+    </div>
+    </div>
+    <div class="col-md-6">
+          <div class="galleryContainer">
+        <div class="galleryItem">
+        <h6 style="text-align:center"> <b>Neurobiological Mechanisms</b></h6>
         <ul>
           <li>brain bases of intelligence</li>
           <li>individual differences in working memory performance</li>
-          <li>effects of personality (esp. anxiety) on executive cognitive control</li>
+          <li>effects of personality on executive cognitive control</li>
           <li>genes, brain, and behaviour</li>
           <li>neurocognitive development of reading, attention, executive control</li>
         </ul>
     </div>
-      <div class="col-md-1" >
-  </div>
-    <div class="col-md-5" >
+    </div>
+    </div>
+    <div class="col-md-6 " >
+      <div class="galleryContainer">
+        <div class="galleryItem">
         <h6 style="text-align:center"> <b>Other </b></h6>
         <ul >
           <li>Neurocomputational approaches to brain-body interactions (eye movements, respiration, heart-rate)</li>
           <li>Neural oscillations in auditory sequence processing</li>
           <li>Predictive modelling in audition </li>
           <li>Neural variability</li>
-          <li>Computational modelling</li>
-          <li>Statistical modelling</li>
+          <li>Computational & Statistical modelling</li>
         </ul>
+      </div>
+      </div>
       </div>
   </div>
 </div>
 
-<h5 style="text-align:center"><b>Ongoing Projects </b></h5>
+<h4 style="text-align:center"><b>Ongoing Projects</b></h4>
 
 <div class="container">
   <div class="row">
@@ -142,4 +191,8 @@ a:active {
     </div> 
   </div>
 </div>
-<style>
+  </div>
+    </div>
+      </div>
+
+<br>
