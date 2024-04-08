@@ -59,16 +59,16 @@ author_profile: true
   <div class="col-md-1" >
   </div>
     <div class="col-md-3 box" >
-    <a href="research/index.html"><img class="linkImage" src="/assets/images/labpic/image2.png" alt="Italian Trulli">
-    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Ongoing Research</h6></a>
+    <a href="research/index.html"><div class="linkImage"><img  src="/assets/images/labpic/image2.png" alt="Italian Trulli">
+    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Ongoing Research</h6></a></div>
     </div>
         <div class="col-md-3 box" >
-    <a href="team/index.html"><img class="linkImage" src="/assets/images/labpic/eegselfie1.jpg" alt="Italian Trulli"> 
-    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Our Team </h6></a>
+    <a href="team/index.html"><div class="linkImage"><img  src="/assets/images/labpic/eegselfie1.jpg" alt="Italian Trulli"> 
+    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Our Team </h6></a></div>
     </div>
     <div class="col-md-3 box" >
-    <a href="publications/index.html"><img class="linkImage" src="/assets/images/labpic/image2.png" alt="Italian Trulli">
-    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Publications</h6></a>
+    <a href="publications/index.html"><div class="linkImage"><img  src="/assets/images/labpic/image2.png" alt="Italian Trulli">
+    <h6 style="font-weight:bold;color:#00618F;text-align: center;">Publications</h6></a></div>
     </div>
   </div>
   </div>
