@@ -12,14 +12,10 @@ feature_row:
     alt: "EEG Selfie"
     title: "Get to know the Team"
     excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
-    actions:
-  - label: "More Info"
     url: "team/index.html"
   - image_path: /assets/images/labpic/image2.jpg
     title: "EEG Selfie"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    actions:
-  - label: "More Info"
     url: "https://unsplash.com"
 author_profile: true
 ---
