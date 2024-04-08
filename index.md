@@ -28,7 +28,7 @@ author_profile: true
   <div class="row">
     <div class="col-md-1" >
     </div>
-    <div class="col-md-6" >
+    <div class="col-md-9" >
     <h4><b>Head of Fiebach Lab: Prof. Dr. Christian Fiebach</b></h4>
 
 <p>Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains. We use modern brain imaging techniques to understand how these uniquely human abilities are organized in the brain. </p>
