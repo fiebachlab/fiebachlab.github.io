@@ -6,7 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
-  overlay_image: /images/projpic/title_brain2.jpg
+  overlay_image: /assets/images/projpic/title_brain2.jpg
 author_profile: true
 ---
 
