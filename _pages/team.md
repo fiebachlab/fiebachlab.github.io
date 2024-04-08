@@ -19,10 +19,10 @@ author_profile: true
     display: block;
     margin-left: auto;
     margin-right: auto;
-transition: all 300ms;
+transition: all 500ms;
         }
 .teamImage:hover {
-      scale:1.05;
+      scale:1.15;
         }
 .centeralign {
   text-align: center;
@@ -32,6 +32,7 @@ transition: all 300ms;
   text-align: center;
   color: #1F416F;
 }
+
 </style>
 
 <h1 class="centeralign2"> <b>Team </b></h1>
