@@ -8,13 +8,19 @@ excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
 intro: 
   - excerpt: 'Welcome to the Laboratory for Cognitive Neuroscience `type="center"`'
 feature_row:
-  - image_path: /assets/images/eegselfie1.jpg
-    alt: "placeholder image 2"
-    title: "EEG Selfie"
+  - image_path: /assets/images/labpic/eegselfie1.jpg
+    alt: "EEG Selfie"
+    title: "Get to know the Team"
     excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
-  - image_path: /assets/images/eegselfie3.jpg
+    actions:
+  - label: "More Info"
+    url: "team/index.html"
+  - image_path: /assets/images/labpic/image2.jpg
     title: "EEG Selfie"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    actions:
+  - label: "More Info"
+    url: "https://unsplash.com"
 author_profile: true
 ---
 
