@@ -8,7 +8,7 @@ author_profile: true
 <style> 
 #boxcolor {
   background-color: #1F416F ;
-  border-radius: 5%;
+  border-radius: 20px;
   padding: 50px;
 } 
 .teamImage{
@@ -19,8 +19,11 @@ author_profile: true
     display: block;
     margin-left: auto;
     margin-right: auto;
-} 
-
+transition: all 300ms;
+        }
+.teamImage:hover {
+      scale:1.05;
+        }
 .centeralign {
   text-align: center;
   color: white;

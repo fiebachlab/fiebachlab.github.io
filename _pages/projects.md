@@ -5,7 +5,7 @@ classes: wide
 <style>
 #boxcolor {
   background-color: #00618F ;
-  border-radius:5%/10%;
+  border-radius:20px;
   padding: 10px;
 } 
 .white {
@@ -20,9 +20,6 @@ classes: wide
     font-weight: bold;
     color: #F8F6F5;
 }
-a.special:visited {
-  color: #F8F6F5;
-}
 .projimage{
     display: block;
     margin-left: auto;
@@ -30,38 +27,55 @@ a.special:visited {
 } 
 .centeralign2 {
   text-align: center;
+  font-weight: bold;
+}
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
 }
 </style>
 
 
 
-<h1 class="centeralign2"> <b>Projects </b></h1>
+<h5 class="centeralign2"> <b>Projects </b></h5>
 
 
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-        <div id="boxcolor">
-           <h5 class="centeralign"> <a href="https://neuroai-arena.github.io/"  class="special"> <b>ARENA </b></a> </h5>
+        <a href="https://neuroai-arena.github.io/"  class="special"><div id="boxcolor">
+           <h5 class="centeralign">  <b>ARENA </b> </h5>
           <div class="centeralign">
             <small>
-            An interdisciplinary research project aimed at better understanding how (conceptual-semantic) knowledge is organized at different levels of abstraction. <br>
+            ARENA ("Abstract Representations in Neural Architectures") is an interdisciplinary research project aimed at better understanding how (conceptual-semantic) knowledge is organized at different levels of abstraction. <br>
             <br>
             DFG Research Unit For 5368 
             </small>
            </div> 
         </div> 
+        </a>
       </div> 
     <div class="col-md-6"> 
-      <div id="boxcolor">
-         <h5 class="centeralign"> <a href="https://gepris.dfg.de/gepris/projekt/510229904"  class="special"><b>DRhyaDS </b></a></h5>
+      <a href="https://gepris.dfg.de/gepris/projekt/510229904"  class="special"><div id="boxcolor">
+         <h5 class="centeralign"> <b>DRhyaDS </b></h5>
         <div class="centeralign"> 
           <small>
-          Das DRhyaDS-Projekts überschreitet die disziplinären Grenzen zwischen Sprachsignalverarbeitung, Psycholinguistik und kognitiver Neurowissenschaft und hat das Potenzial, sowohl die theoretischen Grundlagen erfolgreicher Sprachwahrnehmung als auch die besten Praktiken der Spontansprachanalyse tiefgreifend zu verändern. <br>
+          The DRhyaDS project ("Dekodierung der dynamischen Rhythmen von Sprache" - "Decoding of Dynamic Rhythms of Language") crosses the disciplinary boundaries between speech signal processing, psycholinguistics and cognitive neuroscience  neuroscience and has the potential to advance both the theoretical 
+          theoretical foundations of successful speech perception as well as the best practices
+          practices of spontaneous speech analysis.  <br>
           <br>
           DFG Research Unit For 510229904
           </small>
         </div>
+        </a>
       </div> 
     </div>
   </div>
