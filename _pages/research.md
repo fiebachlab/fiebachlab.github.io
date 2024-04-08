@@ -16,6 +16,14 @@ carousels:
 ---
 
 <style>
+  .background {
+  padding: 30px;
+  box-sizing: border-box;
+  border: 15px solid transparent;
+  background-clip:padding-box;
+  background-color: #f8f6f5;
+  border-radius: 20px;
+        }
 .box {
   padding: 30px;
   box-sizing: border-box;
@@ -69,34 +77,40 @@ a:active {
   transition: all 300ms;
   clear: both;
   height: 140px;
-	-webkit-transition: line-height 1s, height .5s, opacity 1s, border-radius 3s;
+	-webkit-transition: line-height 1s, height .5s, opacity 1s, border-radius 3s scale .5s;
 
 }
 .galleryItem:hover {
     display: block;
         height: 450px;
     line-height:auto;
+    scale:1.05;
 }
 .galleryItem ul {
     display: none;
 }
 .galleryItem:hover ul {
     display: block;
+    }
+.text {
+margin-left: 1em;
+margin-right: 1em;
 }
+
 </style>
 <div class="container">
   <div class="row">
     <div class="col-md-1" >
     </div>
-  <div class="col-md-10" >
+  <div class="col-md-10 background" >
 
 
 
 <!--{% include carousel.html height="5" unit="%" duration="7" number="1" %}-->
 
-<br>
 <h4 style="text-align:center"><b>Research Topics </b></h4>
-<p>Our research group studies the brain bases of higher cognitive functions such as language, working memory, cognitive control, and goal-directed behavior. To this end, we use modern brain imaging techniques such as functional magnetic resonance imaging, electroencephalography, or magnetoencephalography. Our work aims to understand the basic mechanisms of cognition, language processing, and individual differences in cognitive abilities, such as general intelligence or working memory capacity. </p>
+<div class="text">
+<p >Our research group studies the brain bases of higher cognitive functions such as language, working memory, cognitive control, and goal-directed behavior. To this end, we use modern brain imaging techniques such as functional magnetic resonance imaging, electroencephalography, or magnetoencephalography. Our work aims to understand the basic mechanisms of cognition, language processing, and individual differences in cognitive abilities, such as general intelligence or working memory capacity. </p> </div>
 <div class="container">
   <div class="row">
     <div class="col-md-6" >
