@@ -22,7 +22,7 @@ author_profile: true
 transition: all 500ms;
         }
 .teamImage:hover {
-      scale:1.15;
+      scale:1.08;
         }
 .centeralign {
   text-align: center;
