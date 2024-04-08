@@ -11,12 +11,12 @@ feature_row:
   - image_path: /assets/images/labpic/eegselfie1.jpg
     alt: "EEG Selfie"
     title: "Get to know the Team"
-    excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
+    excerpt: "Our Team."
     url: "team/index.html"
-  - image_path: /assets/images/labpic/image2.jpg
-    title: "EEG Selfie"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "https://unsplash.com"
+  - image_path: /assets/images/labpic/image2.png
+    title: "Research"
+    excerpt: "Research."
+    url: "team/research.html"
 author_profile: true
 ---
 
