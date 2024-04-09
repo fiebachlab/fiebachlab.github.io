@@ -17,6 +17,9 @@
 <loc>http://localhost:4000/categories/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/team/dadvar</loc>
+</url>
+<url>
 <loc>http://localhost:4000/team/ernst</loc>
 </url>
 <url>
@@ -44,7 +47,7 @@
 <loc>http://localhost:4000/team/taylor</loc>
 </url>
 <url>
-<loc>http://localhost:4000/teaching</loc>
+<loc>http://localhost:4000/teaching/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/team/</loc>

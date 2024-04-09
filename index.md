@@ -7,13 +7,6 @@ header:
 excerpt: "Welcome to the Laboratory for Cognitive Neuroscience."
 intro: 
   - excerpt: 'Welcome to the Laboratory for Cognitive Neuroscience `type="center"`'
-feature_row:
-  - image_path: /assets/images/labpic/eegselfie1.jpg
-    excerpt: "The Team"
-    url: "team/index.html"
-  - image_path: /assets/images/labpic/image2.png
-    excerpt: "Research Topics"
-    url: "team/research.html"
 author_profile: true
 ---
 
@@ -59,15 +52,15 @@ author_profile: true
   <div class="col-md-1" >
   </div>
     <div class="col-md-3 box" >
-    <a href="research/index.html"><img class="linkImage" src="/assets/images/labpic/image2.png" alt="Italian Trulli">
+    <a href="research/index.html"><img class="linkImage" src="/flab-test/assets/images/labpic/image2.png" alt="Italian Trulli">
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Ongoing Research</h6></a>
     </div>
         <div class="col-md-3 box" >
-    <a href="team/index.html"><img class="linkImage" src="/assets/images/labpic/eegselfie1.jpg" alt="Italian Trulli"> 
+    <a href="team/index.html"><img class="linkImage" src="/flab-test/assets/images/labpic/eegselfie1.jpg" alt="Italian Trulli"> 
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Our Team </h6></a>
     </div>
     <div class="col-md-3 box" >
-    <a href="publications/index.html"><img class="linkImage" src="/assets/images/labpic/image2.png" alt="Italian Trulli">
+    <a href="publications/index.html"><img class="linkImage" src="/flab-test/assets/images/labpic/image2.png" alt="Italian Trulli">
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Publications</h6></a>
     </div>
   </div>

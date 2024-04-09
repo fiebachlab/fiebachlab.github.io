@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 excerpt: "News regarding Teaching."
-permalink: /teaching
+permalink: /teaching/
 ---
 
 
