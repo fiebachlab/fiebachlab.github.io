@@ -1,6 +1,5 @@
 ---
 permalink: /datenschutzhinweise/
-title: Datenschutzhinweise
 ---
 # Datenschutzhinweise gemäß Art. 13 DSGVO
 
@@ -16,7 +15,7 @@ Bei Fragen zum Datenschutz stehen wir Ihnen unter [felixandrewkoerber@gmail.com]
 ## Datenverarbeitung im Rahmen unserer Vereinsarbeit
 
 ### Mitgliederverwaltung
-Mitgliedsdaten (==...==) werden von den jeweiligen Funktionsträger:innen unseres Vereins nur für die ihnen zugeordnete Aufgabenerfüllung verarbeitet. Im Einzelnen bedeutet dies:
+Mitgliedsdaten werden von den jeweiligen Funktionsträger:innen unseres Vereins nur für die ihnen zugeordnete Aufgabenerfüllung verarbeitet. Im Einzelnen bedeutet dies:
 * Wenn der ++Vorstand++ Mitgliedsdaten benötigt, um seine Aufgaben zu erledigen, darf er auf alle hierfür erforderlichen Mitgliedsdaten zugreifen. Dazu gehört insbesondere  Keine.
 * Der/die Kassenwart:in verarbeitet die Mitgliedsdaten, die für den Einzug der Mitgliedsbeiträge, der/die ++Kassenprüfer:in++ verarbeitet die Mitgliedsdaten, die für die Kassenprüfung relevant sind. Dies sind Vorname, Nachname, postalische Anschrift und Bankverbindung mit Zahlungsdaten sowie ggf. Zugriff auf die Lastschriftsverfahrensgenehmigung inklusive Unterschrift, sofern das Mitglied dem Verein ein Lastschriftmandat erteilt hat.
 
