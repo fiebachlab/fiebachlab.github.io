@@ -68,7 +68,7 @@ teaser: /assets/images/FiebachLabLogo.png"
 author:
   name   : "Fiebach Lab"
   avatar : "/assets/images/FiebachLabLogo.png"
-  bio    : "Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br>"
+  bio    : "The Fiebach Lab investigates the neural underpinnings of human cognition, specializing in areas such as perception, memory, decision-making, and their implications for education and cognitive training. <br>"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
