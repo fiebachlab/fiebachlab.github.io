@@ -5,8 +5,8 @@ classes: wide
 ---
 <style> 
 .teamImage{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -20,7 +20,7 @@ classes: wide
 #boxcolor {
   background-color: #1F416F ;
   padding: 50px;
-    border-radius: 3%;
+    border-radius: 20px;
 } 
 .white {
   color: white;
@@ -40,7 +40,7 @@ classes: wide
     <div class="col-md-6">
         <h3 class="centeralign2">{{member.name }}</h3> 
         <p class="white"><b>{{member.title}}</b> <br>
-        {{member.fon}}<br>>
+        {{member.fon}}<br>
         {{member.office}}<br>
         {{member.mail}}
         </p>

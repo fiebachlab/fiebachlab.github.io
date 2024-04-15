@@ -8,7 +8,7 @@ classes: wide
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@ classes: wide
 #boxcolor {
   background-color: #1F416F ;
   padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
 } 
 .white {
   color: white;
