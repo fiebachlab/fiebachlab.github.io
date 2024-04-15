@@ -20,6 +20,9 @@
 <loc>http://localhost:4000/team/dadvar</loc>
 </url>
 <url>
+<loc>http://localhost:4000/datenschutzhinweise/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/team/ernst</loc>
 </url>
 <url>
@@ -27,6 +30,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/team/iaia</loc>
+</url>
+<url>
+<loc>http://localhost:4000/impressum/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
