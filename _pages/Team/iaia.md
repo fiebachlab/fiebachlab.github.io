@@ -3,13 +3,12 @@ excerpt: "About Iaia"
 permalink: /team/iaia
 classes: wide
 ---
-
 <style> 
 .teamImage{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,7 +20,7 @@ classes: wide
 #boxcolor {
   background-color: #1F416F ;
   padding: 50px;
-    border-radius: 3%;
+    border-radius: 10px;
 } 
 .white {
   color: white;
