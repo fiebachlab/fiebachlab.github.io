@@ -24,7 +24,6 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
 search: true
-
 # Build settings
 markdown: kramdown
 theme: minimal-mistakes-jekyll
