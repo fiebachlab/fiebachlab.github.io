@@ -44,7 +44,7 @@ transition: all 500ms;
   <div class="col-md-4" style="height:300px;">
     <a href="{{member.url}}">
     <div class="mask">
-      <img src="./assets/images/teampic/{{ member.photo}}" width="25%" class="image teamImage">
+      <img src="assets/images/teampic/{{ member.photo}}" width="25%" class="image teamImage">
     </div>
     </a>
       <p class="centeralign"> <b>{{member.name }}</b>
