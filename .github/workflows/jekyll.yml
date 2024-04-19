@@ -52,7 +52,7 @@ jobs:
       - name: Encrypt pages with staticrypt
         run: |
           npm install staticrypt
-          npx staticrypt ./_site/calender/index.html -r -p flab -d ./_site/calender --short
+          npx staticrypt ./_site/calender/index.html -r -p flab -d ./_site/calender --short --template-color-secondary "#76B852" --template-color-primary "#014767"
     
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
