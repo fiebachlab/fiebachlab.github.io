@@ -47,6 +47,13 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          
+                # Begin encryption code.
+      - name: Encrypt pages with staticrypt
+        run: |
+          npm install staticrypt
+          npx staticrypt ./_site/calender/index.html -r -p flab-calender -d ./_site/calender
+    
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
