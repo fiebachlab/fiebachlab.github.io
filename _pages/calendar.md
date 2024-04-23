@@ -1,6 +1,6 @@
 ---
-excerpt: "Fiebach Lab Calender"
-permalink: /calender/
+excerpt: "Fiebach Lab Calendar"
+permalink: /calendar/
 author_profile: false
 ---
 
