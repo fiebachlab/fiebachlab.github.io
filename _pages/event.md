@@ -57,13 +57,13 @@ table {
 .stage-saturn {background-color: #26C6DA};
 </style>
 
-<h1>GIF-U15 Winter School 2024 </h1>
-<h1>Adaptive Cognition in Noisy Environments<h1>
+<h3>Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </h3>
 
 <b>Coordinators:</b>	Christian Fiebach (Goethe University Frankfurt), 
 Tom Schönberg (Tel Aviv University) 
 
 <h2>Abstract </h2>
+
 This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines, (a) how the human mind and brain achieve precise perception, cognition, and action in noisy environments; (b) how the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges; and (c) how noisiness is accounted for in modern computational (AI) models of cognition. Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously. Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.
 
 In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.
