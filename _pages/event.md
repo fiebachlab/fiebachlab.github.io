@@ -1,6 +1,6 @@
 ---
 permalink: /winter-school-2024/
-classes: wide
+layout: splash
 author_profile: false
 ---
 
@@ -58,13 +58,14 @@ table {
 .stage-saturn {background-color: #26C6DA};
 </style>
 
-<h3>Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </h3>
+<h4>Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </h4>
 
-<b>Coordinators:</b>	Christian Fiebach (Goethe University Frankfurt), 
-Tom Schönberg (Tel Aviv University) 
+<b>Coordinators:</b>
+<strong>Christian Fiebach <small class="text-muted">Goethe University Frankfurt</small> </strong>
+<strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong>
 
 <details>
-  <summary><h4>Abstract</h4></summary>
+  <summary><b>Abstract</b></summary>
   <p>This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
   <ul>
     <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
@@ -82,7 +83,7 @@ Tom Schönberg (Tel Aviv University)
 <b>Date:</b> December 3-5, 2024 (2.5 days)
 
 
-<h4> Schedule </h4>
+<h5> Schedule </h5>
 
 <style>
 .schedule {
