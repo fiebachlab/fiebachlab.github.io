@@ -63,20 +63,26 @@ table {
 <b>Coordinators:</b>	Christian Fiebach (Goethe University Frankfurt), 
 Tom Schönberg (Tel Aviv University) 
 
-<h2>Abstract </h2>
-
-This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines, (a) how the human mind and brain achieve precise perception, cognition, and action in noisy environments; (b) how the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges; and (c) how noisiness is accounted for in modern computational (AI) models of cognition. Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously. Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.
-
-In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.
-
-Target Audience: Graduate students and PostDocs. Neurosciences, psychology, biology, computer science, AI, as well as any other discipline, if interest is well-motivated.10 each from Israel and Germany, from Tel Aviv University, Goethe University, as well as all Universities and research institutions in Israel and Germany. 
+<details>
+  <summary><h4>Abstract</h4></summary>
+  <p>This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
+  <ul>
+    <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
+    <li>How the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges.</li>
+    <li>How noisiness is accounted for in modern computational (AI) models of cognition.</li>
+  </ul>
+  <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still largely confined to laboratory settings, where multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously.</p>
+  <p>Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.</p>
+  <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
+  <p><b>Target Audience:</b> Graduate students and PostDocs. Neurosciences, psychology, biology, computer science, AI, as well as any other discipline, if interest is well-motivated. 10 each from Israel and Germany, from Tel Aviv University, Goethe University, as well as all Universities and research institutions in Israel and Germany.</p>
+</details>
 
 <b>Location:</b> Goethe University Frankfurt	
 
 <b>Date:</b> December 3-5, 2024 (2.5 days)
 
 
-<h2> Schedule </h2>
+<h4> Schedule </h4>
 
 <style>
 .schedule {
@@ -118,7 +124,6 @@ Target Audience: Graduate students and PostDocs. Neurosciences, psychology, biol
 
 <div class="schedule" role="region" tabindex="0">
 <table>
-    <caption>Table 1</caption>
     <thead>
         <tr>
             <th><br></th>
@@ -197,16 +202,17 @@ Target Audience: Graduate students and PostDocs. Neurosciences, psychology, biol
     </tbody>
 </table>
 
-<h2> List of Speakers </h2> 
-
-**Prof. Dr. Erwan David** (Le Mans University, Computer Science Laboratory)
-**Prof. Dr. Stefan Debener** (University of Oldenburg, Dept. of Psychology)
-**Prof. Dr. Christian Fiebach** (Goethe University Frankfurt, Dept. of Psychology)
-**Dr. Martha Nari Havenith** (Ernst Strüngmann Institute, Frankfurt)
-**Prof. Dr. Chris Kell** (Goethe University Frankfurt, Dept. of Neurology)
-**Prof. Dr. Ayal Meltzer-Asscher** (Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)
-**Prof. Dr. Roy Mukamel** (Tel Aviv University, SSchool of Psychological Sciences)
-**Dr. Marieke Schölvnick** (Ernst Strüngmann Institute, Frankfurt)
-**Prof. Dr. Tom Schonberg** (Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)
-**Prof. Dr. Melissa Võ** (Goethe University Frankfurt, Dept. of Psychology)
-**Prof. Dr. Shlomit Yuval** Greenblat (Tel Aviv University, School of Psychological Sciences)
+<h4> List of Speakers </h4> 
+<ul>
+  <li><strong>Prof. Dr. Erwan David</strong> <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
+  <li><strong>Prof. Dr. Stefan Debener</strong> <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
+  <li><strong>Prof. Dr. Christian Fiebach</strong> <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+  <li><strong>Dr. Martha Nari Havenith</strong> <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
+  <li><strong>Prof. Dr. Chris Kell</strong> <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
+  <li><strong>Prof. Dr. Ayal Meltzer-Asscher</strong> <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
+  <li><strong>Prof. Dr. Roy Mukamel</strong> <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+  <li><strong>Dr. Marieke Schölvnick</strong> <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
+  <li><strong>Prof. Dr. Tom Schonberg</strong> <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
+  <li><strong>Prof. Dr. Melissa Võ</strong> <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+  <li><strong>Prof. Dr. Shlomit Yuval Greenblat</strong> <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+</ul>
