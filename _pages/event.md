@@ -58,19 +58,20 @@ table {
 .stage-saturn {background-color: #26C6DA};
 </style>
 
-<strong><h4>Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </h4></strong>
+<h4> <strong> Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </strong></h4>
 
 <strong>Christian Fiebach <small class="text-muted">Goethe University Frankfurt</small> </strong>
 <strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong>
-<b>Abstract</b>
+
+ <details>
+  <summary>
+<h5><b>Abstract</b></h5></summary>
   <p>This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
   <ul>
     <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
     <li>How the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges.</li>
     <li>How noisiness is accounted for in modern computational (AI) models of cognition.</li>
   </ul>
-  <details>
-  <summary>(Show more)</summary>
   <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still largely confined to laboratory settings, where multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously.</p>
   <p>Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.</p>
   <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
@@ -80,6 +81,7 @@ table {
 <b>Date:</b> December 3-5, 2024 (2.5 days)
 
 <h5> List of Speakers</h5> 
+<small>
 <ul>
   <li><strong>Prof. Dr. Erwan David</strong> <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
   <li><strong>Prof. Dr. Stefan Debener</strong> <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
@@ -92,6 +94,7 @@ table {
   <li><strong>Prof. Dr. Tom Schonberg</strong> <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
   <li><strong>Prof. Dr. Melissa Võ</strong> <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
   <li><strong>Prof. Dr. Shlomit Yuval Greenblat</strong> <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+  </small>
 </ul>
 
 <h5> Schedule </h5>
@@ -102,18 +105,18 @@ table {
 }
 
 .table_component table {
-    border: 1px solid #dededf;
+    border: 1px solid #ffffff;
     height: 100%;
-    width: 100%;
+    width: 80%;
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 1px;
-    text-align: left;
+    text-align: center;
 }
 
 .table_component caption {
     caption-side: top;
-    text-align: left;
+    text-align: center;
 }
 
 .table_component th {
@@ -140,7 +143,6 @@ table {
 </style>
 <div class="table_component" role="region" tabindex="0">
 <table>
-    <caption><br></caption>
     <thead>
         <tr>
             <th></th>
