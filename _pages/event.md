@@ -54,19 +54,22 @@ author_profile: false
 <strong>Christian Fiebach <small class="text-muted">Goethe University Frankfurt</small> </strong>
 <strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong>
 
+<div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
 <details>
-<summary><b>Abstract</b>
-  <p>This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
-  <ul>
-    <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
-    <li>How the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges.</li>
-    <li>How noisiness is accounted for in modern computational (AI) models of cognition.</li>
-  </ul></summary>
-  <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still largely confined to laboratory settings, where multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously.</p>
-  <p>Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.</p>
-  <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
-  <p><b>Target Audience:</b> Graduate students and PostDocs. Neurosciences, psychology, biology, computer science, AI, as well as any other discipline, if interest is well-motivated. 10 each from Israel and Germany, from Tel Aviv University, Goethe University, as well as all Universities and research institutions in Israel and Germany.</p>
+<summary><b>Abstract</b></summary>
+<p>This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
+<ul>
+  <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
+  <li>How the brain handles dynamic and highly variable environments, as a mechanistic basis of these cognitive challenges.</li>
+  <li>How noisiness is accounted for in modern computational (AI) models of cognition.</li>
+</ul>
+<p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still largely confined to laboratory settings, where multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions, with minimal interfering information and clearly defined task rules. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, and a large multitude of information must be considered simultaneously.</p>
+<p>Furthermore, the controlled and artificial settings imposed by traditional experimental paradigms also overlook the manner in which realistic and noisy environments vary over time. One source of this variation over time is the presence of multiple other agents in a realistic environment, who introduce additional agent-environment and agent-agent interactions in a complex social context. Despite this rich complexity, which is largely unaccounted for in most existing psychological and neuroscientific research, humans are able to routinely and effortlessly utilize a range of cognitive and behavioral processes. This raises the question of exactly how it is that such processes, like object recognition, decision making, language processing, memory, and controlled action, are able to function at such high precision in environments that have more realistic levels of noise.</p>
+<p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop format will encourage and foster in-depth discussions across fields of expertise, by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
+<p><b>Target Audience:</b> Graduate students and PostDocs. Neurosciences, psychology, biology, computer science, AI, as well as any other discipline, if interest is well-motivated. 10 each from Israel and Germany, from Tel Aviv University, Goethe University, as well as all Universities and research institutions in Israel and Germany.</p>
 </details>
+</div>
+
 
 <b>Location:</b> Goethe University Frankfurt	
 <b>Date:</b> December 3-5, 2024 (2.5 days)
@@ -103,25 +106,25 @@ author_profile: false
             <td>
                 <div><b>Session 1:&nbsp;</b></div>
                 <p><b>Perception and Cognition in Noisy Environments</b></p>
-                <p><b><br></b></p>
+                <br>
                 <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
-                <p><br></p>
+                <br>
                 <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
             </td>
             <td>
                 <div><b>Session 3:</b></div>
                 <p><b>Research in Virtual and Augmented Environments</b></p>
-                <p><br></p>
+                <br>
                 <p>Melissa Vo, Tom Schönberg, Erwan David&nbsp;</p>
-                <p><br></p>
+                <br>
                 <p>Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice &amp; Evaluation</p>
             </td>
             <td>
                 <div><b>Session 5:</b></div>
                 <p><b>The Noisy Mind and Brain</b></p>
-                <p><br></p>
+                <br>
                 <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
-                <p><br></p>
+                <br>
                 <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
             </td>
         </tr>
@@ -136,9 +139,9 @@ author_profile: false
             <td>
                 <div><b>Session 2:&nbsp;</b></div>
                 <p><b>Cognition and Action in Noisy Environments</b></p>
-                <p><br></p>
+                <br>
                 <p>Chris Kell: title t.b.a.</p>
-                <p><br></p>
+                <br>
                 <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
             </td>
             <td>
