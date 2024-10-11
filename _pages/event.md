@@ -1,6 +1,7 @@
 ---
 permalink: /winter-school-2024/
 classes: wide
+author_profile: false
 ---
 
 <style>
