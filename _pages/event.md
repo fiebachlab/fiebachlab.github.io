@@ -53,11 +53,14 @@ author_profile: false
     <div class="col-md-1" >
     </div>
     <div class="col-md-10" >
+        <h4 center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments”
+        <small class="text-muted"> Goethe University Frankfurt  </small> </strong></h4>
         <div class="row">
-            <h4> <strong> Adaptive Cognition in Noisy Environments <small class="text-muted"> GIF-U15 Winter School 2024  </small> </strong></h4>
+            <div class="col-md-6" >
+            <p>December 3rd - 5th, 2024</p>
             <strong>Christian Fiebach <small class="text-muted">Goethe University Frankfurt</small> </strong>
             <strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong>
-            <div class="col-md-6" >
+            <p>Funded by the German Israeli Foundation (GIF) and the German U15 Network as well as the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities and the Lowy International School at TAU, Goethe University Frankfurt (GU) and Tel Aviv University אוניברסיטת תל־אביב (TAU)  are hosting a joint Winterschool and invite applications from interested PhD students and PostDocs from psychology, neuroscience, computer science, AI, and related fields.</p>
                 <div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
                     <details>
                     <summary><b>Abstract</b>
