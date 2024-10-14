@@ -69,11 +69,7 @@ author_profile: false
         <div class="row">
             <div class="col-md-6" >
                 <p>
-                In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
-                This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:
-                How the human mind and brain achieve precise perception, cognition, and action in noisy environments.
-                How the brain handles dynamic and highly variable environments.
-                How behavior and neural activity can be measured in naturalistic environments.
+                Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time. This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.	
                 </p>
             </div>
             <div class="col-md-6" >
@@ -99,14 +95,24 @@ author_profile: false
                 We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. 
                 The winter school will be held at Goethe University Frankfurt, Germany, between December 3rd 2024 and December 5th 2024.
                 The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
-                Participation in the school is free of charge.
-                Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.
-                Social activities with all participants are planned for the evenings of December 3rd and 4th.            
-                Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). 
-                The workshop ends at 3:00 pm on December 5th, so please plan your departure for the late afternoon. 
+                - Participation in the school is free of charge.
+                - Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German - participants outside of the Frankfurt area will be covered.
+                - Social activities with all participants are planned for the evenings of December 3rd and 4th.            
+                - Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). 
+                - The workshop ends at 3:00 pm on December 5th, so please plan your departure for the late afternoon.
+                To apply for the Winterschool, please send the following information in one pdf to GUTAU.winter2024@gmail.com: 
+                Academic CV including average of grades in former and current degree.
+                List of publications.
+                1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.
+                Deadline for application is October 25, 2024. Feedback about acceptance will be given by October 31st. Application may remain open beyond that date, until all places are filled.
                 </p>
             </div>
             <div class="col-md-6" >
+            In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
+                This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:
+                How the human mind and brain achieve precise perception, cognition, and action in noisy environments.
+                How the brain handles dynamic and highly variable environments.
+                How behavior and neural activity can be measured in naturalistic environments.
             </div>
         </div>
         <strong> Schedule </strong>
