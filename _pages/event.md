@@ -100,16 +100,20 @@ author_profile: false
                 We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. 
                 The winter school will be held at Goethe University Frankfurt, Germany, between December 3rd 2024 and December 5th 2024.
                 The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
-                - Participation in the school is free of charge.
-                - Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German - participants outside of the Frankfurt area will be covered.
-                - Social activities with all participants are planned for the evenings of December 3rd and 4th.            
-                - Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). 
-                - The workshop ends at 3:00 pm on December 5th, so please plan your departure for the late afternoon.
-                To apply for the Winterschool, please send the following information in one pdf to GUTAU.winter2024@gmail.com: 
-                Academic CV including average of grades in former and current degree.
-                List of publications.
-                1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.
-                Deadline for application is October 25, 2024. Feedback about acceptance will be given by October 31st. Application may remain open beyond that date, until all places are filled.
+                <ul>
+                <li> Participation in the school is free of charge.</li>
+                <li> Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German - participants outside of the Frankfurt area will be covered.</li>
+                <li> Social activities with all participants are planned for the evenings of December 3rd and 4th.            </li>
+                <li> Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). </li>
+                <li> The workshop ends at 3:00 pm on December 5th, so please plan your departure for the late afternoon.</li>
+                </ul>
+                To apply for the Winterschool, please send the following information in one pdf to <strong>GUTAU.winter2024@gmail.com</strong>: 
+                <ul>
+                <li>Academic CV including average of grades in former and current degree.</li>
+                <li>List of publications.</li>
+                <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
+                </ul>
+                Deadline for application is <strong>October 25, 2024 </strong>. Feedback about acceptance will be given by October 31st. Application may remain open beyond that date, until all places are filled.
                 </p>
             </div>
             <div class="col-md-6" >
