@@ -65,20 +65,32 @@ author_profile: false
             <div class="col-md-6" >
             </div>
         </div>
-        <strong> List of Speakers</strong> 
-        <ul>
-            <li>Prof. Dr. Erwan David               <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
-            <li>Prof. Dr. Stefan Debener            <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
-            <li>Prof. Dr. Christian Fiebach         <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-            <li>Dr. Martha Nari Havenith            <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
-            <li>Prof. Dr. Chris Kell                <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
-            <li>Prof. Dr. Ayal Meltzer-Asscher      <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
-            <li>Prof. Dr. Roy Mukamel               <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-            <li>Dr. Marieke Schölvnick              <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
-            <li>Prof. Dr. Tom Schonberg             <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
-            <li>Prof. Dr. Melissa Võ                <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-            <li>Prof. Dr. Shlomit Yuval Greenblat   <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6" >
+            </div>
+            <div class="col-md-6" >
+                <strong> List of Speakers</strong> 
+                <ul>
+                    <li>Prof. Dr. Erwan David               <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
+                    <li>Prof. Dr. Stefan Debener            <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
+                    <li>Prof. Dr. Christian Fiebach         <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+                    <li>Dr. Martha Nari Havenith            <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
+                    <li>Prof. Dr. Chris Kell                <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
+                    <li>Prof. Dr. Ayal Meltzer-Asscher      <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
+                    <li>Prof. Dr. Roy Mukamel               <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+                    <li>Dr. Marieke Schölvnick              <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
+                    <li>Prof. Dr. Tom Schonberg             <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
+                    <li>Prof. Dr. Melissa Võ                <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+                    <li>Prof. Dr. Shlomit Yuval Greenblat   <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" >
+            </div>
+            <div class="col-md-6" >
+            </div>
+        </div>
         <strong> Schedule </strong>
         <div class="table_component" role="region" tabindex="0">
             <table>
@@ -96,25 +108,19 @@ author_profile: false
                         <td>
                             <div><b>Session 1:&nbsp;</b></div>
                             <p><b>Perception and Cognition in Noisy Environments</b></p>
-                            <br>
                             <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
-                            <br>
                             <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
                         </td>
                         <td>
                             <div><b>Session 3:</b></div>
                             <p><b>Research in Virtual and Augmented Environments</b></p>
-                            <br>
                             <p>Melissa Vo, Tom Schönberg, Erwan David&nbsp;</p>
-                            <br>
                             <p>Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice &amp; Evaluation</p>
                         </td>
                         <td>
                             <div><b>Session 5:</b></div>
                             <p><b>The Noisy Mind and Brain</b></p>
-                            <br>
                             <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
-                            <br>
                             <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
                         </td>
                     </tr>
@@ -129,17 +135,13 @@ author_profile: false
                         <td>
                             <div><b>Session 2:&nbsp;</b></div>
                             <p><b>Cognition and Action in Noisy Environments</b></p>
-                            <br>
                             <p>Chris Kell: title t.b.a.</p>
-                            <br>
                             <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
                         </td>
                         <td>
                             <div><b>Session 4:</b></div>
                             <p><b>Neuroscience in the Wild <br></b></p>
-                            <p><br></p>
                             <p>Stefan Debener</p>
-                            <p><br></p>
                             <p>Measuring Brain Signals in Noisy Environments: Theory, Practice &amp; Evaluation</p>
                         </td>
                         <td>
