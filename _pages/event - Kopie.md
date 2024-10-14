@@ -57,8 +57,9 @@ author_profile: false
     }
 </style>
 
-<h2> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments”
-        <small class="text-muted"> Goethe University Frankfurt  </small> </strong></center></h2>
+<h2> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments” 
+<small class="text-muted"> Goethe University Frankfurt  </small> 
+</strong></center></h2>
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
@@ -320,7 +321,6 @@ author_profile: false
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
-
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
