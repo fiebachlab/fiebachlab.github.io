@@ -4,54 +4,30 @@ layout: splash
 author_profile: false
 ---
 
-<style>
-.table_component {
-    overflow: auto;
-    width: 100%;
-}
-
-.table_component table {
-    border: 1px solid #ffffff;
-    height: 100%;
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: center;
-}
-
-.table_component caption {
-    caption-side: top;
-    text-align: center;
-}
-
-.table_component th {
-    border: 1px solid #dededf;
-    background-color: #00618F;
-    color: #ffffff;
-    padding: 5px;
-}
-
-.table_component td {
-    border: 1px solid #dededf;
-    padding: 5px;
-}
-
-.table_component tr:nth-child(even) td {
-    background-color: #f8f6f5;
-    color: #4D4B46;
-}
-
-.table_component tr:nth-child(odd) td {
-    background-color: #ffffff;
-    color: #4D4B46;
-}
-
-.background {
-  background: #f8f6f5; 
-  background-clip: padding-box;  
-}
-</style>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background-color: #00618F;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .custom-card {
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .custom-table th {
+            background-color: #00618F;
+            color: white;
+        }
+        .custom-table tr:nth-child(even) {
+            background-color: #f8f6f5;
+        }
+    </style>
 
 <div class="container">
   <div class="row">
