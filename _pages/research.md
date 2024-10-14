@@ -23,37 +23,54 @@ carousels:
   background-clip:padding-box;
   background-color: #f8f6f5;
   border-radius: 20px;
-        }
-.box {
-  padding: 30px;
-  box-sizing: border-box;
-  border: 15px solid transparent;
-  background-clip:padding-box;
-  background-color: #00618F ;
-  border-radius: 50px;
-  color: #F8F6F5;
-  cursor: pointer;  
-  transition: all 300ms;
-  clear: both;
-  height: 100px;
-	-webkit-transition: line-height 1s, width 1s, height 1s, opacity 1s, border-radius 3s ,scale .5s, background-color 0.5s ease;
-  transition: all 300ms;
-        }
-.box:hover {
+  .box {
+    padding: 30px;
+    box-sizing: border-box;
+    border: 15px solid transparent;
+    background-clip: padding-box;
+    background-color: #00618F;
+    border-radius: 50px;
+    color: #F8F6F5;
+    cursor: pointer;
+    transition: all 300ms;
+    clear: both;
+    height: 100px;
+    -webkit-transition: line-height 1s, width 1s, height 1s, opacity 1s, border-radius 3s, scale .5s, background-color 0.5s ease;
+  }
+
+  .box:hover,
+  .box.expanded {
     display: block;
     height: 550px;
-    line-height:auto;
-    scale:1.05;
-    background-color:#0271a6;
-}
+    line-height: auto;
+    scale: 1.05;
+  }
+
+  .box.expanded {
+    height: 550px;
+  }
+
+  .box a {
+    display: none;
+    text-align: left;
+  }
+
+  .box:hover a,
+  .box.expanded a {
+    display: block;
+  }
+
+  .box a:link,
+  .box a:visited,
+  .box a:hover,
+  .box a:active {
+    text-decoration: none;
+  }
+
 .box a {
     display: none;
-    font-size: 0.85em;
     text-align: left;
 }
-.box:hover a {
-    display: block;
-    }
 .link-style {
   color:white;
   margin-left: 1em;
@@ -109,7 +126,6 @@ carousels:
 }
 .galleryItem ul {
     display: none;
-    font-size: 0.9em;
     line-height: 1.5em;
 }
 .galleryItem:hover ul {
@@ -118,10 +134,19 @@ carousels:
 .text {
 margin-left: 1.5em;
 margin-right: 1.5em;
-font-size: 0.9em;
 }
-
 </style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.box').forEach(function (box) {
+        box.addEventListener('click', function () {
+          this.classList.toggle('expanded');
+        });
+      });
+    });
+  </script>
+
+
 <div class="container">
   <div class="row">
     <div class="col-md-1" >
