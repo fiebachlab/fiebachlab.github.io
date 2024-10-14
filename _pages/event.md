@@ -46,6 +46,11 @@ author_profile: false
     background-color: #ffffff;
     color: #4D4B46;
 }
+
+.background {
+  background: #f8f6f5; 
+  background-clip: padding-box;  
+}
 </style>
 
 <div class="container">
@@ -63,11 +68,11 @@ author_profile: false
                 <br>
                 <p>Funded by the German Israeli Foundation (GIF) and the German U15 Network as well as the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities and the Lowy International School at TAU, Goethe University Frankfurt (GU) and Tel Aviv University אוניברסיטת תל־אביב (TAU)  are hosting a joint Winterschool and invite applications from interested PhD students and PostDocs from psychology, neuroscience, computer science, AI, and related fields.</p>
             </div>
-            <div class="col-md-6" >
+            <div class="col-md-6 background" >
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" >
+            <div class="col-md-6 background" >
                 <p>
                 Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time. This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.	
                 </p>
@@ -89,7 +94,7 @@ author_profile: false
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" >
+            <div class="col-md-6 background" >
             <h4>Application and Enrollment</h4>
                 <p>    
                 We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. 
