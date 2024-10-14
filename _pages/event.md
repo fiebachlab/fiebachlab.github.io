@@ -79,18 +79,17 @@ author_profile: false
             <div class="col-md-6" >
                 <strong> List of Speakers</strong> 
                 <ul>
-                    <li>Prof. Dr. Erwan David               <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
-                    <li>Prof. Dr. Stefan Debener            <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
-                    <li>Prof. Dr. Christian Fiebach         <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-                    <li>Dr. Martha Nari Havenith            <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
-                    <li>Prof. Dr. Chris Kell                <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
-                    <li>Prof. Dr. Ayal Meltzer-Asscher      <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
-                    <li>Prof. Dr. Roy Mukamel               <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-                    <li>Dr. Marieke Schölvnick              <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
-                    <li>Prof. Dr. Tom Schonberg             <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
-                    <li>Prof. Dr. Melissa Võ                <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-                    <li>Prof. Dr. Shlomit Yuval Greenblat   <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-                </ul>
+                    <li>Prof. Dr. Erwan David <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
+                    <li>Prof. Dr. Stefan Debener <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
+                    <li>Prof. Dr. Christian Fiebach <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+                    <li>Prof. Dr. Chris Kell <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
+                    <li>Prof. Dr. Aya Meltzer-Asscher <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
+                    <li>Prof. Dr. Roy Mukamel <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
+                    <li>Dr. Marieke Schölvnick <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
+                    <li>Prof. Dr. Tom Schonberg <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
+                    <li>Prof. Dr. Melissa Vo <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
+                    <li>Prof. Dr. Shlomit Yuval Greenberg <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small>    </li>
+                    </ul>
             </div>
         </div>
         <div class="row">
@@ -170,8 +169,8 @@ author_profile: false
                     </tr>
                     <tr>
                         <td><b>17:00 - 18:00</b></td>
-                        <td>tba</td>
-                        <td>tba</td>
+                        <td>‘Speed dating’ by participants: getting to know each other</td>
+                        <td>self-org. discussions by participants</td>
                         <td><i>Departure</i></td>
                     </tr>
                     <tr>
