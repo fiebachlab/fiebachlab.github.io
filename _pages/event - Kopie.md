@@ -4,7 +4,7 @@ layout: wide
 author_profile: false
 ---
 
-<title>Winter School 2024 - Adaptive Cognition in Noisy Environments</title>
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
@@ -14,7 +14,6 @@ author_profile: false
         --accent-color: #FF9800;
     }
     body {
-        font-family: 'Roboto', Arial, sans-serif;
         line-height: 1.6;
         color: #333;
         background-color: #f4f4f4;
@@ -68,13 +67,8 @@ author_profile: false
     }
 </style>
 
-<header class="header">
-    <div class="container text-center">
-        <h1 class="display-4">Goethe University - Tel Aviv University Winterschool</h1>
-        <h2 class="lead">"Adaptive Cognition in Noisy Environments"</h2>
-        <p class="mb-0">December 3rd - 5th, 2024 | Goethe University Frankfurt</p>
-    </div>
-</header>
+<h2> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments”
+        <small class="text-muted"> Goethe University Frankfurt  </small> </strong></center></h2>
 <main class="container">
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
@@ -83,10 +77,10 @@ author_profile: false
                     <h3 class="card-title section-title">Event Details</h3>
                     <p><strong>Organizers:</strong></p>
                     <ul>
-                        <li>Christian Fiebach (Goethe University Frankfurt)</li>
-                        <li>Tom Schönberg (Tel Aviv University)</li>
+                        <li>Prof. Dr. Christian Fiebach (Goethe University Frankfurt)</li>
+                        <li>Prof. Dr. Tom Schönberg (Tel Aviv University)</li>
                     </ul>
-                    <p>Funded by the German Israeli Foundation (GIF), the German U15 Network, the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities, and the Lowy International School at TAU.</p>
+                    <p>Funded by the German Israeli Foundation (GIF) and the German U15 Network as well as the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities and the Lowy International School at TAU, Goethe University Frankfurt (GU) and Tel Aviv University אוניברסיטת תל־אביב (TAU)  are hosting a joint Winterschool and invite applications from interested PhD students and PostDocs from psychology, neuroscience, computer science, AI, and related fields.</p>
                 </div>
             </div>
         </div>
@@ -94,13 +88,13 @@ author_profile: false
             <div class="card custom-card">
                 <div class="card-body">
                     <h3 class="card-title section-title">Overview</h3>
-                    <p>This interdisciplinary workshop explores the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling.</p>
                     <p>The Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
                     <ul>
                         <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
                         <li>How the brain handles dynamic and highly variable environments.</li>
                         <li>How behavior and neural activity can be measured in naturalistic environments.</li>
                     </ul>
+                    <a href="">Read more</a>
                 </div>
             </div>
         </div>
@@ -216,7 +210,6 @@ author_profile: false
     </div>
 </main>
 
-<!-- Speakers Modal -->
 <div class="modal fade" id="speakersModal" tabindex="-1" aria-labelledby="speakersModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -267,3 +260,76 @@ author_profile: false
                                 <td>
                                     <strong>Session 1: Perception and Cognition in Noisy Environments</strong>
                                     <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
+                                    <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
+                                </td>
+                                <td>
+                                    <strong>Session 3: Research in Virtual and Augmented Environments</strong>
+                                    <p>Melissa Vo, Tom Schönberg, Erwan David</p>
+                                    <p>Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation</p>
+                                </td>
+                                <td>
+                                    <strong>Session 5: The Noisy Mind and Brain</strong>
+                                    <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
+                                    <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>12:00 - 13:00</strong></td>
+                                <td>Lunch & Welcome Reception</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                            </tr>
+                            <tr>
+                                <td><strong>13:00 - 16:30</strong></td>
+                                <td>
+                                    <strong>Session 2: Cognition and Action in Noisy Environments</strong>
+                                    <p>Chris Kell: title t.b.a.</p>
+                                    <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
+                                </td>
+                                <td>
+                                    <strong>Session 4: Neuroscience in the Wild</strong>
+                                    <p>Stefan Debener</p>
+                                    <p>Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation</p>
+                                </td>
+                                <td>
+                                    <p>Participant action:</p>
+                                    <p>Wrap-Up Session</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>17:00 - 18:00</strong></td>
+                                <td>'Speed dating' by participants: getting to know each other</td>
+                                <td>self-org. discussions by participants</td>
+                                <td><em>Departure</em></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Evening</strong></td>
+                                <td>dinner & social</td>
+                                <td>dinner & social</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize Bootstrap tooltips and popovers (if used)
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
