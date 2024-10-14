@@ -201,7 +201,7 @@ author_profile: false
             </div>
         </div>
     </div>
-</main>
+</div>
 
 <div class="modal fade" id="speakersModal" tabindex="-1" aria-labelledby="speakersModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
