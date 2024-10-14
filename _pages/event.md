@@ -13,7 +13,7 @@ author_profile: false
 .table_component table {
     border: 1px solid #ffffff;
     height: 100%;
-    width: 80%;
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 1px;
@@ -59,7 +59,8 @@ author_profile: false
             <div class="col-md-6" >
                 <p>December 3rd - 5th, 2024</p>
                 <strong>Christian Fiebach <small class="text-muted">Goethe University Frankfurt</small> </strong>
-                <strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong>
+                <strong>Tom Schönberg <small class="text-muted">Tel Aviv University</small> </strong> 
+                <br>
                 <p>Funded by the German Israeli Foundation (GIF) and the German U15 Network as well as the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities and the Lowy International School at TAU, Goethe University Frankfurt (GU) and Tel Aviv University אוניברסיטת תל־אביב (TAU)  are hosting a joint Winterschool and invite applications from interested PhD students and PostDocs from psychology, neuroscience, computer science, AI, and related fields.</p>
             </div>
             <div class="col-md-6" >
@@ -67,6 +68,13 @@ author_profile: false
         </div>
         <div class="row">
             <div class="col-md-6" >
+                <p>
+                In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
+                This Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:
+                How the human mind and brain achieve precise perception, cognition, and action in noisy environments.
+                How the brain handles dynamic and highly variable environments.
+                How behavior and neural activity can be measured in naturalistic environments.
+                </p>
             </div>
             <div class="col-md-6" >
                 <strong> List of Speakers</strong> 
@@ -87,6 +95,17 @@ author_profile: false
         </div>
         <div class="row">
             <div class="col-md-6" >
+            <h4>Application and Enrollment</h4>
+                <p>    
+                We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. 
+                The winter school will be held at Goethe University Frankfurt, Germany, between December 3rd 2024 and December 5th 2024.
+                The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
+                Participation in the school is free of charge.
+                Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.
+                Social activities with all participants are planned for the evenings of December 3rd and 4th.            
+                Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). 
+                The workshop ends at 3:00 pm on December 5th, so please plan your departure for the late afternoon. 
+                </p>
             </div>
             <div class="col-md-6" >
             </div>
