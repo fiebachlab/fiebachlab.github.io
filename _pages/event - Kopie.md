@@ -92,17 +92,24 @@ author_profile: false
 
 .schedule-session {
     margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .schedule-time {
     font-weight: bold;
-    color: #00618F;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .schedule-session h4 {
     margin: 10px 0;
     color: #333;
 }
+
 
 </style>
 
