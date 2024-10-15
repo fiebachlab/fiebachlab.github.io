@@ -58,11 +58,11 @@ author_profile: false
 
 
 
+<br>
 
-
-<h2> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments” 
+<h3> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments” <br>
 <small class="text-muted"> Goethe University Frankfurt  </small> 
-</strong></center></h2>
+</strong></center></h3>
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
