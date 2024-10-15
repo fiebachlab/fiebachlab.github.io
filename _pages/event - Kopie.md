@@ -50,7 +50,7 @@ author_profile: false
         border-color: #004d70;
     }
     .icon-feature {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--accent-color);
         margin-bottom: 1rem;
     }
