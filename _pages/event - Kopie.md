@@ -143,11 +143,19 @@ author_profile: false
                         <li>How the brain handles dynamic and highly variable environments.</li>
                         <li>How behavior and neural activity can be measured in naturalistic environments.</li>
                     </ul>
-                    <a href="">Read more</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="card custom-card mb-4">
+        <div class="card-body">
+            <h3 class="section-title">Research Context</h3>
+            <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.</p>
+            <p>This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.</p>
+            <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
+        </div>
+    </div>
+
         <div class="row mb-4">
             <div class="col-md-12">
                 <h4 class="section-title">All Speakers</h4>
