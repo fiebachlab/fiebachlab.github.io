@@ -63,7 +63,7 @@ author_profile: false
 }
 
 .schedule-day-header {
-    background-color: #007bff;
+    background-color: #00618F;
     color: white;
     padding: 15px;
     cursor: pointer;
@@ -75,7 +75,7 @@ author_profile: false
 }
 
 .schedule-day-header:hover {
-    background-color: #0056b3;
+    background-color: #3280a5;
 }
 
 .schedule-day-content {
@@ -96,7 +96,7 @@ author_profile: false
 
 .schedule-time {
     font-weight: bold;
-    color: #007bff;
+    color: #00618F;
 }
 
 .schedule-session h4 {
@@ -105,8 +105,6 @@ author_profile: false
 }
 
 </style>
-
-
 
 <br>
 
@@ -240,6 +238,7 @@ author_profile: false
                 </div>
             </div>
         </div>
+<div class="card-body">        
 <section id="schedule">
     <h3 class="section-title">Schedule</h3>
     {% for day in site.data.winter_school_schedule %}
@@ -262,7 +261,9 @@ author_profile: false
       </div>
     {% endfor %}
 </section>
+</div>
 
+<br>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
