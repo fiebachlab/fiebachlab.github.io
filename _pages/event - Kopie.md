@@ -313,6 +313,29 @@ author_profile: false
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var modals = [].slice.call(document.querySelectorAll('.modal'));
+    var modalInstances = modals.map(function(modal) {
+        return new bootstrap.Modal(modal);
+    });
 
+    document.querySelectorAll('[data-bs-toggle="modal"]').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var targetModal = document.querySelector(this.getAttribute('data-bs-target'));
+            var modalInstance = bootstrap.Modal.getInstance(targetModal);
+            modalInstance.show();
+        });
+    });
 
-
+    document.querySelectorAll('.btn-close, .modal').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            if (event.target === this) {
+                var modalInstance = bootstrap.Modal.getInstance(this.closest('.modal'));
+                modalInstance.hide();
+            }
+        });
+    });
+});
+</script>
