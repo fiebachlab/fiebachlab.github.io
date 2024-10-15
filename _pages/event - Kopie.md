@@ -123,7 +123,7 @@ author_profile: false
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h3 class="card-title section-title">Event Details</h3>
+                    <h4 class="card-title section-title">Event Details</h4>
                     <p><strong>Organizers:</strong></p>
                     <ul>
                         <li>Prof. Dr. Christian Fiebach (Goethe University Frankfurt)</li>
@@ -136,7 +136,7 @@ author_profile: false
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h3 class="card-title section-title">Overview</h3>
+                    <h4 class="card-title section-title">Overview</h4>
                     <p>The Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
                     <ul>
                         <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
@@ -150,7 +150,7 @@ author_profile: false
     </div>
         <div class="row mb-4">
             <div class="col-md-12">
-                <h3 class="section-title">All Speakers</h3>
+                <h4 class="section-title">All Speakers</h4>
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <div class="card custom-card">
@@ -249,7 +249,7 @@ author_profile: false
         <div class="col-md-12">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h3 class="section-title">Application and Enrollment</h3>
+                    <h4 class="section-title">Application and Enrollment</h4>
                     <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
                     <p>
                     The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
@@ -284,18 +284,18 @@ author_profile: false
 
 <div class="card-body">        
 <section id="schedule">
-    <h3 class="section-title">Schedule</h3>
+    <h4 class="section-title">Schedule</h4>
     {% for day in site.data.winter_school_schedule %}
       <div class="schedule-day">
         <div class="schedule-day-header">
-          <h3>{{ day.date }}</h3>
+          <h5>{{ day.date }}</h5>
           <span class="expand-icon">▼</span>
         </div>
         <div class="schedule-day-content">
           {% for session in day.sessions %}
             <div class="schedule-session">
               <p class="schedule-time">{{ session.time }}</p>
-              <h4>{{ session.title }}</h4>
+              <h6>{{ session.title }}</h6>
               {% for item in session.items %}
                 <p>{{ item }}</p>
               {% endfor %}
