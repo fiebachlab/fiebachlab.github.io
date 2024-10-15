@@ -190,7 +190,6 @@ author_profile: false
                 </div>
             </div>
         </div>
-    </div>
     <div class="row mb-4">
         <div class="col-md-12">
             <h3 class="section-title">Schedule Highlights</h3>
