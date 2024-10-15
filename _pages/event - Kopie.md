@@ -93,41 +93,103 @@ author_profile: false
             </div>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h3 class="section-title">Featured Speakers</h3>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h5>Prof. Dr. Erwan David</h5>
-                            <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h3 class="section-title">All Speakers</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Erwan David</h5>
+                                <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h5>Prof. Dr. Stefan Debener</h5>
-                            <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Stefan Debener</h5>
+                                <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h5>Prof. Dr. Christian Fiebach</h5>
-                            <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Christian Fiebach</h5>
+                                <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Chris Kell</h5>
+                                <p class="text-muted">Goethe University Frankfurt, Dept. of Neurology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Aya Meltzer-Asscher</h5>
+                                <p class="text-muted">Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Roy Mukamel</h5>
+                                <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Dr. Marieke Schölvnick</h5>
+                                <p class="text-muted">Ernst Strüngmann Institute, Frankfurt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Tom Schonberg</h5>
+                                <p class="text-muted">Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Melissa Vo</h5>
+                                <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card custom-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-circle icon-feature"></i>
+                                <h5>Prof. Dr. Shlomit Yuval Greenberg</h5>
+                                <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-3">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#speakersModal">View All Speakers</button>
-            </div>
+            </div> 
         </div>
     </div>
     <div class="row mb-4">
@@ -215,18 +277,7 @@ author_profile: false
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <ul class="list-group">
-                    <li class="list-group-item">Prof. Dr. Erwan David <small class="text-muted">(Le Mans University, Computer Science Laboratory)</small></li>
-                    <li class="list-group-item">Prof. Dr. Stefan Debener <small class="text-muted">(University of Oldenburg, Dept. of Psychology)</small></li>
-                    <li class="list-group-item">Prof. Dr. Christian Fiebach <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-                    <li class="list-group-item">Prof. Dr. Chris Kell <small class="text-muted">(Goethe University Frankfurt, Dept. of Neurology)</small></li>
-                    <li class="list-group-item">Prof. Dr. Aya Meltzer-Asscher <small class="text-muted">(Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience)</small></li>
-                    <li class="list-group-item">Prof. Dr. Roy Mukamel <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-                    <li class="list-group-item">Dr. Marieke Schölvnick <small class="text-muted">(Ernst Strüngmann Institute, Frankfurt)</small></li>
-                    <li class="list-group-item">Prof. Dr. Tom Schonberg <small class="text-muted">(Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics)</small></li>
-                    <li class="list-group-item">Prof. Dr. Melissa Vo <small class="text-muted">(Goethe University Frankfurt, Dept. of Psychology)</small></li>
-                    <li class="list-group-item">Prof. Dr. Shlomit Yuval Greenberg <small class="text-muted">(Tel Aviv University, School of Psychological Sciences)</small></li>
-                </ul>
+
             </div>
         </div>
     </div>
