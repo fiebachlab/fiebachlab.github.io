@@ -58,56 +58,52 @@ author_profile: false
             max-width: 800px;
             margin: 0 auto;
         }
-        .day-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .day-header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 15px 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .day-header h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .day-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-        }
-        .day-content.show {
-            max-height: 1000px;
-        }
-        .session {
-            padding: 15px 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .session:last-child {
-            border-bottom: none;
-        }
-        .session h4 {
-            margin: 0 0 10px 0;
-            color: #007bff;
-        }
-        .session p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        .expand-icon {
-            transition: transform 0.3s ease;
-        }
-        .day-header.active .expand-icon {
-            transform: rotate(180deg);
-        }
+  .schedule-day {
+    margin-bottom: 20px;
+}
+
+.schedule-day-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-day-header:hover {
+    background-color: #0056b3;
+}
+
+.schedule-day-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: none;
+}
+
+.schedule-day-content.show {
+    display: block;
+}
+
+.schedule-session {
+    margin-bottom: 15px;
+}
+
+.schedule-time {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.schedule-session h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
 </style>
 
 
@@ -244,7 +240,7 @@ author_profile: false
                 </div>
             </div>
         </div>
-  <section id="schedule">
+<section id="schedule">
     <h3 class="section-title">Schedule</h3>
     {% for day in site.data.winter_school_schedule %}
       <div class="schedule-day">
@@ -265,8 +261,8 @@ author_profile: false
         </div>
       </div>
     {% endfor %}
-  </section>
-</div>
+</section>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
