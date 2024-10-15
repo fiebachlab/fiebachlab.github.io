@@ -4,30 +4,30 @@ layout: splash
 author_profile: false
 ---
 
-  <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .header {
-            background-color: #00618F;
-            color: white;
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-        }
-        .custom-card {
-            height: 100%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .custom-table th {
-            background-color: #00618F;
-            color: white;
-        }
-        .custom-table tr:nth-child(even) {
-            background-color: #f8f6f5;
-        }
-    </style>
+<style>
+body {
+    line-height: 1.6;
+    color: #333;
+}
+.header {
+    background-color: #00618F;
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+.custom-card {
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.custom-table th {
+    background-color: #00618F;
+    color: white;
+}
+.custom-table tr:nth-child(even) {
+    background-color: #f8f6f5;
+}
+</style>
+
 
 <div class="container">
   <div class="row">
@@ -36,6 +36,7 @@ author_profile: false
     <div class="col-md-10" >
         <h4 center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments”
         <small class="text-muted"> Goethe University Frankfurt  </small> </strong></h4>
+        <br>
         <div class="row">
             <div class="col-md-6" >
                 <p>December 3rd - 5th, 2024</p>
