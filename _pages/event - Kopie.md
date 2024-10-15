@@ -244,197 +244,42 @@ author_profile: false
                 </div>
             </div>
         </div>
-<div class="schedule-container">
-    <div class="day-card">
-        <div class="day-header">
-            <h3>December 3rd</h3>
-            <span class="expand-icon">▼</span>
+  <section id="schedule">
+    <h3 class="section-title">Schedule</h3>
+    {% for day in site.data.winter_school_schedule %}
+      <div class="schedule-day">
+        <div class="schedule-day-header">
+          <h3>{{ day.date }}</h3>
+          <span class="expand-icon">▼</span>
         </div>
-        <div class="day-content">
-            <div class="session">
-                <h4>8:30 - 12:00: Session 1: Perception and Cognition in Noisy Environments</h4>
-                <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
-                <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
+        <div class="schedule-day-content">
+          {% for session in day.sessions %}
+            <div class="schedule-session">
+              <p class="schedule-time">{{ session.time }}</p>
+              <h4>{{ session.title }}</h4>
+              {% for item in session.items %}
+                <p>{{ item }}</p>
+              {% endfor %}
             </div>
-            <div class="session">
-                <h4>13:00 - 16:30: Session 2: Cognition and Action in Noisy Environments</h4>
-                <p>Chris Kell: title t.b.a.</p>
-                <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
-            </div>
-            <div class="session">
-                <h4>Evening</h4>
-                <p>Dinner & Social</p>
-            </div>
+          {% endfor %}
         </div>
-    </div>
-    <div class="day-card">
-        <div class="day-header">
-            <h3>December 4th</h3>
-            <span class="expand-icon">▼</span>
-        </div>
-        <div class="day-content">
-            <div class="session">
-                <h4>8:30 - 12:00: Session 3: Research in Virtual and Augmented Environments</h4>
-                <p>Melissa Vo, Tom Schönberg, Erwan David: Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation</p>
-            </div>
-            <div class="session">
-                <h4>13:00 - 16:30: Session 4: Neuroscience in the Wild</h4>
-                <p>Stefan Debener: Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation</p>
-            </div>
-            <div class="session">
-                <h4>Evening</h4>
-                <p>Dinner & Social</p>
-            </div>
-        </div>
-    </div>
-    <div class="day-card">
-        <div class="day-header">
-            <h3>December 5th</h3>
-            <span class="expand-icon">▼</span>
-        </div>
-        <div class="day-content">
-            <div class="session">
-                <h4>8:30 - 12:00: Session 5: The Noisy Mind and Brain</h4>
-                <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
-                <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
-            </div>
-            <div class="session">
-                <h4>13:00 - 16:30: Wrap-Up Session</h4>
-                <p>Participant action and final discussions</p>
-            </div>
-            <div class="session">
-                <h4>Evening</h4>
-                <p>Departure</p>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const dayHeaders = document.querySelectorAll('.day-header');
-
-        dayHeaders.forEach(header => {
-            header.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const content = this.nextElementSibling;
-                content.classList.toggle('show');
-            });
-        });
-    });
-</script>
-<div class="row mb-4">
-    <div class="col-md-12">
-        <h3 class="section-title">Schedule</h3>
-        <div class="schedule-container">
-            <div class="card custom-card mb-3">
-                <div class="card-header day-header" style="background-color: var(--primary-color); color: white;">
-                    <h4 class="mb-0">December 3rd</h4>
-                    <span class="expand-icon">▼</span>
-                </div>
-                <div class="card-body day-content">
-                    <div class="session">
-                        <h5 class="text-primary">8:30 - 12:00: Session 1: Perception and Cognition in Noisy Environments</h5>
-                        <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
-                        <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">13:00 - 16:30: Session 2: Cognition and Action in Noisy Environments</h5>
-                        <p>Chris Kell: title t.b.a.</p>
-                        <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">Evening</h5>
-                        <p>Dinner & Social</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card custom-card mb-3">
-                <div class="card-header day-header" style="background-color: var(--primary-color); color: white;">
-                    <h4 class="mb-0">December 4th</h4>
-                    <span class="expand-icon">▼</span>
-                </div>
-                <div class="card-body day-content">
-                    <div class="session">
-                        <h5 class="text-primary">8:30 - 12:00: Session 3: Research in Virtual and Augmented Environments</h5>
-                        <p>Melissa Vo, Tom Schönberg, Erwan David: Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">13:00 - 16:30: Session 4: Neuroscience in the Wild</h5>
-                        <p>Stefan Debener: Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">Evening</h5>
-                        <p>Dinner & Social</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card custom-card mb-3">
-                <div class="card-header day-header" style="background-color: var(--primary-color); color: white;">
-                    <h4 class="mb-0">December 5th</h4>
-                    <span class="expand-icon">▼</span>
-                </div>
-                <div class="card-body day-content">
-                    <div class="session">
-                        <h5 class="text-primary">8:30 - 12:00: Session 5: The Noisy Mind and Brain</h5>
-                        <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
-                        <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">13:00 - 16:30: Wrap-Up Session</h5>
-                        <p>Participant action and final discussions</p>
-                    </div>
-                    <div class="session">
-                        <h5 class="text-primary">Evening</h5>
-                        <p>Departure</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+    {% endfor %}
+  </section>
 </div>
 
-<style>
-    .schedule-container {
-        max-width: 100%;
-    }
-    .day-header {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .day-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-    }
-    .day-content.show {
-        max-height: 1000px;
-    }
-    .session {
-        margin-bottom: 15px;
-    }
-    .session:last-child {
-        margin-bottom: 0;
-    }
-    .expand-icon {
-        transition: transform 0.3s ease;
-    }
-    .day-header.active .expand-icon {
-        transform: rotate(180deg);
-    }
-</style>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const dayHeaders = document.querySelectorAll('.day-header');
+document.addEventListener('DOMContentLoaded', function() {
+  const dayHeaders = document.querySelectorAll('.schedule-day-header');
 
-        dayHeaders.forEach(header => {
-            header.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const content = this.nextElementSibling;
-                content.classList.toggle('show');
-            });
-        });
+  dayHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const content = this.nextElementSibling;
+      content.classList.toggle('show');
+      const icon = this.querySelector('.expand-icon');
+      icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
     });
+  });
+});
 </script>

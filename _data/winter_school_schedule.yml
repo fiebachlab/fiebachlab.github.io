@@ -1,0 +1,53 @@
+- date: December 3rd, 2024
+  sessions:
+    - time: 8:30 - 12:00
+      title: Session 1 - Perception and Cognition in Noisy Environments
+      items:
+        - "Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world"
+        - "Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension"
+
+    - time: 13:00 - 16:30
+      title: Session 2 - Cognition and Action in Noisy Environments
+      items:
+        - "Chris Kell: Title to be announced"
+        - "Roy Mukamel: Perception through the lens of voluntary actions"
+
+    - time: Evening
+      title: Social Event
+      items:
+        - "Dinner & Social"
+
+- date: December 4th, 2024
+  sessions:
+    - time: 8:30 - 12:00
+      title: Session 3 - Research in Virtual and Augmented Environments
+      items:
+        - "Melissa Vo, Tom Schönberg, Erwan David: Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation"
+
+    - time: 13:00 - 16:30
+      title: Session 4 - Neuroscience in the Wild
+      items:
+        - "Stefan Debener: Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation"
+
+    - time: Evening
+      title: Social Event
+      items:
+        - "Dinner & Social"
+
+- date: December 5th, 2024
+  sessions:
+    - time: 8:30 - 12:00
+      title: Session 5 - The Noisy Mind and Brain
+      items:
+        - "Christian Fiebach: Behavioral and neural variability and its role for complex cognition"
+        - "Martha Havenith, Marieke Schölvnick: Title to be announced"
+
+    - time: 13:00 - 16:30
+      title: Wrap-Up Session
+      items:
+        - "Participant action and final discussions"
+
+    - time: Evening
+      title: Departure
+      items:
+        - "Farewell and departure"
