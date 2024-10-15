@@ -97,7 +97,7 @@ author_profile: false
             <div class="col-md-12">
                 <h3 class="section-title">All Speakers</h3>
                 <div class="row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -106,7 +106,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -115,7 +115,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -124,7 +124,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -133,7 +133,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -151,7 +151,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -160,7 +160,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -169,7 +169,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -178,7 +178,7 @@ author_profile: false
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
@@ -189,7 +189,6 @@ author_profile: false
                     </div>
                 </div>
             </div>
-            </div> 
         </div>
     </div>
     <div class="row mb-4">
