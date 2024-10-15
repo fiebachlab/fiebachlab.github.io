@@ -245,6 +245,43 @@ author_profile: false
                 </div>
             </div>
         </div>
+  <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h3 class="section-title">Application and Enrollment</h3>
+                    <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
+                    <p>
+                    The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
+                            <ul>
+                                <li>Free participation</li>
+                                <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
+                                <li>Evening social activities</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
+                            <p>Send the following to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
+                            <ul>
+                                <li>Academic CV including average of grades in former and current degree.</li>
+                                <li>List of publications</li>
+                                <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning mt-3" role="alert">
+                        <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 25, 2024</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="card-body">        
 <section id="schedule">
     <h3 class="section-title">Schedule</h3>
