@@ -54,6 +54,60 @@ author_profile: false
         color: var(--accent-color);
         margin-bottom: 1rem;
     }
+            .schedule-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .day-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .day-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .day-header h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .day-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        .day-content.show {
+            max-height: 1000px;
+        }
+        .session {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .session:last-child {
+            border-bottom: none;
+        }
+        .session h4 {
+            margin: 0 0 10px 0;
+            color: #007bff;
+        }
+        .session p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        .expand-icon {
+            transition: transform 0.3s ease;
+        }
+        .day-header.active .expand-icon {
+            transform: rotate(180deg);
+        }
 </style>
 
 
@@ -190,201 +244,84 @@ author_profile: false
                 </div>
             </div>
         </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h3 class="section-title">Schedule Highlights</h3>
-            <div class="table-responsive">
-                <table class="table table-bordered custom-table">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Dec. 3rd</th>
-                            <th>Dec. 4th</th>
-                            <th>Dec. 5th</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>8:30 - 12:00</strong></td>
-                            <td>Session 1: Perception and Cognition in Noisy Environments</td>
-                            <td>Session 3: Research in Virtual and Augmented Environments</td>
-                            <td>Session 5: The Noisy Mind and Brain</td>
-                        </tr>
-                        <tr>
-                            <td><strong>13:00 - 16:30</strong></td>
-                            <td>Session 2: Cognition and Action in Noisy Environments</td>
-                            <td>Session 4: Neuroscience in the Wild</td>
-                            <td>Wrap-Up Session</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Evening</strong></td>
-                            <td>Dinner & Social</td>
-                            <td>Dinner & Social</td>
-                            <td>Departure</td>
-                        </tr>
-                    </tbody>
-                </table>
+<div class="schedule-container">
+    <div class="day-card">
+        <div class="day-header">
+            <h3>December 3rd</h3>
+            <span class="expand-icon">▼</span>
+        </div>
+        <div class="day-content">
+            <div class="session">
+                <h4>8:30 - 12:00: Session 1: Perception and Cognition in Noisy Environments</h4>
+                <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
+                <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
             </div>
-            <div class="text-center mt-3">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scheduleModal">View Full Schedule</button>
+            <div class="session">
+                <h4>13:00 - 16:30: Session 2: Cognition and Action in Noisy Environments</h4>
+                <p>Chris Kell: title t.b.a.</p>
+                <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
+            </div>
+            <div class="session">
+                <h4>Evening</h4>
+                <p>Dinner & Social</p>
             </div>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <div class="card custom-card">
-                <div class="card-body">
-                    <h3 class="section-title">Application and Enrollment</h3>
-                    <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
-                    <p>
-                    The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
-                            <ul>
-                                <li>Free participation</li>
-                                <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
-                                <li>Evening social activities</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
-                            <p>Send the following to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
-                            <ul>
-                                <li>Academic CV including average of grades in former and current degree.</li>
-                                <li>List of publications</li>
-                                <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="alert alert-warning mt-3" role="alert">
-                        <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 25, 2024</strong>
-                    </div>
-                </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <h3>December 4th</h3>
+            <span class="expand-icon">▼</span>
+        </div>
+        <div class="day-content">
+            <div class="session">
+                <h4>8:30 - 12:00: Session 3: Research in Virtual and Augmented Environments</h4>
+                <p>Melissa Vo, Tom Schönberg, Erwan David: Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation</p>
+            </div>
+            <div class="session">
+                <h4>13:00 - 16:30: Session 4: Neuroscience in the Wild</h4>
+                <p>Stefan Debener: Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation</p>
+            </div>
+            <div class="session">
+                <h4>Evening</h4>
+                <p>Dinner & Social</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <h3>December 5th</h3>
+            <span class="expand-icon">▼</span>
+        </div>
+        <div class="day-content">
+            <div class="session">
+                <h4>8:30 - 12:00: Session 5: The Noisy Mind and Brain</h4>
+                <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
+                <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
+            </div>
+            <div class="session">
+                <h4>13:00 - 16:30: Wrap-Up Session</h4>
+                <p>Participant action and final discussions</p>
+            </div>
+            <div class="session">
+                <h4>Evening</h4>
+                <p>Departure</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="speakersModal" tabindex="-1" aria-labelledby="speakersModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="speakersModalLabel">All Speakers</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Schedule Modal -->
-<div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="scheduleModalLabel">Full Schedule</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered custom-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Dec. 3rd</th>
-                                <th>Dec. 4th</th>
-                                <th>Dec. 5th</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>8:30 - 12:00</strong></td>
-                                <td>
-                                    <strong>Session 1: Perception and Cognition in Noisy Environments</strong>
-                                    <p>Shlomit Yuval-Greenberg: Visual exploration: A window to a noisy world</p>
-                                    <p>Ayal Meltzer-Asscher: Noisy-channel processing in real-time language comprehension</p>
-                                </td>
-                                <td>
-                                    <strong>Session 3: Research in Virtual and Augmented Environments</strong>
-                                    <p>Melissa Vo, Tom Schönberg, Erwan David</p>
-                                    <p>Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation</p>
-                                </td>
-                                <td>
-                                    <strong>Session 5: The Noisy Mind and Brain</strong>
-                                    <p>Christian Fiebach: Behavioral and neural variability and its role for complex cognition</p>
-                                    <p>Martha Havenith, Marieke Schölvnick: title t.b.a.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>12:00 - 13:00</strong></td>
-                                <td>Lunch & Welcome Reception</td>
-                                <td>Lunch</td>
-                                <td>Lunch</td>
-                            </tr>
-                            <tr>
-                                <td><strong>13:00 - 16:30</strong></td>
-                                <td>
-                                    <strong>Session 2: Cognition and Action in Noisy Environments</strong>
-                                    <p>Chris Kell: title t.b.a.</p>
-                                    <p>Roy Mukamel: Perception through the lens of voluntary actions</p>
-                                </td>
-                                <td>
-                                    <strong>Session 4: Neuroscience in the Wild</strong>
-                                    <p>Stefan Debener</p>
-                                    <p>Measuring Brain Signals in Noisy Environments: Theory, Practice & Evaluation</p>
-                                </td>
-                                <td>
-                                    <p>Participant action:</p>
-                                    <p>Wrap-Up Session</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>17:00 - 18:00</strong></td>
-                                <td>'Speed dating' by participants: getting to know each other</td>
-                                <td>self-org. discussions by participants</td>
-                                <td><em>Departure</em></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Evening</strong></td>
-                                <td>dinner & social</td>
-                                <td>dinner & social</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var modals = [].slice.call(document.querySelectorAll('.modal'));
-    var modalInstances = modals.map(function(modal) {
-        return new bootstrap.Modal(modal);
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const dayHeaders = document.querySelectorAll('.day-header');
 
-    document.querySelectorAll('[data-bs-toggle="modal"]').forEach(function(button) {
-        button.addEventListener('click', function() {
-            var targetModal = document.querySelector(this.getAttribute('data-bs-target'));
-            var modalInstance = bootstrap.Modal.getInstance(targetModal);
-            modalInstance.show();
+        dayHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                content.classList.toggle('show');
+            });
         });
     });
-
-    document.querySelectorAll('.btn-close, .modal').forEach(function(element) {
-        element.addEventListener('click', function(event) {
-            if (event.target === this) {
-                var modalInstance = bootstrap.Modal.getInstance(this.closest('.modal'));
-                modalInstance.hide();
-            }
-        });
-    });
-});
 </script>
