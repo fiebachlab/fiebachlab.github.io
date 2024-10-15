@@ -4,112 +4,122 @@ layout: splash
 author_profile: false
 ---
 <style>
-    :root {
-        --primary-color: #00618F;
-        --secondary-color: #00618F;
-        --accent-color: #00618F;
-    }
-    body {
-        line-height: 1.6;
-        color: #333;
-        background-color: #f4f4f4;
-    }
-    .custom-card {
-        height: 100%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border: none;
-        transition: transform 0.3s ease-in-out;
-    }
-    .custom-card:hover {
-        transform: translateY(-5px);
-    }
-    .custom-table th {
-        background-color: var(--primary-color);
-        color: white;
-    }
-    .custom-table tr:nth-child(even) {
-        background-color: var(--secondary-color);
-    }
-    .section-title {
-        border-left: 5px solid var(--accent-color);
-        padding-left: 15px;
-        margin-bottom: 20px;
-    }
-    .list-group-item {
-        transition: background-color 0.3s ease;
-    }
-    .list-group-item:hover {
-        background-color: var(--secondary-color);
-    }
-    .btn-primary {
-        background-color: var(--primary-color);
-        border-color: var(--primary-color);
-    }
-    .btn-primary:hover {
-        background-color: #004d70;
-        border-color: #004d70;
-    }
-    .icon-feature {
-        font-size: 1.5rem;
-        color: var(--accent-color);
-        margin-bottom: 1rem;
-    }
-            .schedule-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .day-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .day-header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 15px 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .day-header h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .day-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-        }
-        .day-content.show {
-            max-height: 1000px;
-        }
-        .session {
-            padding: 15px 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .session:last-child {
-            border-bottom: none;
-        }
-        .session h4 {
-            margin: 0 0 10px 0;
-            color: #007bff;
-        }
-        .session p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        .expand-icon {
-            transition: transform 0.3s ease;
-        }
-        .day-header.active .expand-icon {
-            transform: rotate(180deg);
-        }
+  :root {
+    --primary-color: #00618F;
+    --secondary-color: #0081BA;
+    --accent-color: #FFA500;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  .page__content {
+    font-size: 1.1em;
+  }
+  
+  .section-title {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: var(--primary-color);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .card-body {
+    padding: 25px;
+  }
+  
+  .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .speaker-card {
+    text-align: center;
+  }
+  
+  .speaker-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .schedule-day {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .schedule-day-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .schedule-day-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .schedule-day-content.show {
+    max-height: 1000px;
+  }
+  
+  .schedule-session {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .schedule-session:last-child {
+    border-bottom: none;
+  }
+  
+  .schedule-time {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
 </style>
-
 
 
 <br>
