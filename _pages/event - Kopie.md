@@ -119,7 +119,7 @@ author_profile: false
 }
 
 .image-container img {
-  width: 100px; /* You can adjust the size as needed */
+  width: 200px; /* You can adjust the size as needed */
   height: auto;
 }
 
