@@ -12,7 +12,6 @@ author_profile: false
     body {
         line-height: 1.6;
         color: #333;
-        background-color: #f4f4f4;
          font-size: 90%; 
     }
     .custom-card {
