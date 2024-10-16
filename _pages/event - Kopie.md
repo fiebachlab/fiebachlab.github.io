@@ -124,8 +124,6 @@ excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></
 .image-container img {
   width: 200px; /* You can adjust the size as needed */
   height: auto;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 </style>
