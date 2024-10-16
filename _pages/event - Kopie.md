@@ -285,15 +285,13 @@ body {
             </div>
         </div>
     </div>
-    <div class="card custom-card mb-4">
-        <div class="col-md-12">
-            <div class="card custom-card">
-                <h5 class="section-title">Sponsors</h5>        
-                <div class="image-container">
-                    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
-                    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
-                    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
-                </div>
+    <div class="row mb-4">
+        <div class="col-md-12">>
+            <h5 class="section-title">Sponsors</h5>        
+            <div class="image-container">
+                <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+                <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
             </div>
         </div>
     </div>    
