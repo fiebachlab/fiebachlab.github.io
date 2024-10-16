@@ -179,6 +179,7 @@ body {
     <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
     <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
 </div>
+<br>
     <div class="card custom-card mb-4">
         <div class="card-body">
             <h3 class="section-title">Workshop Description</h3>
@@ -284,17 +285,17 @@ body {
                 </div>
             </div>
         </div>
-<div class="row mb-4">
-<h5 class="section-title">Sponsors</h5>        
-<div class="image-container">
-    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
-    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a><br>
-    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
-</div>
-</div>
   <div class="row mb-4">
         <div class="col-md-12">
             <div class="card custom-card">
+            <h5 class="section-title">Sponsors</h5>        
+                <div class="image-container">
+                    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+                    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+                </div>
+                <div class="image-container">
+                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
+                </div>
                 <div class="card-body">
                     <h5 class="section-title">Application and Enrollment</h5>
                     <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
@@ -327,8 +328,8 @@ body {
             </div>
         </div>
     </div>
-</div>
-
+  <div class="row mb-4">
+        <div class="col-md-12">
 <div class="card-body">        
 <section id="schedule">
     <h5 class="section-title">Schedule</h5>
@@ -352,6 +353,8 @@ body {
       </div>
     {% endfor %}
 </section>
+</div>
+</div>
 </div>
 <br>
 
