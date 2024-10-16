@@ -14,7 +14,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     --accent-color: #00618F;
 }
 body {
-    line-height: 1.3;
+    line-height: 1.5;
     font-size: 80%; 
 }
 .custom-card {
