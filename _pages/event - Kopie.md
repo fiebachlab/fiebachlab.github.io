@@ -119,9 +119,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  padding: 0 10%; /* Replaces fixed margins for better responsiveness */
   max-width: 100%;
+  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
 }
 
 .image-container img {
@@ -288,14 +288,18 @@ body {
   <div class="row mb-4">
         <div class="col-md-12">
             <div class="card custom-card">
-            <h5 class="section-title">Sponsors</h5>        
+                <h5 class="section-title">Sponsors</h5>        
                 <div class="image-container">
                     <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
                     <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
                 </div>
-                <div class="image-container">
+            <div class="image-container">
                 <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
-                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row mb-4">
+            <div class="col-md-12">
                 <div class="card-body">
                     <h5 class="section-title">Application and Enrollment</h5>
                     <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
