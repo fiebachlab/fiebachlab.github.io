@@ -111,13 +111,19 @@ author_profile: false
     color: #333;
 }
 
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
 
 </style>
 
 <br>
 
 <h3> <center> <strong> Goethe University - Tel Aviv University Winterschool <br> “Adaptive Cognition in Noisy Environments” <br></strong></center></h3>
-<h3> <center> <strong><small class="text-muted"> Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</small> </strong></center></h4>
+<h4> <center> <strong><small class="text-muted"> Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</small> </strong></center></h4>
 
 <div class="container">
     <div class="row">
