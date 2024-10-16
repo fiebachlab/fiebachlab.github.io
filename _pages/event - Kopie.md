@@ -114,6 +114,8 @@ author_profile: false
   display: flex;
   justify-content: space-between;
   align-items: center; /* Optional: centers images vertically if needed */
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .image-container img {
@@ -129,9 +131,8 @@ author_profile: false
 <h3> <center> <strong> Goethe University - Tel Aviv University Winterschool <br> “Adaptive Cognition in Noisy Environments” <br></strong></center></h3>
 <h4> <center> <strong><small class="text-muted"> Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</small> </strong></center></h4>
 <div class="image-container">
-    <img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" >
-    <img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo">
-    <img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo">
+    <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU  Logo" ></a>
+    <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
 </div>
 <div class="container">
     <div class="row mb-4">
@@ -158,6 +159,7 @@ author_profile: false
                         <li>How the brain handles dynamic and highly variable environments.</li>
                         <li>How behavior and neural activity can be measured in naturalistic environments.</li>
                     </ul>
+                    <p>For more information, see the <a href="#schedule">Schedule </a> below.</p>
                 </div>
             </div>
         </div>
@@ -267,6 +269,14 @@ author_profile: false
                 </div>
             </div>
         </div>
+<div class="row mb-4">
+<h4 class="section-title">Sponsors</h4>        
+<div class="image-container">
+    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
+</div>
+</div>
   <div class="row mb-4">
         <div class="col-md-12">
             <div class="card custom-card">
