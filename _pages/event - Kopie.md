@@ -5,7 +5,7 @@ author_profile: false
 header:
   overlay_color: "#00618F"
 title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
-excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></b> <br <div class="image-container">  <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a> <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a></div>
+excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></b>
 ---
 <style>
     :root {
@@ -131,6 +131,7 @@ excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></
 
 </style>
 
+
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
@@ -161,6 +162,10 @@ excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></
             </div>
         </div>
     </div>
+    <div class="image-container">
+    <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
+    <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
+</div>
     <div class="card custom-card mb-4">
         <div class="card-body">
             <h3 class="section-title">Workshop Description</h3>
