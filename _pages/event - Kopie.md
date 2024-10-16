@@ -12,10 +12,12 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     --primary-color: #00618F;
     --secondary-color: #00618F;
     --accent-color: #00618F;
+    --bg-color: #f4f4f4;
 }
 body {
     line-height: 1.5;
     font-size: 80%; 
+    background-color: var(--bg-color);
 }
 .custom-card {
     height: 100%;
