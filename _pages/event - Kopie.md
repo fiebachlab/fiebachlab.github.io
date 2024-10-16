@@ -5,7 +5,7 @@ author_profile: false
 header:
   overlay_color: "#00618F"
 title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
-excerpt: <p style="color:white;"><b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></b></p>
+excerpt: <p style="color:white;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
     :root {
@@ -14,8 +14,8 @@ excerpt: <p style="color:white;"><b><center>Goethe University Frankfurt, Dec. 2 
         --accent-color: #00618F;
     }
     body {
-        line-height: 1.6;
-         font-size: 85%; 
+        line-height: 1.3;
+         font-size: 80%; 
     }
     .custom-card {
         height: 100%;
