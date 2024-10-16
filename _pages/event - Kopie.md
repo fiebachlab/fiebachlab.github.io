@@ -131,6 +131,10 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
 
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class ="col-md-10>
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
@@ -338,7 +342,8 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
     {% endfor %}
 </section>
 </div>
-
+</div>
+</div>
 <br>
 
 <script>
