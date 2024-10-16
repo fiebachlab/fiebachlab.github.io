@@ -174,10 +174,10 @@ body {
                 </div>
             </div>
         </div>
-    </div>
-    <div class="image-container">
-        <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
-        <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
+        <div class="image-container">
+            <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
+            <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
+        </div>    
     </div>
     <br>
     <div class="card custom-card mb-4">
