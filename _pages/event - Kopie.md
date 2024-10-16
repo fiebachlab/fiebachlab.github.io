@@ -70,7 +70,7 @@ author_profile: false
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 
@@ -81,7 +81,7 @@ author_profile: false
 .schedule-day-content {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 15px;
     display: none;
 }
@@ -94,7 +94,7 @@ author_profile: false
     margin-bottom: 15px;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 3px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
