@@ -59,10 +59,14 @@ body {
     color: var(--accent-color);
     margin-bottom: 1rem;
 }
+
 .schedule-container {
-    max-width: 800px;
+    max-width: 900px; /* Increased the width for more space */
     margin: 0 auto;
+    padding-left: 20px;  /* Added padding for extra space on the left */
+    padding-right: 20px; /* Added padding for extra space on the right */
 }
+
 .schedule-day {
     margin-bottom: 20px;
 }
@@ -87,7 +91,7 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px; /* Added extra padding for a more spacious look */
     display: none;
 }
 
@@ -97,9 +101,9 @@ body {
 
 .schedule-session {
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 20px; /* Increased padding for a more open look */
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 10px; /* Increased radius for smoother borders */
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
