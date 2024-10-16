@@ -15,8 +15,7 @@ excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></
     }
     body {
         line-height: 1.6;
-        color: #333;
-         font-size: 90%; 
+         font-size: 85%; 
     }
     .custom-card {
         height: 100%;
