@@ -8,60 +8,60 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
-    :root {
-        --primary-color: #00618F;
-        --secondary-color: #00618F;
-        --accent-color: #00618F;
-    }
-    body {
-        line-height: 1.3;
-        font-size: 80%; 
-    }
-    .custom-card {
-        height: 100%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border: none;
-        transition: transform 0.3s ease-in-out;
-    }
-    .custom-card:hover {
-        transform: translateY(-5px);
-    }
-    .custom-table th {
-        background-color: var(--primary-color);
-        color: white;
-    }
-    .custom-table tr:nth-child(even) {
-        background-color: var(--secondary-color);
-    }
-    .section-title {
-        border-left: 5px solid var(--accent-color);
-        padding-left: 15px;
-        margin-bottom: 20px;
-    }
-    .list-group-item {
-        transition: background-color 0.3s ease;
-    }
-    .list-group-item:hover {
-        background-color: var(--secondary-color);
-    }
-    .btn-primary {
-        background-color: var(--primary-color);
-        border-color: var(--primary-color);
-    }
-    .btn-primary:hover {
-        background-color: #004d70;
-        border-color: #004d70;
-    }
-    .icon-feature {
-        font-size: 1.5rem;
-        color: var(--accent-color);
-        margin-bottom: 1rem;
-    }
-            .schedule-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-  .schedule-day {
+:root {
+    --primary-color: #00618F;
+    --secondary-color: #00618F;
+    --accent-color: #00618F;
+}
+body {
+    line-height: 1.3;
+    font-size: 80%; 
+}
+.custom-card {
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+.custom-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+.custom-table tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+.section-title {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+.list-group-item:hover {
+    background-color: var(--secondary-color);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #004d70;
+    border-color: #004d70;
+}
+.icon-feature {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.schedule-day {
     margin-bottom: 20px;
 }
 
@@ -126,6 +126,19 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
   width: 250px; /* You can adjust the size as needed */
   height: auto;
 }
+
+.container {
+    padding-left: 40px;  /* Adjust the values as needed */
+    padding-right: 40px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 80px;  /* For larger screens, increase the padding */
+        padding-right: 80px;
+    }
+}
+
 
 </style>
 
