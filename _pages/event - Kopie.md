@@ -1,6 +1,6 @@
 ---
 permalink: /winter-school-2024-2/
-layout: wide
+layout: splash
 author_profile: false
 header:
   overlay_color: "#00618F"
