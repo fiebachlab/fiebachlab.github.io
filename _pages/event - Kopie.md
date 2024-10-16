@@ -4,8 +4,8 @@ layout: splash
 author_profile: false
 header:
   overlay_color: "#00618F"
-title: "Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments"
-excerpt: Goethe University Frankfurt, Dec. 2 - Dec. 5 2024
+title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
+excerpt: <b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></b>
 ---
 <style>
     :root {
@@ -129,19 +129,8 @@ excerpt: Goethe University Frankfurt, Dec. 2 - Dec. 5 2024
     margin-right: 200px;
 }
 
-.box-header{
-    background-color: #00618F;
-    padding: 15px;
-}
-
-
 </style>
 
-
-<div class="box-header">
-    <h3 style="color: white;text-align: center;font-weight:bold"> </h3> 
-    <h4 style="color: white;text-align: center;font-weight:bold;opacity:0.95"> </h4>
-</div>
 <div class="image-container">
     <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU  Logo" ></a>
     <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
