@@ -1,23 +1,37 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 <style>
+.box {
+  background-color: #00618F;
+  border-radius: 5px;
+  color: #F8F6F5;
+  padding: 5px 10px;
+  display: inline-block;
+  line-height: 1;
+}
 
-  .box {
-    padding: 5px 10px;
-    box-sizing: border-box;
-    background-color: #00618F;
-    border-radius: 5px;
-    border: 2px solid #00618F;
-    color: #F8F6F5;
-    margin-bottom: 0;
-    display: inline-block;
-    line-height: 1.5;
-  }
-  
-  .box p {
-    margin: 0;
-    padding: 0;
-  }
-  
+.masthead__menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.masthead__menu-item a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.visible-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Remove any margins or padding from the paragraph inside the box */
+.box p {
+  margin: 0;
+  padding: 0;
+}
+
+
 </style>
 
 <div class="masthead sticky">
