@@ -108,7 +108,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     margin-bottom: 10px;
 }
 
-.schedule-session h4 {
+.schedule-session h5 {
     margin: 10px 0;
     color: #333;
 }
@@ -135,7 +135,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h4 class="card-title section-title">Event Details</h4>
+                    <h5 class="card-title section-title">Event Details</h5>
                     <p><strong>Organizers:</strong></p>
                     <ul>
                         <li>Prof. Dr. Christian Fiebach (Goethe University Frankfurt)</li>
@@ -148,7 +148,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h4 class="card-title section-title">Overview</h4>
+                    <h5 class="card-title section-title">Overview</h5>
                     <p>The Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
                     <ul>
                         <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
@@ -174,13 +174,13 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     </div>
         <div class="row mb-4">
             <div class="col-md-12">
-                <h4 class="section-title">Speakers</h4>
+                <h5 class="section-title">Speakers</h5>
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Erwan David</h5>
+                                <h6>Prof. Dr. Erwan David</h6>
                                 <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
                             </div>
                         </div>
@@ -189,7 +189,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Stefan Debener</h5>
+                                <h6>Prof. Dr. Stefan Debener</h6>
                                 <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
                             </div>
                         </div>
@@ -198,7 +198,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Christian Fiebach</h5>
+                                <h6>Prof. Dr. Christian Fiebach</h6>
                                 <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Chris Kell</h5>
+                                <h6>Prof. Dr. Chris Kell</h6>
                                 <p class="text-muted">Goethe University Frankfurt, Dept. of Neurology</p>
                             </div>
                         </div>
@@ -216,7 +216,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Aya Meltzer-Asscher</h5>
+                                <h6>Prof. Dr. Aya Meltzer-Asscher</h6>
                                 <p class="text-muted">Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience</p>
                             </div>
                         </div>
@@ -225,7 +225,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Roy Mukamel</h5>
+                                <h6>Prof. Dr. Roy Mukamel</h6>
                                 <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
                             </div>
                         </div>
@@ -234,7 +234,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Dr. Marieke Schölvnick</h5>
+                                <h6>Dr. Marieke Schölvnick</h6>
                                 <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Tom Schonberg</h5>
+                                <h6>Prof. Dr. Tom Schonberg</h6>
                                 <p class="text-muted">Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics</p>
                             </div>
                         </div>
@@ -252,7 +252,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Melissa Vo</h5>
+                                <h6>Prof. Dr. Melissa Vo</h6>
                                 <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
                             </div>
                         </div>
@@ -261,7 +261,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
                         <div class="card custom-card">
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
-                                <h5>Prof. Dr. Shlomit Yuval Greenberg</h5>
+                                <h6>Prof. Dr. Shlomit Yuval Greenberg</h6>
                                 <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
                             </div>
                         </div>
@@ -270,7 +270,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
             </div>
         </div>
 <div class="row mb-4">
-<h4 class="section-title">Sponsors</h4>        
+<h5 class="section-title">Sponsors</h5>        
 <div class="image-container">
     <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
     <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
@@ -281,7 +281,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
         <div class="col-md-12">
             <div class="card custom-card">
                 <div class="card-body">
-                    <h4 class="section-title">Application and Enrollment</h4>
+                    <h5 class="section-title">Application and Enrollment</h5>
                     <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
                     <p>
                     The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
@@ -316,7 +316,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
 
 <div class="card-body">        
 <section id="schedule">
-    <h4 class="section-title">Schedule</h4>
+    <h5 class="section-title">Schedule</h5>
     {% for day in site.data.winter_school_schedule %}
       <div class="schedule-day">
         <div class="schedule-day-header">
