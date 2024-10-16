@@ -15,7 +15,7 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
     }
     body {
         line-height: 1.3;
-         font-size: 80%; 
+        font-size: 80%; 
     }
     .custom-card {
         height: 100%;
@@ -53,7 +53,7 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
         border-color: #004d70;
     }
     .icon-feature {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: var(--accent-color);
         margin-bottom: 1rem;
     }
