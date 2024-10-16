@@ -4,9 +4,9 @@ layout: wide
 author_profile: false
 header:
   overlay_color: "#00618F"
-title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
-excerpt: "<b><center>Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</center></b>"
+title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b><br><b><small><center>Dec. 2 - Dec. 5 2024 @Goethe University Frankfurt</center></small></b>"
 ---
+
 <style>
     :root {
         --primary-color: #00618F;
