@@ -5,7 +5,7 @@ author_profile: false
 header:
   overlay_color: "#00618F"
 title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
-excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</h5>
+excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
     :root {
@@ -53,7 +53,7 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
         border-color: #004d70;
     }
     .icon-feature {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: var(--accent-color);
         margin-bottom: 1rem;
     }
@@ -119,11 +119,11 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
   align-items: center;
   margin-left: 200px;
   margin-right: 200px;
-  max-width: 20%;
+  max-width: 100%;
 }
 
 .image-container img {
-  width: 200px; /* You can adjust the size as needed */
+  width: 250px; /* You can adjust the size as needed */
   height: auto;
 }
 
@@ -131,10 +131,6 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class ="col-md-10">
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
@@ -341,8 +337,6 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
       </div>
     {% endfor %}
 </section>
-</div>
-</div>
 </div>
 <br>
 
