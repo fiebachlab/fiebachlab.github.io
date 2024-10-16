@@ -74,37 +74,25 @@ body {
 .schedule-day-header {
     background-color: #00618F;
     color: white;
-    padding: 10px 20px; /* Reduced padding */
+    padding: 15px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px; /* Slightly rounded corners */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    max-width: 600px; /* Limiting the width */
-    margin: 0 auto; /* Center the banner */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Add a soft shadow for a cleaner look */
-    font-size: 1rem; /* Adjusting font size for better readability */
-    text-align: center; /* Center the text */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .schedule-day-header:hover {
     background-color: #3280a5;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Slightly increase shadow on hover */
 }
 
 .schedule-day-content {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
+    border-radius: 10px;
+    padding: 20px; /* Added extra padding for a more spacious look */
     display: none;
-    max-width: 600px; /* Ensure content aligns with header */
-    margin: 0 auto; /* Center the content as well */
-}
-
-.expand-icon {
-    font-size: 1.2rem;
 }
 
 .schedule-day-content.show {
@@ -201,8 +189,7 @@ body {
             <h5 class="section-title">Workshop Description</h5>
             <p>Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.
             <br>
-            This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.
-            <br>
+            This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.<br>
             In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
             </p>
         </div>
