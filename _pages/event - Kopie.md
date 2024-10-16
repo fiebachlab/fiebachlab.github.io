@@ -74,25 +74,37 @@ body {
 .schedule-day-header {
     background-color: #00618F;
     color: white;
-    padding: 15px;
+    padding: 10px 20px; /* Reduced padding */
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px; /* Limiting the width */
+    margin: 0 auto; /* Center the banner */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Add a soft shadow for a cleaner look */
+    font-size: 1rem; /* Adjusting font size for better readability */
+    text-align: center; /* Center the text */
 }
 
 .schedule-day-header:hover {
     background-color: #3280a5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Slightly increase shadow on hover */
 }
 
 .schedule-day-content {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px; /* Added extra padding for a more spacious look */
+    border-radius: 8px;
+    padding: 15px;
     display: none;
+    max-width: 600px; /* Ensure content aligns with header */
+    margin: 0 auto; /* Center the content as well */
+}
+
+.expand-icon {
+    font-size: 1.2rem;
 }
 
 .schedule-day-content.show {
