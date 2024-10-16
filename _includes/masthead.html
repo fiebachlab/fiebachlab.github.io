@@ -1,5 +1,18 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+<style>
 
+.box {
+  padding: 20px;
+  box-sizing: border-box;
+  border: 15px solid transparent;
+  background-clip: padding-box;
+  background-color: #00618F;
+  border-radius: 50px;
+  color: #F8F6F5;
+}
+
+
+</style>
 
 <div class="masthead sticky">
   <div class="masthead__inner-wrap">
@@ -18,6 +31,9 @@
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <li class="masthead__menu-item">
+            <a class="box" href="https://www.fiebachlab.org/winter-school-2024-2/" title="Winterschool">Winterschool</a>
+          </li>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
