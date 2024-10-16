@@ -116,10 +116,15 @@ author_profile: false
 
 <br>
 
-<h3> <center> <strong> Goethe University - Tel Aviv University Winterschool “Adaptive Cognition in Noisy Environments” <br>
-<small class="text-muted"> Goethe University Frankfurt  </small> 
-</strong></center></h3>
+<h3> <center> <strong> Goethe University - Tel Aviv University Winterschool <br> “Adaptive Cognition in Noisy Environments” <br></strong></center></h3>
+<h3> <center> <strong><small class="text-muted"> Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</small> </strong></center></h4>
+
 <div class="container">
+    <div class="row">
+        <img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo">
+        <img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo">
+        <img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo">
+    </div>
     <div class="row mb-4">
         <div class="col-md-6 mb-4">
             <div class="card custom-card">
@@ -150,16 +155,15 @@ author_profile: false
     </div>
     <div class="card custom-card mb-4">
         <div class="card-body">
-            <h3 class="section-title">Research Context</h3>
+            <h3 class="section-title">Workshop Description</h3>
             <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.</p>
             <p>This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.</p>
             <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
         </div>
     </div>
-
         <div class="row mb-4">
             <div class="col-md-12">
-                <h4 class="section-title">All Speakers</h4>
+                <h4 class="section-title">Speakers</h4>
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <div class="card custom-card">
@@ -220,7 +224,7 @@ author_profile: false
                             <div class="card-body text-center">
                                 <i class="fas fa-user-circle icon-feature"></i>
                                 <h5>Dr. Marieke Schölvnick</h5>
-                                <p class="text-muted">Ernst Strüngmann Institute, Frankfurt</p>
+                                <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
                             </div>
                         </div>
                     </div>
