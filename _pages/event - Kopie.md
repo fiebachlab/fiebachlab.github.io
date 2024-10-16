@@ -110,11 +110,17 @@ author_profile: false
     color: #333;
 }
 
-.img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Optional: centers images vertically if needed */
 }
+
+.image-container img {
+  width: 100px; /* You can adjust the size as needed */
+  height: auto;
+}
+
 
 </style>
 
@@ -122,10 +128,10 @@ author_profile: false
 
 <h3> <center> <strong> Goethe University - Tel Aviv University Winterschool <br> “Adaptive Cognition in Noisy Environments” <br></strong></center></h3>
 <h4> <center> <strong><small class="text-muted"> Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</small> </strong></center></h4>
-<div class="container" style="max-width: 100%" >
-    <img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" height="50">
-    <img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo" height="50">
-    <img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo" height="50">
+<div class="image-container">
+    <img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" >
+    <img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo">
+    <img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo">
 </div>
 <div class="container">
     <div class="row mb-4">
