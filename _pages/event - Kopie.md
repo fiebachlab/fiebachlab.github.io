@@ -115,7 +115,7 @@ author_profile: false
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    max-width: 30%;
 }
 
 </style>
