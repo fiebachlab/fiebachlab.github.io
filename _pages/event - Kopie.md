@@ -121,6 +121,8 @@ author_profile: false
 .image-container img {
   width: 200px; /* You can adjust the size as needed */
   height: auto;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 
