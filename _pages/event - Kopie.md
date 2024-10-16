@@ -75,7 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -86,7 +86,7 @@ body {
 .schedule-day-content {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 15px;
     display: none;
 }
@@ -183,9 +183,10 @@ body {
     <div class="card custom-card mb-4">
         <div class="card-body">
             <h3 class="section-title">Workshop Description</h3>
-            <p>Research into the psychological and brain mechanisms underlying perception, cognition, and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.</p>
-            <p>This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.</p>
-            <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
+            <p>Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.<br>
+            This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.<br>
+            In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
+            </p>
         </div>
     </div>
     <div class="row mb-4">
@@ -286,7 +287,7 @@ body {
         </div>
     </div>
     <div class="row mb-4">
-        <div class="col-md-12">>
+        <div class="col-md-12">
             <h5 class="section-title">Sponsors</h5>        
             <div class="image-container">
                 <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
@@ -299,7 +300,7 @@ body {
         <div class="col-md-12">
             <div class="card-body">
                 <h5 class="section-title">Application and Enrollment</h5>
-                <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
+                <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the <b>Winterschool Adaptive Cognition in Noisy Environments</b>. </p>
                 <p>
                 The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
                 </p>
