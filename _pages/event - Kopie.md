@@ -116,9 +116,10 @@ excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt,
 .image-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Optional: centers images vertically if needed */
-    margin-left: 200px;
-    margin-right: 200px;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  max-width: 20%;
 }
 
 .image-container img {
