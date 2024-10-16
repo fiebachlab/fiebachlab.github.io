@@ -130,14 +130,14 @@ body {
 }
 
 .container {
-    padding-left: 40px;  /* Adjust the values as needed */
-    padding-right: 40px;
+    padding-left: 60px;  /* Adjust the values as needed */
+    padding-right: 60px;
 }
 
 @media (min-width: 768px) {
     .container {
-        padding-left: 80px;  /* For larger screens, increase the padding */
-        padding-right: 80px;
+        padding-left: 120px;  /* For larger screens, increase the padding */
+        padding-right: 120px;
     }
 }
 
@@ -176,10 +176,10 @@ body {
         </div>
     </div>
     <div class="image-container">
-    <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
-    <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
-</div>
-<br>
+        <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
+        <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
+    </div>
+    <br>
     <div class="card custom-card mb-4">
         <div class="card-body">
             <h3 class="section-title">Workshop Description</h3>
@@ -188,178 +188,177 @@ body {
             <p>In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.</p>
         </div>
     </div>
-        <div class="row mb-4">
-            <div class="col-md-12">
-                <h5 class="section-title">Speakers</h5>
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Erwan David</h6>
-                                <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
-                            </div>
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h5 class="section-title">Speakers</h5>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Erwan David</h6>
+                            <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Stefan Debener</h6>
-                                <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Stefan Debener</h6>
+                            <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Christian Fiebach</h6>
-                                <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Christian Fiebach</h6>
+                            <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Chris Kell</h6>
-                                <p class="text-muted">Goethe University Frankfurt, Dept. of Neurology</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Chris Kell</h6>
+                            <p class="text-muted">Goethe University Frankfurt, Dept. of Neurology</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Aya Meltzer-Asscher</h6>
-                                <p class="text-muted">Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Aya Meltzer-Asscher</h6>
+                            <p class="text-muted">Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Roy Mukamel</h6>
-                                <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Roy Mukamel</h6>
+                            <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Dr. Marieke Schölvnick</h6>
-                                <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Dr. Marieke Schölvnick</h6>
+                            <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Tom Schonberg</h6>
-                                <p class="text-muted">Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Tom Schonberg</h6>
+                            <p class="text-muted">Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Melissa Vo</h6>
-                                <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Melissa Vo</h6>
+                            <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card custom-card">
-                            <div class="card-body text-center">
-                                <i class="fas fa-user-circle icon-feature"></i>
-                                <h6>Prof. Dr. Shlomit Yuval Greenberg</h6>
-                                <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
-                            </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-circle icon-feature"></i>
+                            <h6>Prof. Dr. Shlomit Yuval Greenberg</h6>
+                            <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-  <div class="row mb-4">
+    </div>
+    <div class="card custom-card mb-4">
         <div class="col-md-12">
             <div class="card custom-card">
                 <h5 class="section-title">Sponsors</h5>        
                 <div class="image-container">
                     <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
                     <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+                    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
                 </div>
-            <div class="image-container">
-                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
             </div>
         </div>
-    </div>
-        <div class="row mb-4">
-            <div class="col-md-12">
-                <div class="card-body">
-                    <h5 class="section-title">Application and Enrollment</h5>
-                    <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
-                    <p>
-                    The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
-                            <ul>
-                                <li>Free participation</li>
-                                <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
-                                <li>Evening social activities</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
-                            <p>Send the following to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
-                            <ul>
-                                <li>Academic CV including average of grades in former and current degree.</li>
-                                <li>List of publications</li>
-                                <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
-                            </ul>
-                        </div>
+    </div>    
+    <div class="card custom-card mb-4">
+        <div class="col-md-12">
+            <div class="card-body">
+                <h5 class="section-title">Application and Enrollment</h5>
+                <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the Winterschool Adaptive Cognition in Noisy Environments. </p>
+                <p>
+                The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
+                        <ul>
+                            <li>Free participation</li>
+                            <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
+                            <li>Evening social activities</li>
+                        </ul>
                     </div>
-                    <div class="alert alert-warning mt-3" role="alert">
-                        <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 25, 2024</strong>
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
+                        <p>Send the following to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
+                        <ul>
+                            <li>Academic CV including average of grades in former and current degree.</li>
+                            <li>List of publications</li>
+                            <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
+                        </ul>
                     </div>
+                </div>
+                <div class="alert alert-warning mt-3" role="alert">
+                    <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 25, 2024</strong>
                 </div>
             </div>
         </div>
     </div>
   <div class="row mb-4">
         <div class="col-md-12">
-<div class="card-body">        
-<section id="schedule">
-    <h5 class="section-title">Schedule</h5>
-    {% for day in site.data.winter_school_schedule %}
-      <div class="schedule-day">
-        <div class="schedule-day-header">
-          <h5>{{ day.date }}</h5>
-          <span class="expand-icon">▼</span>
-        </div>
-        <div class="schedule-day-content">
-          {% for session in day.sessions %}
-            <div class="schedule-session">
-              <p class="schedule-time">{{ session.time }}</p>
-              <h6>{{ session.title }}</h6>
-              {% for item in session.items %}
-                <p>{{ item }}</p>
-              {% endfor %}
+            <div class="card-body">        
+                <section id="schedule">
+                    <h5 class="section-title">Schedule</h5>
+                    {% for day in site.data.winter_school_schedule %}
+                    <div class="schedule-day">
+                        <div class="schedule-day-header">
+                            <h5>{{ day.date }}</h5>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="schedule-day-content">
+                            {% for session in day.sessions %}
+                            <div class="schedule-session">
+                                <p class="schedule-time">{{ session.time }}</p>
+                                <h6>{{ session.title }}</h6>
+                                {% for item in session.items %}
+                                <p>{{ item }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
             </div>
-          {% endfor %}
         </div>
-      </div>
-    {% endfor %}
-</section>
-</div>
-</div>
-</div>
+    </div>
+</div>    
 <br>
 
 <script>
