@@ -1,11 +1,11 @@
 ---
 permalink: /winter-school-2024-2/
-layout: splash
+layout: wide
 author_profile: false
 header:
   overlay_color: "#00618F"
 title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Adaptive Cognition in Noisy Environments</center></b>"
-excerpt: <p style="color:white;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
+excerpt: <h5 style="color:white;text-align:center;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024<h5>
 ---
 <style>
     :root {
