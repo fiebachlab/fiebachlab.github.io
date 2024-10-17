@@ -309,6 +309,9 @@ body {
                 <p>
                 The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
                 </p>
+                <p>
+                Deadline for application is October 25, 2024. Feedback about acceptance will be given by October 31st. Application may remain open beyond that date, until all places are filled.
+                </p>
                 <div class="row">
                     <div class="col-md-6">
                         <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
@@ -316,11 +319,12 @@ body {
                             <li>Free participation</li>
                             <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
                             <li>Evening social activities</li>
+                            <li>Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
-                        <p>Send the following to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
+                        <p>Send the following information in one pdf to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
                         <ul>
                             <li>Academic CV including average of grades in former and current degree.</li>
                             <li>List of publications</li>
