@@ -26,8 +26,8 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.custom-card p{
-    color:636363;
+.custom-card a{
+    color:00618F;
 }
 
 .custom-card:hover {
