@@ -25,6 +25,11 @@ body {
     border: none;
     transition: transform 0.3s ease-in-out;
 }
+
+.custom-card p{
+    color:636363;
+}
+
 .custom-card:hover {
     transform: translateY(-5px);
 }
