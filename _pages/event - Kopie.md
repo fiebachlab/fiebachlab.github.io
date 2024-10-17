@@ -26,7 +26,7 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.custom-card a{
+.custom-card a:visited{
     color:00618F;
 }
 
