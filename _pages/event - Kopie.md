@@ -312,7 +312,7 @@ body {
                 <h5 class="section-title">Application and Enrollment</h5>
                 <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the <b>Winterschool Adaptive Cognition in Noisy Environments</b>. </p>
                 <p>
-                The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
+                The enrollment is competitive and open for all Ph.D. and postdoctoral researchers from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
                 </p>
                 <p>
                 Deadline for application is October 28, 2024. Feedback about acceptance will be given by November 5th. Application may remain open beyond that date, until all places are filled.
