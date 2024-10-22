@@ -315,7 +315,7 @@ body {
                 The enrollment is competitive and open for all Ph.D. and postdoctoral research from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
                 </p>
                 <p>
-                Deadline for application is October 25, 2024. Feedback about acceptance will be given by October 31st. Application may remain open beyond that date, until all places are filled.
+                Deadline for application is October 28, 2024. Feedback about acceptance will be given by November 5th. Application may remain open beyond that date, until all places are filled.
                 </p>
                 <div class="row">
                     <div class="col-md-6">
