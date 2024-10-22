@@ -338,7 +338,7 @@ body {
                     </div>
                 </div>
                 <div class="alert alert-warning mt-3" role="alert">
-                    <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 25, 2024</strong>
+                    <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 28, 2024</strong>
                 </div>
             </div>
         </div>
