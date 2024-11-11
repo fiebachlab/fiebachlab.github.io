@@ -258,10 +258,10 @@ body {
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
+                    <div class="card custom-card">s
                         <div class="card-body text-center">
                             <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Dr. Marieke Schölvnick</h6>
+                            <h6>Dr. Marieke Schölvinck</h6>
                             <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
                         </div>
                     </div>
