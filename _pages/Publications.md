@@ -39,7 +39,5 @@ years: [
 
 <h6 class="centeralign2">Published</h6>
 {% for y in page.years %}
-  {% if y %}
     {% bibliography -f references -q @*[year={{y}}]* %}
-  {% endif %}
 {% endfor %}
