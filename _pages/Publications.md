@@ -28,6 +28,5 @@ classes: wide
 </ol>   
 
 <h6 class="centeralign2">Published</h6>
-{% for y in page.years %}
-    {% bibliography -f references %}
-{% endfor %}
+{% bibliography -f references %}
+
