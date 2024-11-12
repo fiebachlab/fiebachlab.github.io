@@ -1,141 +1,205 @@
 ---
 ---
-<div class="publication-entry">
-  <div class="reference">
-    {{reference}}
-  </div>
+<div class="publications-container">
+  <div class="publication-entry">
+    <div class="reference">
+      {{reference}}
+    </div>
 
-  <div class="action-buttons">
-    <button class="pub-btn bibtex-btn" onclick="toggleSection('bibtex-{{entry.key}}')">
-      BibTeX
-    </button>
+    <div class="action-buttons">
+      <button class="pub-btn bibtex-btn" data-target="bibtex-{{entry.key}}" aria-label="Show BibTeX">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V6H20V18M6,10H8V12H6V10M6,14H14V16H6V14M16,14H18V16H16V14M10,10H18V12H10V10Z"/></svg>
+        BibTeX
+      </button>
+
+      {% if entry.abstract %}
+      <button class="pub-btn abstract-btn" data-target="abstract-{{entry.key}}" aria-label="Show Abstract">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z"/></svg>
+        Abstract
+      </button>
+      {% endif %}
+
+      {% if entry.doi %}
+      <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" class="pub-btn doi-btn" target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+        DOI
+      </a>
+      {% endif %}
+
+      {% if entry.preprint %}
+      <a href="{{ entry.preprint }}" class="pub-btn preprint-btn" target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z"/></svg>
+        Preprint
+      </a>
+      {% endif %}
+
+      {% if entry.code %}
+      <a href="{{ entry.code }}" class="pub-btn code-btn" target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z"/></svg>
+        Code
+      </a>
+      {% endif %}
+    </div>
+
+    <div id="bibtex-{{entry.key}}" class="collapsible bibtex-section" role="region" aria-hidden="true">
+      <pre><code>{{entry.bibtex}}</code></pre>
+    </div>
 
     {% if entry.abstract %}
-    <button class="pub-btn abstract-btn" onclick="toggleSection('abstract-{{entry.key}}')">
-      Abstract
-    </button>
-    {% endif %}
-
-    {% if entry.doi %}
-    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" class="pub-btn doi-btn">
-      DOI
-    </a>
-    {% endif %}
-
-    {% if entry.preprint %}
-    <a href="{{ entry.preprint }}" class="pub-btn preprint-btn">
-      Preprint
-    </a>
-    {% endif %}
-
-    {% if entry.link %}
-    <a href="{{ entry.link }}" class="pub-btn link-btn">
-      Link
-    </a>
-    {% endif %}
-
-    {% if entry.code %}
-    <a href="{{ entry.code }}" class="pub-btn code-btn">
-      Code
-    </a>
+    <div id="abstract-{{entry.key}}" class="collapsible abstract-section" role="region" aria-hidden="true">
+      <h4>Abstract</h4>
+      <p>{{entry.abstract}}</p>
+    </div>
     {% endif %}
   </div>
-
-  <div id="bibtex-{{entry.key}}" class="collapsible bibtex-section">
-    <pre>{{entry.bibtex}}</pre>
-  </div>
-
-  {% if entry.abstract %}
-  <div id="abstract-{{entry.key}}" class="collapsible abstract-section">
-    <h4>Abstract</h4>
-    <p>{{entry.abstract}}</p>
-  </div>
-  {% endif %}
 </div>
 
 <style>
+:root {
+  --primary-color: #1F416F;
+  --hover-color: #2c5c9e;
+  --bg-color: #ffffff;
+  --text-color: #2c3e50;
+  --border-radius: 6px;
+  --transition-speed: 0.2s;
+}
+
+.publications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .publication-entry {
-  margin-bottom: 2em;
-  padding: 1em;
-  border-left: 3px solid #1F416F;
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  border-left: 4px solid var(--primary-color);
+  background: var(--bg-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  transition: transform var(--transition-speed);
+}
+
+.publication-entry:hover {
+  transform: translateX(4px);
 }
 
 .reference {
-  margin-bottom: 1em;
-  line-height: 1.4;
+  margin-bottom: 1.2em;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-size: 1.1em;
 }
 
 .action-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
-  margin: 1em 0;
+  gap: 0.8em;
+  margin: 1.2em 0;
 }
 
 .pub-btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.5em 1em;
-  border: 1px solid #1F416F;
-  border-radius: 4px;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
   background: transparent;
-  color: #1F416F;
-  font-size: 0.9em;
+  color: var(--primary-color);
+  font-size: 0.95em;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all var(--transition-speed);
 }
 
 .pub-btn:hover {
-  background: #1F416F;
+  background: var(--primary-color);
   color: white;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  width: 1.2em;
+  height: 1.2em;
+  fill: currentColor;
 }
 
 .collapsible {
   display: none;
-  margin-top: 1em;
-  padding: 1em;
-  background: #f5f5f5;
-  border-radius: 4px;
+  margin-top: 1.2em;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transform: translateY(-10px);
+  transition: opacity var(--transition-speed), transform var(--transition-speed);
 }
 
 .collapsible.active {
   display: block;
   opacity: 1;
+  transform: translateY(0);
 }
 
 .abstract-section h4 {
   margin-top: 0;
-  color: #1F416F;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+  font-size: 1.2em;
 }
 
 .bibtex-section pre {
   margin: 0;
-  padding: 1em;
+  padding: 1.2em;
   background: white;
-  border-radius: 3px;
+  border-radius: calc(var(--border-radius) - 2px);
   font-size: 0.9em;
   overflow-x: auto;
+  border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .publication-entry {
+    padding: 1em;
+  }
+  
+  .action-buttons {
+    gap: 0.5em;
+  }
+  
+  .pub-btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
 }
 </style>
 
 <script>
-function toggleSection(id) {
-  const section = document.getElementById(id);
-  const isActive = section.classList.contains('active');
-  
-  if (isActive) {
-    section.classList.remove('active');
-    setTimeout(() => {
-      section.style.display = 'none';
-    }, 300);
-  } else {
-    section.style.display = 'block';
-    requestAnimationFrame(() => {
-      section.classList.add('active');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.pub-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      if (!button.dataset.target) return;
+      
+      e.preventDefault();
+      const targetId = button.dataset.target;
+      const section = document.getElementById(targetId);
+      const isActive = section.classList.contains('active');
+      
+      if (isActive) {
+        section.classList.remove('active');
+        section.setAttribute('aria-hidden', 'true');
+        setTimeout(() => {
+          section.style.display = 'none';
+        }, 200);
+      } else {
+        section.style.display = 'block';
+        requestAnimationFrame(() => {
+          section.classList.add('active');
+          section.setAttribute('aria-hidden', 'false');
+        });
+      }
     });
-  }
-}
+  });
+});
 </script>
