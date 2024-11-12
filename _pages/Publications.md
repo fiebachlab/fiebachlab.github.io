@@ -30,7 +30,6 @@ years: [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 
 
 <h6 class="centeralign2">Published</h6>
 {% for y in page.years %}
-  <h3  id="{{y}}" class="pubyear">{{y}}</h3>
   {% bibliography -f references -q @*[year={{y}}]* %}
 {% endfor %}
 
