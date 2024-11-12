@@ -70,11 +70,11 @@
 }
 
 .publication-entry {
-  margin-bottom: 2.5em;
-  padding: 1.5em;
-  border-left: 4px solid var(--primary-color);
+  margin-bottom: 1.5em; /* Reduced from 2.5em */
+  padding: 1em; /* Reduced from 1.5em */
+  border-left: 3px solid var(--primary-color); /* Slightly thinner border */
   background: var(--bg-color);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Subtler shadow */
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   transition: transform var(--transition-speed);
 }
@@ -84,33 +84,34 @@
 }
 
 .reference {
-  margin-bottom: 1.2em;
-  line-height: 1.5;
+  margin-bottom: 0.8em; /* Reduced from 1.2em */
+  line-height: 1.4; /* Tighter line height */
   color: var(--text-color);
-  font-size: 1.1em;
+  font-size: 1em; /* Slightly smaller */
 }
 
 .action-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8em;
-  margin: 1.2em 0;
+  gap: 0.5em; /* Reduced from 0.8em */
+  margin: 0.8em 0; /* Reduced from 1.2em */
 }
 
 .pub-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  padding: 0.6em 1.2em;
+  padding: 0.4em 0.8em; /* Reduced from 0.6em 1.2em */
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   background: transparent;
   color: var(--primary-color);
-  font-size: 0.95em;
+  font-size: 0.9em; /* Slightly smaller */
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   transition: all var(--transition-speed);
+  border-width: 1px; /* Thinner border */
 }
 
 .pub-btn:hover {
@@ -127,8 +128,8 @@
 
 .collapsible {
   display: none;
-  margin-top: 1.2em;
-  padding: 1.5em;
+  margin-top: 0.8em; /* Reduced from 1.2em */
+  padding: 1em; /* Reduced from 1.5em */
   background: #f8f9fa;
   border-radius: var(--border-radius);
   opacity: 0;
@@ -144,24 +145,24 @@
 
 .abstract-section h4 {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em; /* Reduced from 1em */
   color: var(--primary-color);
-  font-size: 1.2em;
+  font-size: 1.1em; /* Slightly smaller */
 }
 
 .bibtex-section pre {
   margin: 0;
-  padding: 1.2em;
+  padding: 0.8em; /* Reduced from 1.2em */
   background: white;
   border-radius: calc(var(--border-radius) - 2px);
-  font-size: 0.9em;
+  font-size: 0.85em; /* Slightly smaller */
   overflow-x: auto;
   border: 1px solid #e0e0e0;
 }
 
 @media (max-width: 768px) {
   .publication-entry {
-    padding: 1em;
+    padding: 0.8em;
   }
   
   .action-buttons {
@@ -169,8 +170,8 @@
   }
   
   .pub-btn {
-    padding: 0.5em 1em;
-    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    font-size: 0.85em;
   }
 }
 </style>
