@@ -2,11 +2,6 @@
 excerpt: "Publications"
 permalink: publications/
 classes: wide
-years: [
-  2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 
-  2016, 2015, 2013, 2012, 2011, 2010, 2009, 2008, 
-  2007, 2005, 2004, 2003, 2002
-]
 ---
 
 <style>
@@ -39,5 +34,5 @@ years: [
 
 <h6 class="centeralign2">Published</h6>
 {% for y in page.years %}
-    {% bibliography -f references -q @*[year={{y}}]* %}
+    {% bibliography -f references --order descending %}
 {% endfor %}
