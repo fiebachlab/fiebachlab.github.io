@@ -5,11 +5,6 @@ classes: wide
 ---
 
 <style>
-.centeralign {
-  text-align: center;
-  color:#1F416F;
-  font-weight: bold;
-}
 .centeralign2 {
   color:#1F416F;
   font-weight: bold;
@@ -34,5 +29,5 @@ classes: wide
 
 <h6 class="centeralign2">Published</h6>
 {% for y in page.years %}
-    {% bibliography -f references --order descending %}
+    {% bibliography -f references %}
 {% endfor %}

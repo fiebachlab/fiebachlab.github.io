@@ -124,7 +124,7 @@ scholar:
   repository: /publications
   repository_file_delimiter: "." 
   sort_by: year
-  order: ascending
+  order: descending
   group_by: year
 
   source: ./_bibliography

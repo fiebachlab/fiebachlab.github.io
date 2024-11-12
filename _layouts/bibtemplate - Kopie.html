@@ -1,65 +1,112 @@
 ---
-
 ---
+<div class="publication-entry">
+  {{ reference }}
 
+  <div class="publication-buttons">
+    {% if entry.abstract %}
+      <button onclick="toggleElement('abstract-{{entry.key}}')" class="pub-button abstract-btn">
+        Abstract
+      </button>
+    {% endif %}
 
-<div class="text-justify"><small>{{reference}}</small></div>
-<button class="button0"  onclick="toggleBibtex{{entry.key}}()">Bibtex</button>
-{% if entry.abstract %}
-    <button class="button3" onclick="showText{{entry.key}}()">Abstract</button>
-{% endif %}
+    {% if entry.bibtex %}
+      <button onclick="toggleElement('bibtex-{{entry.key}}')" class="pub-button bibtex-btn">
+        BibTeX
+      </button>
+    {% endif %}
 
+    {% if entry.link %}
+      <a href="{{ entry.link }}" class="pub-button link-btn">
+        Link
+      </a>
+    {% endif %}
 
-{% if entry.doi %}
-    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="doi" /></a>
-{% endif %}
- 
-{% if entry.preprint %}
-    <a href="{{ entry.preprint }}"><input class="button2" type="button" value="preprint" /></a>
-{% endif %}
- 
-{% if entry.link %}
-    <a href="{{ entry.link }}"><input class="button4" type="button" value="link" /></a>
-{% endif %}
- 
-{% if entry.code %}
-    <a href="{{ entry.code }}"><input class="button3" type="button" value="code" /></a>
-{% endif %}
-<div id="a{{entry.key}}" style="display: none;">
-<pre>{{entry.bibtex}}</pre>
-</div>
+    {% if entry.code %}
+      <a href="{{ entry.code }}" class="pub-button code-btn">
+        Code
+      </a>
+    {% endif %}
+  </div>
 
-<div id="b{{entry.key}}" style="display: none;">
-    <div id="boxcolor">
-        <h4><b>Abstract</b></h4>
-        <small>{{entry.abstract}}</small>
+  {% if entry.abstract %}
+    <div id="abstract-{{entry.key}}" class="abstract-box" style="display: none;">
+      <h4>Abstract</h4>
+      <p>{{entry.abstract}}</p>
     </div>
+  {% endif %}
+
+  {% if entry.bibtex %}
+    <div id="bibtex-{{entry.key}}" class="bibtex-box" style="display: none;">
+      <pre>{{entry.bibtex}}</pre>
+    </div>
+  {% endif %}
 </div>
+
+<style>
+.publication-entry {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border-left: 3px solid #1F416F;
+}
+
+.publication-buttons {
+  margin: 0.5em 0;
+}
+
+.pub-button {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  margin-right: 0.5em;
+  border: 1px solid #1F416F;
+  border-radius: 3px;
+  background: transparent;
+  color: #1F416F;
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.pub-button:hover {
+  background: #1F416F;
+  color: white;
+}
+
+.abstract-box, .bibtex-box {
+  margin-top: 1em;
+  padding: 1em;
+  background: #f5f5f5;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.abstract-box h4 {
+  margin-top: 0;
+  color: #1F416F;
+}
+
+.bibtex-box pre {
+  margin: 0;
+  padding: 1em;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+</style>
 
 <script>
-function toggleBibtex{{entry.key}}(parameter) {
-    var x= document.getElementById('a{{entry.key}}');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
+function toggleElement(id) {
+  const element = document.getElementById(id);
+  const isHidden = element.style.display === 'none';
+  
+  element.style.display = isHidden ? 'block' : 'none';
+  element.style.opacity = '0';
+  
+  if (isHidden) {
+    setTimeout(() => {
+      element.style.opacity = '1';
+    }, 10);
+  }
 }
-function showText{{entry.key}}(parameter) {
-    var x= document.getElementById('b{{entry.key}}');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-
 </script>
-<style>
-    #boxcolor {
-      background-color: #f9f9f9 ;
-      border-radius:1%;
-      padding: 10px;
-    } 
-   
-    </style>
