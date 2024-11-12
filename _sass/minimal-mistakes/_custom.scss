@@ -55,5 +55,9 @@ $supplement-color              : #abb500 !default;
 	display:none; 
 	position:relative;
 }
-
+body {
+    line-height: 1.5;
+    font-size: 80%; 
+    background-color: var(--bg-color);
+}
 .katex { font-size: 1em !important; }
