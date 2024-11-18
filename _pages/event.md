@@ -97,12 +97,10 @@ body {
     background-color: #004d70;
     border-color: #004d70;
 }
-.icon-feature {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
 
+.card-body {
+    padding: 1.5rem 1rem; /* Consistent padding */
+}
 .schedule-container {
     max-width: 900px; /* Increased the width for more space */
     margin: 0 auto;
@@ -177,8 +175,19 @@ body {
 }
 
 .speaker-image {
-    height: 2rem;
-    width: auto;
+    margin-top: 1rem; /* Add space above image */
+    width: auto; /* Fixed width */
+    height: 2.5rem; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-feature {
+    margin-top: 1rem; /* Add space above image */
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
 }
 .container {
     padding-left: 60px;  /* Adjust the values as needed */
