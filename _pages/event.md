@@ -22,7 +22,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px; /* Fixed height for all cards */
+    justify-content: center;
 }
 
 .card-body {
@@ -30,7 +30,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem; /* Reduced gap between elements */
+    gap: 0.5rem;
 }
 
 .custom-card:hover {
@@ -182,10 +182,12 @@ body {
 }
 
 .speaker-image {
-    width: 80px; /* Fixed width */
-    height: 80px; /* Fixed height */
-    object-fit: cover;
-    margin: 0.25rem 0; /* Reduced margin */
+    margin-top: 0.5rem; /* Add space above image */
+    width: auto; /* Fixed width */
+    height: 2.5rem; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon-feature {
