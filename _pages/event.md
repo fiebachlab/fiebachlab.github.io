@@ -16,6 +16,9 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;  /* Add white background */
 }
 
 .custom-card:hover {
@@ -56,13 +59,7 @@ body {
     font-size: 80%; 
     background-color: var(--bg-color);
 }
-.custom-card {
-    height: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    background-color: white;  /* Add white background */
-}
+
 
 .custom-card a:visited{
     color:00618F;
@@ -99,7 +96,7 @@ body {
 }
 
 .card-body {
-    padding: 1.5rem 1rem; /* Consistent padding */
+    padding: 1rem 1rem; /* Consistent padding */
 }
 .schedule-container {
     max-width: 900px; /* Increased the width for more space */
