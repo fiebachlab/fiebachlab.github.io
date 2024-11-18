@@ -244,7 +244,7 @@ body {
         <div class="col-md-12">
             <h5 class="section-title">Speakers</h5>
             <div class="row">
-                   {% for speaker in site.data.winter_school_speakers %}
+            {% for speaker in site.data.winter_school_speakers %}
             <div class="col-md-3 mb-3">
                 <div class="custom-card" data-speaker-id="{{ forloop.index }}">
                     <div class="card-body text-center">
@@ -258,7 +258,8 @@ body {
                     </div>
                 </div>
             </div>
-        {% endfor %}
+            {% endfor %}
+            </div>
         </div>
         <!-- Speaker Details Section -->
         {% for speaker in site.data.winter_school_speakers %}
@@ -276,8 +277,6 @@ body {
             </div>
         </div>
         {% endfor %}
-            </div>
-        </div>
     </div>
     <div class="row mb-4">
         <div class="col-md-12">
@@ -332,23 +331,23 @@ body {
                 <section id="schedule">
                     <h5 class="section-title">Schedule</h5>
                     {% for day in site.data.winter_school_schedule %}
-                    <div class="schedule-day">
-                        <div class="schedule-day-header">
-                            <h5>{{ day.date }}</h5>
-                            <span class="expand-icon">▼</span>
-                        </div>
-                        <div class="schedule-day-content">
-                            {% for session in day.sessions %}
-                            <div class="schedule-session">
-                                <p class="schedule-time">{{ session.time }}</p>
-                                <h6>{{ session.title }}</h6>
-                                {% for item in session.items %}
-                                <p>{{ item }}</p>
+                        <div class="schedule-day">
+                            <div class="schedule-day-header">
+                                <h5>{{ day.date }}</h5>
+                                <span class="expand-icon">▼</span>
+                            </div>
+                            <div class="schedule-day-content">
+                                {% for session in day.sessions %}
+                                    <div class="schedule-session">
+                                        <p class="schedule-time">{{ session.time }}</p>
+                                        <h6>{{ session.title }}</h6>
+                                        {% for item in session.items %}
+                                            <p>{{ item }}</p>
+                                        {% endfor %}
+                                    </div>
                                 {% endfor %}
                             </div>
-                        {% endfor %}
                         </div>
-                    </div>
                     {% endfor %}
                 </section>
             </div>
