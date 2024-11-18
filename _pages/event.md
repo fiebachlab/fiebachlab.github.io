@@ -61,6 +61,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border: none;
     transition: transform 0.3s ease-in-out;
+    background-color: white;  /* Add white background */
 }
 
 .custom-card a:visited{
