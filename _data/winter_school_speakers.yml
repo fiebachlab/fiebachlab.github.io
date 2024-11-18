@@ -1,0 +1,83 @@
+- name: Prof. Dr. Erwan David
+  affiliation: Le Mans University, Computer Science Laboratory
+  bio: >
+    Prof. David is a professor of computer science at Le Mans University in France, associated also with cognitive sciences, and interested in particular in gaze movement dynamics and modelling. He does a lot of studies in virtual reality, notably to understand and track gaze and body in complex natural situations. He also works on methods for processing gaze in 3D (XR).
+  title: "Using Eye Tracking, Virtual and Augmented Reality Methods to Study Cognition in Noisy Environment: Theory, Practice & Evaluation"
+  abstract: >
+    This talk will provide a hands-on exploration of using virtual reality (VR) and eye tracking to enhance the study of naturalistic behaviors. As traditional methods often fall short in replicating real-world visual experiences, we will demonstrate how immersive VR environments can simulate complex visual scenarios, allowing researchers to observe and analyze visual behavior in a more ecologically valid context. Participants will engage with eye tracking and data gathering toolboxes that capture gaze patterns and visual attention in real time. By integrating these technologies, we aim to enhance our understanding of cognition in naturalistic settings. Attendees will leave with practical knowledge on implementing VR and eye tracking in their own research, fostering innovative approaches to studying the intricacies of human cognition.
+  picture: assets/images/winterschool/Erwan.png
+
+- name: Prof. Dr. Stefan Debener
+  affiliation: University of Oldenburg, Dept. of Psychology
+  bio: >
+    Prof. Debener’s research interest is to further our understanding of the brain-behaviour relationship. How does the brain respond to sensory deprivation, and how could a better knowledge of compensatory mechanisms help us to improve rehabilitation strategies, for instance in the deaf? How is information of the different senses, such as seeing and hearing, combined to create a coherent percept of the world? To investigate these questions he combines established approaches in experimental psychology with non-invasive recordings of human brain function.
+  title: "Mobile EEG: Noisy brain signals captured in noisy environments"
+  abstract: >
+    I will discuss advances in mobile EEG and explore how mobile EEG systems are transforming research by allowing brain activity to be monitored in real-world settings, far beyond traditional laboratory environments. I will discuss the technical challenges, recent developments and future applications of this technology in fields such as cognitive neuroscience and cognitive state monitoring. I am confident that in the future, mobile EEG will help us to understand how the brain deals with the challenges of everyday life.
+  picture: assets/images/winterschool/Debener.jpg
+
+- name: Prof. Dr. Christian Fiebach
+  affiliation: Goethe University Frankfurt, Dept. of Psychology
+  bio: >
+    Christian Fiebach is a Professor of Neurocognitive Psychology at Goethe University Frankfurt. His research focuses on the brain mechanisms underlying higher cognitive processes. Main topics of his research are word recognition and language processing, cognitive flexibility and stability, and understanding the neurobiological underpinnings of individual differences in cognitive abilities. To this end, he and his lab use non-invasive human brain imaging methods like functional MRI, EEG, and MEG.
+  picture: assets/images/teampic/fiebach.png
+
+- name: Prof. Dr. Chris Kell
+  affiliation: Goethe University Frankfurt, Dept. of Neurology
+  bio: >
+    Prof. Kell is the head of Cognitive Neuroscience at the Department of Neurology and co-director of the Brain Imaging Center at Goethe University in Frankfurt, Germany. He is primarily interested in Functional Neurosurgery and the neural bases of hemispheric specialization. His lab is interested in the mechanisms that drive human behavior, focusing on understanding how complex brain networks are set up and how temporal properties of brain function orchestrate neural computation in these networks. Besides functional and structural MRI, he uses MEG, stereo electroencephalography, electrocorticography, and direct cortical stimulation during awake surgery of brain tumor and epilepsy patients.
+  title: What the brain may control when acting
+  abstract: >
+    As Neuroscientists, we seek to understand the neurobiological groundings of observed behavior, ultimately to satisfy our curiosity and to use this knowledge to inform and improve clinical therapy. One reasonable approach that we classically use is to identify correlates of observed behavior in neural data. In this lecture, I will present such "neural correlates" of speech feedback control, link them with theoretical models and computational solutions and discuss the usefulness and limitations of such an approach. Speech is an ideal example of a behavioral outcome that is subjected to noise both in the environment and also in the speaker's and listener's nervous system. I propose that interpreting speech as a consequence of an agent's pursuit of subjective hierarchically organized perceptual goals in a dynamically coupled noisy agent-environment system may help us gaining deeper insights into the neurobiology of language.
+  picture: assets/images/winterschool/Kell.jpg
+
+- name: Prof. Dr. Aya Meltzer-Asscher
+  affiliation: Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience
+  bio: >
+    Prof. Aya Meltzer-Asscher is a professor at the Linguistics Department and the Sagol School of Neuroscience. She is head of the Sentence Processing Lab at the Linguistics Department and director of the Sagol School of Neuroscience. Prof. Meltzer-Asscher's research focuses on language comprehension in the adult, healthy brain, using online behavioral methods (such as reading times) as well as electrophysiology, to track sentence processing as it occurs in real time. Her research also targets the interaction between domain-general cognitive processes, such as working memory, and language comprehension.
+  title: Noisy-channel processing in real-time language comprehension
+  abstract: >
+    Communication takes place in noisy and dynamic environments. Yet, language comprehension is largely effortless and accurate. In this talk, I will discuss how mechanisms of language comprehension are adapted to operate in the face of noise and variability. I will review the noisy-channel processing framework, according to which comprehenders use Bayesian inferencing to reconstruct intended utterances. I will present findings from Hebrew showing that noisy-channel inferencing is engaged during real-time sentence processing, and not only offline. In addition, I will discuss adaptation of language processing mechanisms to variable settings, focusing on mechanisms of lexical prediction. I will present evidence showing that comprehenders attenuate their predictions when the predictive validity in the experiment is low.
+  picture: assets/images/winterschool/Meltzer-Asscher.jpg
+
+- name: Prof. Dr. Roy Mukamel
+  affiliation: Tel Aviv University, School of Psychological Sciences
+  bio: >
+    Prof. Mukamel is a professor in the School of Psychological Sciences and Sagol School of Neuroscience at Tel-Aviv University. His lab studies motor control and goal directed behavior. Voluntary movements and purposeful behavior require the mapping of actions onto outcomes. Prof. Mukamel studies the neural mechanisms that underlie these mappings and how they are formed in the process of learning. To this end, he uses behavioral data (such as movement kinematics) and neural data using various non-invasive methods (including EEG, fMRI, and MEG) in healthy participants.
+  title: Perception through the lens of voluntary actions
+  abstract: >
+    Perception is a complex interaction between the physical properties of the stimulus, and the internal neural state of the perceiver. Thus perception and the underlying neural processing of the same physical stimulus can vary significantly across different contexts. Emerging evidence suggests that active motor engagement - a hallmark of natural behavior - plays a significant role in modulating internal states and consequently perception. During my talk, I will discuss how voluntary actions and related processes (such as intentions and expectations) interact with sensory regions to shape perception.
+  picture: assets/images/winterschool/Mukamel.jpg
+
+- name: Dr. Marieke Schölvinck
+  affiliation: Ernst Strüngmann Institute for Neuroscience, Frankfurt
+  bio: >
+    Dr. Schölvinck is a group leader at the Ernst Strüngmann Institute for Neuroscience in Frankfurt. In her research, she explores the dynamic neuronal signatures of superimposed neuronal representations in the context of naturalistic behaviour. She does so using a variety of techniques, ranging from fMRI in humans and primates, and in vivo electrophysiology in rodents, cats, and primates, to computational modelling.
+  title: "Catching cognition in the act: how tracking naturalistic cognitive processing over time reduces noise"
+  abstract: >
+    Imagine, for a moment, doing grocery shopping. Even a simple task like this requires a lot of simultaneous actions and thought processes: spatial navigation through the aisles, working memory to remember the shopping list, attention to spot the right food items, and so on. Typically, neuroscience studies these processes separately, and discards any activity unrelated to the process of interest as noise. Moreover, the allegedly same cognitive processes are studied very differently in different species. In my talk, I will show how multiple cognitive processes can be studied simultaneously in a natural way in mice, monkeys, and humans. My approach does not discard any activity as noise and allows for a rare, direct comparison between these three species.
+  picture: assets/images/winterschool/MariekeScholvinck_picture.jpg
+
+- name: Prof. Dr. Tom Schonberg
+  affiliation: Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics
+  bio: >
+    Prof. Schonberg is a professor in the department of Neurobiology and the Sagol School of Neuroscience at Tel Aviv University. The research in his laboratory is focused on the neural basis of behavior change. The lab studies the process of value construction, generalization, how values can be perturbed and how these processes are manifested in the human brain. Research methodologies include structural and functional MRI, eye tracking and computational decision-making models, all used together with the common goal of studying neural plasticity underlying behavior.
+  title: The Minerva Center for human intelligence in immersive, augmented and mixed realities and why use XR in research
+  abstract: >
+    The Minerva Center for human intelligence in immersive, augmented and mixed realities is an international resource located at Tel Aviv University, that allows for Israeli and German research to collaborate on cutting edge research using XR technologies. In my talk I will present the idea behind the center and the unique TAU XR studio that enables researchers from both countries to collaborate in building high end research content. Finally, I will present a few research examples from my own laboratory studying decision-making and spatial navigation, that take advantage of XR technologies and the center's unique advantages.
+  picture: assets/images/winterschool/Schonberg.png
+
+- name: Prof. Dr. Melissa Vo
+  affiliation: Goethe University Frankfurt, Dept. of Psychology
+  bio: >
+    Melissa Vo is a professor for Cognitive Psychology at the Goethe University in Frankfurt and head of the Scene Grammar Lab (SGL). Her lab is interested in a wide variety of aspects in visual cognition, particularly visual attention and visual memory during scene perception. The lab’s core research areas therefore include top-down guidance in scene search, neural representation and development of scene knowledge, as well as action-perception interactions in real-world scenarios.
+  picture: assets/images/winterschool/Melissa_Vo.jpg
+
+- name: Prof. Dr. Shlomit Yuval Greenberg
+  affiliation: Tel Aviv University, School of Psychological Sciences
+  bio: >
+    Prof. Yuval-Greenberg is a professor at Tel Aviv’s School of Psychological Sciences and Sagol School of Neuroscience. In her research, she studies the Cognitive Neuroscience of perception, attention and memory, focusing on their link to eye movement behavior. Research in her lab examines eye movements as a window on cognitive and social processes in healthy adults and also investigates the development of these mechanisms in infants and children. Research methods used by the lab vary and include behavioral methods, EEG and fMRI. Research populations include healthy young and older adults, participants with ADHD and infants ages 3-12 months.
+  title: "Visual Exploration: A Window to a Noisy World"
+  abstract: >
+    Our environment is rich with abundant perceptual input, much of it is visual. The visual exploration process continuously navigates this stream of information, by relying on a dynamic process involving saccades—rapid eye movements—and fixations, allowing brief pauses to process visual data. After each fixation, there is an approximate 200 ms inhibition in saccades, representing the early visual processing phase. This inhibition is followed by a rebound in saccade rate around 300 ms post-offset of the previous saccade, signaling the system's drive to continue exploring. This alternating pattern of inhibition and rebound illustrates the balance between processing incoming data and the urge to explore new visual stimuli. Through the exploration mechanism, our visual system manages to filter and interpret a chaotic stream of information, creating a coherent representation of the surrounding world despite the noisy nature of sensory input. In this talk I will discuss a series of finding on visual exploration starting at infancy and until older age. I will explore how the drive to explore manifests in this visual process and how it is affected by arousal.
+  picture: assets/images/winterschool/Yuval-Greenberg.jpg
