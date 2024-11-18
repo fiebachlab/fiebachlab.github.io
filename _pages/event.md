@@ -323,4 +323,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.btn[data-toggle="collapse"]');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var target = document.querySelector(button.getAttribute('data-target'));
+            if (target.classList.contains('show')) {
+                target.classList.remove('show');
+            } else {
+                target.classList.add('show');
+            }
+        });
+    });
+});
 </script>
