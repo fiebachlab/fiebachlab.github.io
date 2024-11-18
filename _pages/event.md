@@ -138,6 +138,10 @@ body {
   height: auto;
 }
 
+.speaker-image {
+    height: 1.5rem;
+    width: auto;
+}
 .container {
     padding-left: 60px;  /* Adjust the values as needed */
     padding-right: 60px;
@@ -208,7 +212,7 @@ body {
                     <div class="card custom-card">
                         <div class="card-body text-center">
                             {% if speaker.picture %}
-                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle mb-3" alt="{{ speaker.name }}">
+                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image" alt="{{ speaker.name }}">
                             {% else %}
                                 <i class="fas fa-user-circle icon-feature"></i>
                             {% endif %}
