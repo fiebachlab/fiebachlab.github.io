@@ -190,8 +190,6 @@ body {
         padding-right: 120px;
     }
 }
-
-
 </style>
 
 
@@ -371,14 +369,26 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    var cards = document.querySelectorAll('.card[data-toggle="collapse"]');
-    cards.forEach(function(card) {
+    const speakerCards = document.querySelectorAll('.custom-card');
+    
+    speakerCards.forEach(card => {
         card.addEventListener('click', function() {
-            var target = document.querySelector(card.getAttribute('data-target'));
-            if (target.classList.contains('show')) {
-                target.classList.remove('show');
-            } else {
-                target.classList.add('show');
+            const speakerId = this.dataset.speakerId;
+            
+            // Remove active state from all cards
+            speakerCards.forEach(c => c.classList.remove('active'));
+            
+            // Hide all speaker details
+            document.querySelectorAll('.speaker-details').forEach(detail => {
+                detail.classList.remove('show');
+            });
+            
+            // Show selected speaker details
+            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+            if (speakerDetails) {
+                this.classList.add('active');
+                speakerDetails.classList.add('show');
+                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         });
     });
