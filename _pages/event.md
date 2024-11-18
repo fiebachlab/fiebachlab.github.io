@@ -8,6 +8,44 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
+<style>
+.speaker-cards {
+    margin-bottom: 2rem;
+}
+
+.custom-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-card.active {
+    border-color: var(--primary-color);
+}
+
+.speaker-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.speaker-details.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 :root {
     --primary-color: #00618F;
     --secondary-color: #00618F;
@@ -60,7 +98,7 @@ body {
     border-color: #004d70;
 }
 .icon-feature {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--accent-color);
     margin-bottom: 1rem;
 }
@@ -139,7 +177,7 @@ body {
 }
 
 .speaker-image {
-    height: 1.5rem;
+    height: 2rem;
     width: auto;
 }
 .container {
@@ -207,31 +245,38 @@ body {
         <div class="col-md-12">
             <h5 class="section-title">Speakers</h5>
             <div class="row">
-            {% for speaker in site.data.winter_school_speakers %}
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            {% if speaker.picture %}
-                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image" alt="{{ speaker.name }}">
-                            {% else %}
-                                <i class="fas fa-user-circle icon-feature"></i>
-                            {% endif %}
-                            <h6> {{ speaker.name }}</h6>
-                            <p class="text-muted"> {{ speaker.affiliation }}</p>
-                        </div>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="false" aria-controls="collapse{{ forloop.index }}">
-                            More Info
-                        </button>
-                        <div class="collapse" id="collapse{{ forloop.index }}">
-                            <div class="card card-body mt-3">
-                                <p>{{ speaker.bio }}</p>
-                                <h6>{{ speaker.title }}</h6>
-                                <p>{{ speaker.abstract }}</p>
-                            </div>
-                        </div>
+                   {% for speaker in site.data.winter_school_speakers %}
+            <div class="col-md-3 mb-3">
+                <div class="custom-card" data-speaker-id="{{ forloop.index }}">
+                    <div class="card-body text-center">
+                        {% if speaker.picture %}
+                            <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
+                        {% else %}
+                            <i class="fas fa-user-circle icon-feature"></i>
+                        {% endif %}
+                        <h6>{{ speaker.name }}</h6>
+                        <p class="text-muted">{{ speaker.affiliation }}</p>
                     </div>
                 </div>
-            {% endfor %}
+            </div>
+        {% endfor %}
+        </div>
+        <!-- Speaker Details Section -->
+        {% for speaker in site.data.winter_school_speakers %}
+        <div id="speaker-details-{{ forloop.index }}" class="speaker-details">
+            <h4>{{ speaker.name }}</h4>
+            <p class="text-muted">{{ speaker.affiliation }}</p>
+            <div class="mt-4">
+                <p>{{ speaker.bio }}</p>
+                {% if speaker.title %}
+                    <h5 class="mt-4">{{ speaker.title }}</h5>
+                {% endif %}
+                {% if speaker.abstract %}
+                    <p class="mt-3">{{ speaker.abstract }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
             </div>
         </div>
     </div>
@@ -328,10 +373,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    var buttons = document.querySelectorAll('.btn[data-toggle="collapse"]');
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var target = document.querySelector(button.getAttribute('data-target'));
+    var cards = document.querySelectorAll('.card[data-toggle="collapse"]');
+    cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            var target = document.querySelector(card.getAttribute('data-target'));
             if (target.classList.contains('show')) {
                 target.classList.remove('show');
             } else {
