@@ -17,8 +17,20 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid transparent;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
-    background-color: white;  /* Add white background */
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .custom-card:hover {
@@ -95,9 +107,7 @@ body {
     border-color: #004d70;
 }
 
-.card-body {
-    padding: 1rem 1rem; /* Consistent padding */
-}
+
 .schedule-container {
     max-width: 900px; /* Increased the width for more space */
     margin: 0 auto;
@@ -172,7 +182,7 @@ body {
 }
 
 .speaker-image {
-    margin-top: 1rem; /* Add space above image */
+    margin-top: 0.5rem 0; /* Add space above image */
     width: auto; /* Fixed width */
     height: 2.5rem; /* Fixed height */
     object-fit: cover; /* Maintain aspect ratio */
