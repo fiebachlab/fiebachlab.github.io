@@ -208,7 +208,7 @@ body {
                     <div class="card custom-card">
                         <div class="card-body text-center">
                             {% if speaker.image %}
-                                <img src="{{ speaker.image }}" class="img-fluid rounded-circle mb-3" alt="{{ speaker.name }}">
+                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle mb-3" alt="{{ speaker.name }}">
                             {% else %}
                                 <i class="fas fa-user-circle icon-feature"></i>
                             {% endif %}
