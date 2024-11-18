@@ -8,7 +8,6 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
-<style>
 .speaker-cards {
     margin-bottom: 2rem;
 }
