@@ -367,7 +367,16 @@ body {
                                         <p class="schedule-time">{{ session.time }}</p>
                                         <h6>{{ session.title }}</h6>
                                         {% for item in session.items %}
-                                            <p>{{ item }}</p>
+                                            <p>
+                                            {% assign processed_item = item %}
+                                            {% for speaker in site.data.winter_school_speakers %}
+                                                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
+                                                {% if item contains speaker_name %}
+                                                    {% assign processed_item = item | replace: speaker_name, '<a href="#" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
+                                                {% endif %}
+                                            {% endfor %}
+                                            {{ processed_item }}
+                                            </p>
                                         {% endfor %}
                                     </div>
                                 {% endfor %}
@@ -414,6 +423,36 @@ document.addEventListener('DOMContentLoaded', function() {
             const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
             if (speakerDetails) {
                 this.classList.add('active');
+                speakerDetails.classList.add('show');
+                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const speakerLinks = document.querySelectorAll('.speaker-link');
+    
+    speakerLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const speakerId = this.dataset.speakerId;
+            
+            // Remove active state from all cards
+            document.querySelectorAll('.custom-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Hide all speaker details
+            document.querySelectorAll('.speaker-details').forEach(detail => {
+                detail.classList.remove('show');
+            });
+            
+            // Show selected speaker details
+            const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+            
+            if (speakerCard && speakerDetails) {
+                speakerCard.classList.add('active');
                 speakerDetails.classList.add('show');
                 speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
