@@ -362,24 +362,24 @@ body {
                                 <span class="expand-icon">▼</span>
                             </div>
                             <div class="schedule-day-content">
-                                {% for session in day.sessions %}
-                                    <div class="schedule-session">
-                                        <p class="schedule-time">{{ session.time }}</p>
-                                        <h6>{{ session.title }}</h6>
-                                        {% for item in session.items %}
-                                            <p>
-                                            {% assign processed_item = item %}
-                                            {% for speaker in site.data.winter_school_speakers %}
-                                                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
-                                                {% if item contains speaker_name %}
-                                                    {% assign processed_item = item | replace: speaker_name, '<a href="#" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
-                                                {% endif %}
-                                            {% endfor %}
-                                            {{ processed_item }}
-                                            </p>
-                                        {% endfor %}
-                                    </div>
-                                {% endfor %}
+{% for session in day.sessions %}
+    <div class="schedule-session">
+        <p class="schedule-time">{{ session.time }}</p>
+        <h6>{{ session.title }}</h6>
+        {% for item in session.items %}
+            <p>
+            {% assign processed_item = item %}
+            {% for speaker in site.data.winter_school_speakers %}
+                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
+                {% if item contains speaker_name %}
+                    {% assign processed_item = processed_item | replace: speaker_name, '<a href="#" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
+                {% endif %}
+            {% endfor %}
+            {{ processed_item }}
+            </p>
+        {% endfor %}
+    </div>
+{% endfor %}
                             </div>
                         </div>
                     {% endfor %}
