@@ -8,6 +8,15 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
+.speaker-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.speaker-link:hover {
+    text-decoration: underline;
+}
 .speaker-cards {
     margin-bottom: 1rem;
     cursor: pointer;
@@ -366,18 +375,34 @@ body {
     <div class="schedule-session">
         <p class="schedule-time">{{ session.time }}</p>
         <h6>{{ session.title }}</h6>
+        {% for session in day.sessions %}
+    <div class="schedule-session">
+        <p class="schedule-time">{{ session.time }}</p>
+        <h6>{{ session.title }}</h6>
         {% for item in session.items %}
             <p>
             {% assign processed_item = item %}
-            {% for speaker in site.data.winter_school_speakers %}
-                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
-                {% if item contains speaker_name %}
-                    {% assign processed_item = processed_item | replace: speaker_name, '<a href="#" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
-                {% endif %}
+            {% assign words = item | split: ' ' %}
+            {% assign new_words = '' | split: '' %}
+            
+            {% for word in words %}
+                {% assign processed_word = word %}
+                {% for speaker in site.data.winter_school_speakers %}
+                    {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
+                    {% if word contains speaker_name %}
+                        {% capture processed_word %}
+                            <a href="javascript:void(0)" class="speaker-link" data-speaker-id="{{ forloop.index }}">{{ word }}</a>
+                        {% endcapture %}
+                    {% endif %}
+                {% endfor %}
+                {% assign new_words = new_words | push: processed_word %}
             {% endfor %}
-            {{ processed_item }}
+            
+            {{ new_words | join: ' ' }}
             </p>
         {% endfor %}
+    </div>
+{% endfor %}
     </div>
 {% endfor %}
                             </div>
