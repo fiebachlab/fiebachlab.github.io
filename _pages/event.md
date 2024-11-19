@@ -10,6 +10,16 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
 <style>
 .speaker-cards {
     margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .custom-card {
