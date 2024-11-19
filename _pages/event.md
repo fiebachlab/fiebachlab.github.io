@@ -363,52 +363,36 @@ body {
         <div class="col-md-12">
             <div class="card-body">        
                 <section id="schedule">
-                    <h5 class="section-title">Schedule</h5>
-                    {% for day in site.data.winter_school_schedule %}
-                        <div class="schedule-day">
-                            <div class="schedule-day-header">
-                                <h5>{{ day.date }}</h5>
-                                <span class="expand-icon">▼</span>
-                            </div>
-                            <div class="schedule-day-content">
-{% for session in day.sessions %}
-    <div class="schedule-session">
-        <p class="schedule-time">{{ session.time }}</p>
-        <h6>{{ session.title }}</h6>
-        {% for session in day.sessions %}
-    <div class="schedule-session">
-        <p class="schedule-time">{{ session.time }}</p>
-        <h6>{{ session.title }}</h6>
-        {% for item in session.items %}
-            <p>
-            {% assign processed_item = item %}
-            {% assign words = item | split: ' ' %}
-            {% assign new_words = '' | split: '' %}
-            
-            {% for word in words %}
-                {% assign processed_word = word %}
-                {% for speaker in site.data.winter_school_speakers %}
-                    {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
-                    {% if word contains speaker_name %}
-                        {% capture processed_word %}
-                            <a href="javascript:void(0)" class="speaker-link" data-speaker-id="{{ forloop.index }}">{{ word }}</a>
-                        {% endcapture %}
-                    {% endif %}
+    <h5 class="section-title">Schedule</h5>
+    {% for day in site.data.winter_school_schedule %}
+        <div class="schedule-day">
+            <div class="schedule-day-header">
+                <h5>{{ day.date }}</h5>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="schedule-day-content">
+                {% for session in day.sessions %}
+                    <div class="schedule-session">
+                        <p class="schedule-time">{{ session.time }}</p>
+                        <h6>{{ session.title }}</h6>
+                        {% for item in session.items %}
+                            <p>
+                            {% assign processed_item = item %}
+                            {% for speaker in site.data.winter_school_speakers %}
+                                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
+                                {% if item contains speaker_name %}
+                                    {% assign processed_item = processed_item | replace: speaker_name, '<a href="javascript:void(0)" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
+                                {% endif %}
+                            {% endfor %}
+                            {{ processed_item }}
+                            </p>
+                        {% endfor %}
+                    </div>
                 {% endfor %}
-                {% assign new_words = new_words | push: processed_word %}
-            {% endfor %}
-            
-            {{ new_words | join: ' ' }}
-            </p>
-        {% endfor %}
-    </div>
-{% endfor %}
-    </div>
-{% endfor %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </section>
+            </div>
+        </div>
+    {% endfor %}
+</section>
             </div>
         </div>
     </div>
