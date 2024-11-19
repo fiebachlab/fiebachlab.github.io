@@ -9,7 +9,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
 ---
 <style>
 .speaker-cards {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .custom-card {
@@ -29,8 +29,8 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: left;
+    gap: 0.1rem;
 }
 
 .custom-card:hover {
@@ -44,9 +44,9 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
 
 .speaker-details {
     background: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     display: none;
     animation: fadeIn 0.3s ease;
