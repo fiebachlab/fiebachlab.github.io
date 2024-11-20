@@ -401,62 +401,34 @@ body {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const dayHeaders = document.querySelectorAll('.schedule-day-header');
-
-  dayHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      this.classList.toggle('active');
-      const content = this.nextElementSibling;
-      content.classList.toggle('show');
-      const icon = this.querySelector('.expand-icon');
-      icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
-    });
-  });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const speakerCards = document.querySelectorAll('.custom-card');
-    
-    speakerCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const speakerId = this.dataset.speakerId;
-            
-            // Remove active state from all cards
-            speakerCards.forEach(c => c.classList.remove('active'));
-            
-            // Hide all speaker details
-            document.querySelectorAll('.speaker-details').forEach(detail => {
-                detail.classList.remove('show');
-            });
-            
-            // Show selected speaker details
-            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-            if (speakerDetails) {
-                this.classList.add('active');
-                speakerDetails.classList.add('show');
-                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
+    // Schedule day toggle functionality
+    const dayHeaders = document.querySelectorAll('.schedule-day-header');
+    dayHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            content.classList.toggle('show');
+            const icon = this.querySelector('.expand-icon');
+            icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
         });
     });
-});
-document.addEventListener('DOMContentLoaded', function() {
+
+    // Speaker link functionality
     const speakerLinks = document.querySelectorAll('.speaker-link');
-    
     speakerLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            const speakerId = this.dataset.speakerId;
+            const speakerId = this.getAttribute('data-speaker-id');
             
-            // Remove active state from all cards
+            // Reset all cards and details
             document.querySelectorAll('.custom-card').forEach(card => {
                 card.classList.remove('active');
             });
-            
-            // Hide all speaker details
             document.querySelectorAll('.speaker-details').forEach(detail => {
                 detail.classList.remove('show');
             });
             
-            // Show selected speaker details
+            // Activate clicked speaker's card and details
             const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
             const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
             
