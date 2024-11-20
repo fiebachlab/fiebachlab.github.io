@@ -274,44 +274,45 @@ body {
             </p>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="section-title">Speakers</h5>
-            <div class="row">
+    <!-- Speakers Section -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h5 class="section-title">Speakers</h5>
+        <div class="row speaker-cards">
             {% for speaker in site.data.winter_school_speakers %}
-            <div class="col-md-3 mb-3">
-                <div class="custom-card" data-speaker-id="{{ forloop.index }}">
-                    <div class="card-body text-center">
-                        {% if speaker.picture %}
-                            <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
-                        {% else %}
-                            <i class="fas fa-user-circle icon-feature"></i>
-                        {% endif %}
-                        <h6>{{ speaker.name }}</h6>
-                        <p class="text-muted">{{ speaker.affiliation }}</p>
+                <div class="col-md-3 mb-3">
+                    <div class="custom-card" data-speaker-id="{{ speaker.id }}">
+                        <div class="card-body text-center">
+                            {% if speaker.picture %}
+                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
+                            {% else %}
+                                <i class="fas fa-user-circle icon-feature"></i>
+                            {% endif %}
+                            <h6>{{ speaker.name }}</h6>
+                            <p class="text-muted">{{ speaker.affiliation }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             {% endfor %}
-            </div>
         </div>
         <!-- Speaker Details Section -->
         {% for speaker in site.data.winter_school_speakers %}
-        <div id="speaker-details-{{ forloop.index }}" class="speaker-details">
-            <h4>{{ speaker.name }}</h4>
-            <p class="text-muted">{{ speaker.affiliation }}</p>
-            <div class="mt-4">
-                <p>{{ speaker.bio }}</p>
-                {% if speaker.title %}
-                    <h5 class="mt-4">{{ speaker.title }}</h5>
-                {% endif %}
-                {% if speaker.abstract %}
-                    <p class="mt-3">{{ speaker.abstract }}</p>
-                {% endif %}
+            <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
+                <h4>{{ speaker.name }}</h4>
+                <p class="text-muted">{{ speaker.affiliation }}</p>
+                <div class="mt-4">
+                    <p>{{ speaker.bio }}</p>
+                    {% if speaker.title %}
+                        <h5 class="mt-4">{{ speaker.title }}</h5>
+                    {% endif %}
+                    {% if speaker.abstract %}
+                        <p class="mt-3">{{ speaker.abstract }}</p>
+                    {% endif %}
+                </div>
             </div>
-        </div>
         {% endfor %}
     </div>
+</div>
     <div class="row mb-4">
         <div class="col-md-12">
             <h5 class="section-title">Sponsors</h5>        
@@ -359,113 +360,109 @@ body {
             </div>
         </div>
     </div>
-  <div class="row mb-4">
+    <div class="row mb-4">
         <div class="col-md-12">
-            <div class="card-body">        
-                <section id="schedule">
-    <h5 class="section-title">Schedule</h5>
-    {% for day in site.data.winter_school_schedule %}
-        <div class="schedule-day">
-            <div class="schedule-day-header">
-                <h5>{{ day.date }}</h5>
-                <span class="expand-icon">▼</span>
-            </div>
-            <div class="schedule-day-content">
-                {% for session in day.sessions %}
-                    <div class="schedule-session">
-                        <p class="schedule-time">{{ session.time }}</p>
-                        <h6>{{ session.title }}</h6>
-                        {% for item in session.items %}
-                            <p>
-                            {% assign processed_item = item %}
-                            {% for speaker in site.data.winter_school_speakers %}
-                                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
-                                {% if item contains speaker_name %}
-                                    {% assign processed_item = processed_item | replace: speaker_name, '<a href="javascript:void(0)" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
-                                {% endif %}
+            <section id="schedule">
+                <h5 class="section-title">Schedule</h5>
+                {% for day in site.data.winter_school_schedule %}
+                    <div class="schedule-day">
+                        <div class="schedule-day-header">
+                            <h5>{{ day.date }}</h5>
+                            <span class="expand-icon">▼</span>
+                        </div>
+                        <div class="schedule-day-content" style="display: none;">
+                            {% for session in day.sessions %}
+                                <div class="schedule-session">
+                                    <p class="schedule-time">{{ session.time }}</p>
+                                    <h6>{{ session.title }}</h6>
+                                    {% for item in session.items %}
+                                        <p>
+                                        {% assign processed_item = item %}
+                                        {% for speaker in site.data.winter_school_speakers %}
+                                            {% assign speaker_full_name = speaker.name %}
+                                            {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
+                                            {% if item contains speaker_full_name %}
+                                                {% capture speaker_link %}
+                                                    <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_full_name }}</a>
+                                                {% endcapture %}
+                                                {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link %}
+                                            {% elsif item contains speaker_short_name %}
+                                                {% capture speaker_link %}
+                                                    <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_short_name }}</a>
+                                                {% endcapture %}
+                                                {% assign processed_item = processed_item | replace: speaker_short_name, speaker_link %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ processed_item }}
+                                        </p>
+                                    {% endfor %}
+                                </div>
                             {% endfor %}
-                            {{ processed_item }}
-                            </p>
-                        {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
-</section>
-            </div>
+            </section>
         </div>
     </div>
 </div>    
 <br>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const dayHeaders = document.querySelectorAll('.schedule-day-header');
-
-  dayHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      this.classList.toggle('active');
-      const content = this.nextElementSibling;
-      content.classList.toggle('show');
-      const icon = this.querySelector('.expand-icon');
-      icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
+    // Toggle schedule day content
+    const dayHeaders = document.querySelectorAll('.schedule-day-header');
+    dayHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content) {
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+                const icon = this.querySelector('.expand-icon');
+                if (icon) {
+                    icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
+                }
+            }
+        });
     });
-  });
-});
-document.addEventListener('DOMContentLoaded', function() {
+    // Event delegation for speaker links in schedule
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('speaker-link')) {
+            e.preventDefault();
+            const speakerId = e.target.getAttribute('data-speaker-id');
+            if (speakerId) {
+                showSpeakerDetails(speakerId);
+            }
+        }
+    });
+    // Click event listeners for speaker cards
     const speakerCards = document.querySelectorAll('.custom-card');
-    
     speakerCards.forEach(card => {
         card.addEventListener('click', function() {
-            const speakerId = this.dataset.speakerId;
-            
-            // Remove active state from all cards
-            speakerCards.forEach(c => c.classList.remove('active'));
-            
-            // Hide all speaker details
-            document.querySelectorAll('.speaker-details').forEach(detail => {
-                detail.classList.remove('show');
-            });
-            
-            // Show selected speaker details
-            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-            if (speakerDetails) {
-                this.classList.add('active');
-                speakerDetails.classList.add('show');
-                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            const speakerId = this.getAttribute('data-speaker-id');
+            if (speakerId) {
+                showSpeakerDetails(speakerId);
             }
         });
     });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const speakerLinks = document.querySelectorAll('.speaker-link');
-    
-    speakerLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const speakerId = this.dataset.speakerId;
-            
-            // Remove active state from all cards
-            document.querySelectorAll('.custom-card').forEach(card => {
-                card.classList.remove('active');
-            });
-            
-            // Hide all speaker details
-            document.querySelectorAll('.speaker-details').forEach(detail => {
-                detail.classList.remove('show');
-            });
-            
-            // Show selected speaker details
-            const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
-            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-            
-            if (speakerCard && speakerDetails) {
-                speakerCard.classList.add('active');
-                speakerDetails.classList.add('show');
-                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
+    function showSpeakerDetails(speakerId) {
+        // Remove active class from all cards
+        document.querySelectorAll('.custom-card').forEach(card => {
+            card.classList.remove('active');
         });
-    });
+        // Hide all speaker details
+        document.querySelectorAll('.speaker-details').forEach(detail => {
+            detail.classList.remove('show');
+        });
+        // Show selected speaker details
+        const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+        const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+        if (speakerCard && speakerDetails) {
+            speakerCard.classList.add('active');
+            speakerDetails.classList.add('show');
+            speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 });
-</script>
