@@ -406,6 +406,7 @@ body {
     </div>
 </div>    
 <br>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Toggle schedule day content
@@ -466,3 +467,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+</script>
