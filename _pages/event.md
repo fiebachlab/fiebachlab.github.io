@@ -25,6 +25,10 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: white;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .custom-card {
@@ -34,13 +38,17 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: white;
     padding: 1rem;
-    height: 100%; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-body {
     width: 100%;
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    align-items: left;
     gap: 0.1rem;
 }
 
@@ -266,7 +274,7 @@ body {
             </p>
         </div>
     </div>
-    <!-- Speakers Section -->
+<!-- Speakers Section -->
 <div class="row mb-4">
     <div class="col-md-12">
         <h5 class="section-title">Speakers</h5>
@@ -287,31 +295,31 @@ body {
                 </div>
             {% endfor %}
         </div>
+        <!-- Speaker Details Section -->
+        {% for speaker in site.data.winter_school_speakers %}
+            <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
+                <h4>{{ speaker.name }}</h4>
+                <p class="text-muted">{{ speaker.affiliation }}</p>
+                <div class="mt-4">
+                    <p>{{ speaker.bio }}</p>
+                    {% if speaker.title %}
+                        <h5 class="mt-4">{{ speaker.title }}</h5>
+                    {% endif %}
+                    {% if speaker.abstract %}
+                        <p class="mt-3">{{ speaker.abstract }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
-<!-- Speaker Details Section -->
-{% for speaker in site.data.winter_school_speakers %}
-    <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
-        <h4>{{ speaker.name }}</h4>
-        <p class="text-muted">{{ speaker.affiliation }}</p>
-        <div class="mt-4">
-            <p>{{ speaker.bio }}</p>
-            {% if speaker.title %}
-                <h5 class="mt-4">{{ speaker.title }}</h5>
-            {% endif %}
-            {% if speaker.abstract %}
-                <p class="mt-3">{{ speaker.abstract }}</p>
-            {% endif %}
-        </div>
-    </div>
-{% endfor %}
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="section-title">Sponsors</h5>        
-            <div class="image-container">
-                <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
-                <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
-                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h5 class="section-title">Sponsors</h5>        
+                <div class="image-container">
+                    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+                    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+                    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
             </div>
         </div>
     </div>    
