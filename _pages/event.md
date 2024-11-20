@@ -371,25 +371,29 @@ body {
                 <span class="expand-icon">▼</span>
             </div>
             <div class="schedule-day-content">
-                {% for session in day.sessions %}
-                    <div class="schedule-session">
-                        <p class="schedule-time">{{ session.time }}</p>
-                        <h6>{{ session.title }}</h6>
-                        {% for item in session.items %}
-                            <p>
-                            {% assign processed_item = item %}
-                            {% for speaker in site.data.winter_school_speakers %}
-                                {% assign speaker_name = speaker.name | remove: "Prof. Dr. " %}
-                                {% if item contains speaker_name %}
-                                    {% assign processed_item = processed_item | replace: speaker_name, '<a href="javascript:void(0)" class="speaker-link" data-speaker-id="' | append: forloop.index | append: '">' | append: speaker_name | append: '</a>' %}
-                                {% endif %}
-                            {% endfor %}
-                            {{ processed_item }}
-                            </p>
-                        {% endfor %}
-                    </div>
+    {% for session in day.sessions %}
+        <div class="schedule-session">
+            <p class="schedule-time">{{ session.time }}</p>
+            <h6>{{ session.title }}</h6>
+            {% for item in session.items %}
+                <p>
+                {% assign processed_item = item %}
+                {% for speaker in site.data.winter_school_speakers %}
+                    {% assign speaker_full_name = speaker.name %}
+                    {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
+                    {% if item contains speaker_full_name or item contains speaker_short_name %}
+                        {% capture speaker_link %}
+                            <a class="speaker-link" onclick="showSpeakerDetails('{{ forloop.index }}')" href="#">{{ speaker_short_name }}</a>
+                        {% endcapture %}
+                        {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link | replace: speaker_short_name, speaker_link %}
+                    {% endif %}
                 {% endfor %}
-            </div>
+                {{ processed_item }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
         </div>
     {% endfor %}
 </section>
@@ -398,46 +402,84 @@ body {
     </div>
 </div>    
 <br>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Schedule day toggle functionality
+    // Schedule day toggles
     const dayHeaders = document.querySelectorAll('.schedule-day-header');
     dayHeaders.forEach(header => {
-        header.addEventListener('click', function() {
+        header.addEventListener('click', function(e) {
+            e.preventDefault();
             this.classList.toggle('active');
             const content = this.nextElementSibling;
-            content.classList.toggle('show');
-            const icon = this.querySelector('.expand-icon');
-            icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
-        });
-    });
-
-    // Speaker link functionality
-    const speakerLinks = document.querySelectorAll('.speaker-link');
-    speakerLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const speakerId = this.getAttribute('data-speaker-id');
-            
-            // Reset all cards and details
-            document.querySelectorAll('.custom-card').forEach(card => {
-                card.classList.remove('active');
-            });
-            document.querySelectorAll('.speaker-details').forEach(detail => {
-                detail.classList.remove('show');
-            });
-            
-            // Activate clicked speaker's card and details
-            const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
-            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-            
-            if (speakerCard && speakerDetails) {
-                speakerCard.classList.add('active');
-                speakerDetails.classList.add('show');
-                speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (content) {
+                content.classList.toggle('show');
+                const icon = this.querySelector('.expand-icon');
+                if (icon) {
+                    icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
+                }
             }
         });
     });
+
+    // Speaker cards click handling
+    document.querySelectorAll('.custom-card').forEach((card, index) => {
+        card.setAttribute('data-speaker-id', index + 1);
+        card.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSpeakerDetails(index + 1);
+        });
+    });
+
+    // Speaker links in schedule
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('speaker-link')) {
+            e.preventDefault();
+            const speakerId = e.target.dataset.speakerId;
+            if (speakerId) {
+                showSpeakerDetails(speakerId);
+            }
+        }
+    });
 });
+
+function showSpeakerDetails(speakerId) {
+    try {
+        // Reset previous states
+        document.querySelectorAll('.custom-card').forEach(card => {
+            card.classList.remove('active');
+        });
+        document.querySelectorAll('.speaker-details').forEach(detail => {
+            detail.classList.remove('show');
+        });
+        
+        // Activate selected speaker
+        const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+        const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+        
+        if (!speakerCard || !speakerDetails) {
+            console.error('Speaker card or details not found');
+            return;
+        }
+
+        speakerCard.classList.add('active');
+        speakerDetails.classList.add('show');
+
+        // Scroll to speaker section with offset for fixed headers
+        const speakerSection = document.querySelector('.speakers-section');
+        if (speakerSection) {
+            const headerOffset = 100; // Adjust based on your header height
+            const elementPosition = speakerSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    } catch (error) {
+        console.error('Error showing speaker details:', error);
+        // Optional: Show user-friendly error message
+        alert('Sorry, there was an error displaying the speaker details.');
+    }
+}
 </script>
