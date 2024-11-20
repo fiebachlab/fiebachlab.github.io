@@ -17,18 +17,12 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
 .speaker-link:hover {
     text-decoration: underline;
 }
+
 .speaker-cards {
     margin-bottom: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid transparent;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: white;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .custom-card {
@@ -41,31 +35,19 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.card-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 0.1rem;
-}
-
-.custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 220px; /* Ensure consistent height */
 }
 
 .custom-card.active {
     border-color: var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .speaker-details {
     background: white;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 10px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     display: none;
     animation: fadeIn 0.3s ease;
@@ -79,208 +61,32 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-:root {
-    --primary-color: #00618F;
-    --secondary-color: #00618F;
-    --accent-color: #00618F;
-    --bg-color: #f4f4f4;
-}
-body {
-    line-height: 1.5;
-    font-size: 80%; 
-    background-color: var(--bg-color);
-}
 
-
-.custom-card a:visited{
-    color:00618F;
-}
-
-.custom-card:hover {
-    transform: translateY(-5px);
-}
-.custom-table th {
-    background-color: var(--primary-color);
-    color: white;
-}
-.custom-table tr:nth-child(even) {
-    background-color: var(--secondary-color);
-}
-.section-title {
-    border-left: 5px solid var(--accent-color);
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-.list-group-item {
-    transition: background-color 0.3s ease;
-}
-.list-group-item:hover {
-    background-color: var(--secondary-color);
-}
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-.btn-primary:hover {
-    background-color: #004d70;
-    border-color: #004d70;
-}
-
-
-.schedule-container {
-    max-width: 900px; /* Increased the width for more space */
-    margin: 0 auto;
-    padding-left: 20px;  /* Added padding for extra space on the left */
-    padding-right: 20px; /* Added padding for extra space on the right */
-}
-
-.schedule-day {
-    margin-bottom: 20px;
-}
-
-.schedule-day-header {
-    background-color: #00618F;
-    color: white;
-    padding: 15px;
+.speaker-link {
+    color: var(--primary-color);
+    text-decoration: none;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
 }
 
-.schedule-day-header:hover {
-    background-color: #3280a5;
-}
-
-.schedule-day-content {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px; /* Added extra padding for a more spacious look */
-    display: none;
-}
-
-.schedule-day-content.show {
-    display: block;
-}
-
-.schedule-session {
-    margin-bottom: 15px;
-    padding: 20px; /* Increased padding for a more open look */
-    border: 1px solid #ddd;
-    border-radius: 10px; /* Increased radius for smoother borders */
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.schedule-time {
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.schedule-session h5 {
-    margin: 10px 0;
-    color: #333;
-}
-
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%; /* Replaces fixed margins for better responsiveness */
-  max-width: 100%;
-  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+.speaker-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .image-container img {
-  width: 250px; /* You can adjust the size as needed */
-  height: auto;
-}
-
-.speaker-image {
-    margin-top: 0.5rem; /* Add space above image */
-    width: auto; /* Fixed width */
-    height: 2.5rem; /* Fixed height */
-    object-fit: cover; /* Maintain aspect ratio */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icon-feature {
-    margin-top: 1rem; /* Add space above image */
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-.container {
-    padding-left: 60px;  /* Adjust the values as needed */
-    padding-right: 60px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding-left: 120px;  /* For larger screens, increase the padding */
-        padding-right: 120px;
-    }
+    width: 250px;
+    height: auto;
 }
 </style>
 
-
-<div class="container">
-    <div class="row mb-4">
-        <div class="col-md-6 mb-4">
-            <div class="card custom-card">
-                <div class="card-body">
-                    <h5 class="card-title section-title">Event Details</h5>
-                    <p><strong>Organizers:</strong></p>
-                    <ul>
-                        <li>Prof. Dr. Christian Fiebach (Goethe University Frankfurt)</li>
-                        <li>Prof. Dr. Tom Schönberg (Tel Aviv University)</li>
-                    </ul>
-                    <p>Funded by the German Israeli Foundation (GIF) and the German U15 Network as well as the Minerva Center for the Study of Human Intelligence in Immersive, Augmented and Mixed Realities and the Lowy International School at TAU, Goethe University Frankfurt (GU) and Tel Aviv University אוניברסיטת תל־אביב (TAU)  are hosting a joint Winterschool and invite applications from interested PhD students and PostDocs from psychology, neuroscience, computer science, AI, and related fields.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card custom-card">
-                <div class="card-body">
-                    <h5 class="card-title section-title">Overview</h5>
-                    <p>The Winter School offers a platform for early career scientists from Israel and Germany to explore across disciplines:</p>
-                    <ul>
-                        <li>How the human mind and brain achieve precise perception, cognition, and action in noisy environments.</li>
-                        <li>How the brain handles dynamic and highly variable environments.</li>
-                        <li>How behavior and neural activity can be measured in naturalistic environments.</li>
-                    </ul>
-                    <p>For more information, see the <a href="#schedule">Schedule </a> below.</p>
-                </div>
-            </div>
-        </div>
-        <div class="image-container">
-            <a href="https://www.uni-frankfurt.de/de?locale=de"><img src="/assets/images/winterschool/Logo-Goethe-University.png" alt="GU Logo" ></a>
-            <a href="https://english.tau.ac.il/"><img src="/assets/images/winterschool/Tel_Aviv_university_logo.png" alt="TAU Logo"></a>
-        </div>    
-    </div>
-    <br>
-    <div class="card custom-card mb-4">
-        <div class="card-body">
-            <h5 class="section-title">Workshop Description</h5>
-            <p>Research into the psychological and brain mechanisms underlying perception, cognition and action has made enormous progress over the last decades. However, cognitive and neuroscience research is still to a great part confined to laboratory settings, in which multitasking demands are mostly absent and stimuli are presented under artificial and highly controlled conditions. This is not a realistic model of our everyday lives. Rather, perception, cognition, and action take place in noisy environments, where sensory signals are more frequently compromised, a multitude of information must be considered simultaneously, and relevant information varies over time.
-            <br>
-            This raises the question of exactly how it is that processes like object recognition, decision making, language processing, memory, and controlled action are able to function at such high precision in environments that have more realistic levels of noise.<br>
-            In this interdisciplinary workshop, participants will be exposed to the challenges of studying the brain and mind in naturalistic, noisy environments, from the perspectives of neuroscience, cognitive psychology, and computational modeling. The workshop will encourage and foster in-depth discussions by supplementing impulse talks from leading scientists with ample time for interactions among participants.
-            </p>
-        </div>
-    </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="section-title">Speakers</h5>
-            <div class="row">
-            {% for speaker in site.data.winter_school_speakers %}
+<!-- Speaker Cards Section -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h5 class="section-title">Speakers</h5>
+        <div class="row speaker-cards">
+        {% for speaker in site.data.winter_school_speakers %}
             <div class="col-md-3 mb-3">
-                <div class="custom-card" data-speaker-id="{{ forloop.index }}">
+                <div class="custom-card" data-speaker-id="{{ speaker.id }}">
                     <div class="card-body text-center">
                         {% if speaker.picture %}
                             <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
@@ -292,117 +98,86 @@ body {
                     </div>
                 </div>
             </div>
-            {% endfor %}
-            </div>
+        {% endfor %}
         </div>
+
         <!-- Speaker Details Section -->
         {% for speaker in site.data.winter_school_speakers %}
-    <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
-        <h4>{{ speaker.name }}</h4>
-        <p class="text-muted">{{ speaker.affiliation }}</p>
-        <div class="mt-4">
-            <p>{{ speaker.bio }}</p>
-            {% if speaker.title %}
-                <h5 class="mt-4">{{ speaker.title }}</h5>
-            {% endif %}
-            {% if speaker.abstract %}
-                <p class="mt-3">{{ speaker.abstract }}</p>
-            {% endif %}
-        </div>
-    </div>
-{% endfor %}
-    </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="section-title">Sponsors</h5>        
-            <div class="image-container">
-                <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
-                <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
-                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
-            </div>
-        </div>
-    </div>    
-    <div class="card custom-card mb-4">
-        <div class="col-md-12">
-            <div class="card-body">
-                <h5 class="section-title">Application and Enrollment</h5>
-                <p>We invite graduate students and postdoctoral researchers from psychology, neuroscience, computer science, AI and related fields from universities and research institutions in Israel and Germany to apply for the <b>Winterschool Adaptive Cognition in Noisy Environments</b>. </p>
-                <p>
-                The enrollment is competitive and open for all Ph.D. and postdoctoral researchers from psychology, neuroscience, computer science AI and related fields. The selection will be made by a committee of researchers from GU and TAU.
-                </p>
-                <p>
-                Deadline for application is October 28, 2024. Feedback about acceptance will be given by November 5th. Application may remain open beyond that date, until all places are filled.
-                </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5><i class="fas fa-check-circle text-success"></i> What's Included</h5>
-                        <ul>
-                            <li>Free participation</li>
-                            <li>Travel expenses and accommodation (3 nights: Dec. 2 - Dec. 5) for participants from Israel as well as from German participants outside of the Frankfurt area will be covered.</li>
-                            <li>Evening social activities</li>
-                            <li>Participants are expected to attend all lectures. Please plan to arrive on the evening of the previous day (December 2nd). </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h5><i class="fas fa-info-circle text-primary"></i> How to Apply</h5>
-                        <p>Send the following information in one pdf to <strong>GUTAU.winter2024@gmail.com</strong>:</p>
-                        <ul>
-                            <li>Academic CV including average of grades in former and current degree.</li>
-                            <li>List of publications</li>
-                            <li>1 page motivation statement that clearly outlines your scientific background, your motivation for participating as well as the relationship of the topics of the winter school to your own research.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="alert alert-warning mt-3" role="alert">
-                    <i class="fas fa-calendar-alt"></i> Application Deadline: <strong>October 28, 2024</strong>
+            <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
+                <h4>{{ speaker.name }}</h4>
+                <p class="text-muted">{{ speaker.affiliation }}</p>
+                <div class="mt-4">
+                    <p>{{ speaker.bio }}</p>
+                    {% if speaker.title %}
+                        <h5 class="mt-4">{{ speaker.title }}</h5>
+                    {% endif %}
+                    {% if speaker.abstract %}
+                        <p class="mt-3">{{ speaker.abstract }}</p>
+                    {% endif %}
                 </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
-  <div class="row mb-4">
-        <div class="col-md-12">
-            <div class="card-body">        
-                <section id="schedule">
-                    <h5 class="section-title">Schedule</h5>
-                    {% for day in site.data.winter_school_schedule %}
-                        <div class="schedule-day">
-                            <div class="schedule-day-header">
-                                <h5>{{ day.date }}</h5>
-                                <span class="expand-icon">▼</span>
-                            </div>
-                            <div class="schedule-day-content">
-                                {% for session in day.sessions %}
-                                    <div class="schedule-session">
-                                        <p class="schedule-time">{{ session.time }}</p>
-                                        <h6>{{ session.title }}</h6>
-                                        {% for item in session.items %}
-                                            <p>
-                                            {% assign processed_item = item %}
-                                            {% for speaker in site.data.winter_school_speakers %}
-                                                {% assign speaker_full_name = speaker.name %}
-                                                {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
-                                                {% if item contains speaker_full_name or item contains speaker_short_name %}
-                                                    {% capture speaker_link %}
-                                                        <a class="speaker-link" data-speaker-id="{{ speaker.id }}" href="#">{{ speaker_short_name }}</a>
-                                                    {% endcapture %}
-                                                    {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link | replace: speaker_short_name, speaker_link %}
-                                                {% endif %}
-                                            {% endfor %}
-                                            {{ processed_item }}
-                                            </p>
-                                        {% endfor %}
-                                    </div>
-                                {% endfor %}
-                            </div>
+</div>
+
+<!-- Schedule Section -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card-body">        
+            <section id="schedule">
+                <h5 class="section-title">Schedule</h5>
+                {% for day in site.data.winter_school_schedule %}
+                    <div class="schedule-day">
+                        <div class="schedule-day-header">
+                            <h5>{{ day.date }}</h5>
+                            <span class="expand-icon">▼</span>
                         </div>
-                    {% endfor %}
-                </section>
-            </div>
+                        <div class="schedule-day-content">
+                            {% for session in day.sessions %}
+                                <div class="schedule-session">
+                                    <p class="schedule-time">{{ session.time }}</p>
+                                    <h6>{{ session.title }}</h6>
+                                    {% for item in session.items %}
+                                        <p>
+                                        {% assign processed_item = item %}
+                                        {% for speaker in site.data.winter_school_speakers %}
+                                            {% assign speaker_full_name = speaker.name %}
+                                            {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
+                                            {% if item contains speaker_full_name or item contains speaker_short_name %}
+                                                {% capture speaker_link %}
+                                                    <a class="speaker-link" data-speaker-id="{{ speaker.id }}" href="#">{{ speaker_short_name }}</a>
+                                                {% endcapture %}
+                                                {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link | replace: speaker_short_name, speaker_link %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ processed_item }}
+                                        </p>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Sponsors Section -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h5 class="section-title">Sponsors</h5>        
+        <div class="image-container">
+            <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+            <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+            <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
         </div>
     </div>
 </div>    
+
 <br>
 
+<!-- JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Schedule day toggle functionality
@@ -430,6 +205,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 showSpeakerDetails(speakerId);
             }
         }
+    });
+
+    // Add click event listeners to speaker cards
+    const speakerCards = document.querySelectorAll('.custom-card');
+    speakerCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const speakerId = this.dataset.speakerId;
+            if (speakerId) {
+                showSpeakerDetails(speakerId);
+            }
+        });
     });
 });
 
