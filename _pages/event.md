@@ -8,31 +8,19 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
-.speaker-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
+/* Base Styles */
+body {
+    line-height: 1.5;
+    font-size: 80%;
+    background-color: var(--bg-color);
 }
 
-.speaker-link:hover {
-    text-decoration: underline;
+.container {
+    padding-left: 60px;
+    padding-right: 60px;
 }
-.speaker-cards {
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: white;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.speaker-details.active {
-    display: block;
-}
+
+/* Card Styles */
 .custom-card {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -40,10 +28,15 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: white;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-card.active {
+    border-color: var(--primary-color);
 }
 
 .card-body {
@@ -54,13 +47,15 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     gap: 0.1rem;
 }
 
-.custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+/* Speaker Styles */
+.speaker-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.custom-card.active {
-    border-color: var(--primary-color);
+.speaker-link:hover {
+    text-decoration: underline;
 }
 
 .speaker-details {
@@ -77,64 +72,18 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     display: block;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-:root {
-    --primary-color: #00618F;
-    --secondary-color: #00618F;
-    --accent-color: #00618F;
-    --bg-color: #f4f4f4;
-}
-body {
-    line-height: 1.5;
-    font-size: 80%; 
-    background-color: var(--bg-color);
+.speaker-image {
+    margin: 0.5rem auto;
+    width: auto;
+    height: 2.5rem;
+    object-fit: cover;
 }
 
-
-.custom-card a:visited{
-    color:00618F;
-}
-
-.custom-card:hover {
-    transform: translateY(-5px);
-}
-.custom-table th {
-    background-color: var(--primary-color);
-    color: white;
-}
-.custom-table tr:nth-child(even) {
-    background-color: var(--secondary-color);
-}
-.section-title {
-    border-left: 5px solid var(--accent-color);
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-.list-group-item {
-    transition: background-color 0.3s ease;
-}
-.list-group-item:hover {
-    background-color: var(--secondary-color);
-}
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-.btn-primary:hover {
-    background-color: #004d70;
-    border-color: #004d70;
-}
-
-
+/* Schedule Styles */
 .schedule-container {
-    max-width: 900px; /* Increased the width for more space */
+    max-width: 900px;
     margin: 0 auto;
-    padding-left: 20px;  /* Added padding for extra space on the left */
-    padding-right: 20px; /* Added padding for extra space on the right */
+    padding: 0 20px;
 }
 
 .schedule-day {
@@ -142,7 +91,7 @@ body {
 }
 
 .schedule-day-header {
-    background-color: #00618F;
+    background-color: var(--primary-color);
     color: white;
     padding: 15px;
     cursor: pointer;
@@ -161,7 +110,7 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px; /* Added extra padding for a more spacious look */
+    padding: 20px;
     display: none;
 }
 
@@ -171,9 +120,9 @@ body {
 
 .schedule-session {
     margin-bottom: 15px;
-    padding: 20px; /* Increased padding for a more open look */
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 10px; /* Increased radius for smoother borders */
+    border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -184,48 +133,37 @@ body {
     margin-bottom: 10px;
 }
 
-.schedule-session h5 {
-    margin: 10px 0;
-    color: #333;
+/* Utility Classes */
+.section-title {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 .image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%; /* Replaces fixed margins for better responsiveness */
-  max-width: 100%;
-  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .image-container img {
-  width: 250px; /* You can adjust the size as needed */
-  height: auto;
+    width: 250px;
+    height: auto;
 }
 
-.speaker-image {
-    margin-top: 0.5rem; /* Add space above image */
-    width: auto; /* Fixed width */
-    height: 2.5rem; /* Fixed height */
-    object-fit: cover; /* Maintain aspect ratio */
-    margin-left: auto;
-    margin-right: auto;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.icon-feature {
-    margin-top: 1rem; /* Add space above image */
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-.container {
-    padding-left: 60px;  /* Adjust the values as needed */
-    padding-right: 60px;
-}
-
+/* Media Queries */
 @media (min-width: 768px) {
     .container {
-        padding-left: 120px;  /* For larger screens, increase the padding */
+        padding-left: 120px;
         padding-right: 120px;
     }
 }
@@ -278,47 +216,46 @@ body {
         </div>
     </div>
     <!-- Speakers Grid Section -->
-<div class="row mb-4">
-    <div class="col-md-12">
-        <h5 class="section-title">Speakers</h5>
-        <div class="row">
-            {% for speaker in site.data.winter_school_speakers %}
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h5 class="section-title">Speakers</h5>
+            <div class="row">
+                {% for speaker in site.data.winter_school_speakers %}
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="custom-card" data-speaker-id="{{ speaker.id }}">
                         <div class="card-body text-center">
                             {% if speaker.picture %}
-                                <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
+                            <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
                             {% else %}
-                                <i class="fas fa-user-circle icon-feature"></i>
+                            <i class="fas fa-user-circle icon-feature"></i>
                             {% endif %}
                             <h6>{{ speaker.name }}</h6>
                             <p class="text-muted">{{ speaker.affiliation }}</p>
                         </div>
                     </div>
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
-
-<!-- Speaker Details Section -->
-<div class="speaker-details-container">
-    {% for speaker in site.data.winter_school_speakers %}
-        <div id="speaker-details-{{ speaker.id }}" class="speaker-details" style="display: none;">
+    <!-- Speaker Details Container -->
+    <div class="speaker-details-container">
+        {% for speaker in site.data.winter_school_speakers %}
+        <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
             <h4>{{ speaker.name }}</h4>
             <p class="text-muted">{{ speaker.affiliation }}</p>
             <div class="mt-4">
                 <p>{{ speaker.bio }}</p>
                 {% if speaker.title %}
-                    <h5 class="mt-4">{{ speaker.title }}</h5>
+                <h5 class="mt-4">{{ speaker.title }}</h5>
                 {% endif %}
                 {% if speaker.abstract %}
-                    <p class="mt-3">{{ speaker.abstract }}</p>
+                <p class="mt-3">{{ speaker.abstract }}</p>
                 {% endif %}
             </div>
         </div>
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
         <div class="row mb-4">
             <div class="col-md-12">
                 <h5 class="section-title">Sponsors</h5>        
@@ -366,114 +303,102 @@ body {
             </div>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <section id="schedule">
-                <h5 class="section-title">Schedule</h5>
-                {% for day in site.data.winter_school_schedule %}
-                    <div class="schedule-day">
-                        <div class="schedule-day-header">
-                            <h5>{{ day.date }}</h5>
-                            <span class="expand-icon">▼</span>
-                        </div>
-                        <div class="schedule-day-content" style="display: none;">
-                            {% for session in day.sessions %}
-                                <div class="schedule-session">
-                                    <p class="schedule-time">{{ session.time }}</p>
-                                    <h6>{{ session.title }}</h6>
-                                    {% for item in session.items %}
-                                        <p>
-                                            {% assign processed_item = item %}
-                                            {% for speaker in site.data.winter_school_speakers %}
-                                                {% assign speaker_full_name = speaker.name %}
-                                                {% assign speaker_short_name = speaker.short_name | default: speaker.name %}
-                                                {% if item contains speaker_full_name %}
-                                                    {% capture speaker_link %}
-                                                        <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_full_name }}</a>
-                                                    {% endcapture %}
-                                                    {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link %}
-                                                {% elsif item contains speaker_short_name %}
-                                                    {% capture speaker_link %}
-                                                        <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_short_name }}</a>
-                                                    {% endcapture %}
-                                                    {% assign processed_item = processed_item | replace: speaker_short_name, speaker_link %}
-                                                {% endif %}
-                                            {% endfor %}
-                                            {{ processed_item }}
-                                        </p>
-                                    {% endfor %}
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
+    <div class="schedule-container">
+        {% for day in site.data.winter_school_schedule %}
+        <div class="schedule-day">
+            <div class="schedule-day-header">
+                <h5>{{ day.date }}</h5>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="schedule-day-content" style="display: none;">
+                {% for session in day.sessions %}
+                <div class="schedule-session">
+                    <p class="schedule-time">{{ session.time }}</p>
+                    <h6>{{ session.title }}</h6>
+                    {% for item in session.items %}
+                    <p>{{ item }}</p>
+                    {% endfor %}
+                </div>
                 {% endfor %}
-            </section>
+            </div>
         </div>
+        {% endfor %}
     </div>
-</div>    
+</div>
 <br>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Toggle schedule day content
+    // Schedule day toggle functionality
     const dayHeaders = document.querySelectorAll('.schedule-day-header');
     dayHeaders.forEach(header => {
         header.addEventListener('click', function() {
-            this.classList.toggle('active');
             const content = this.nextElementSibling;
+            const icon = this.querySelector('.expand-icon');
+            
             if (content) {
-                if (content.style.display === "none" || content.style.display === "") {
-                    content.style.display = "block";
-                } else {
-                    content.style.display = "none";
-                }
-                const icon = this.querySelector('.expand-icon');
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
                 if (icon) {
-                    icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
+                    icon.textContent = content.style.display === 'none' ? '▼' : '▲';
                 }
             }
         });
     });
 
-    // Event delegation for speaker links in schedule
+    // Speaker details functionality
+    function showSpeakerDetails(speakerId) {
+        // Hide all details
+        document.querySelectorAll('.speaker-details').forEach(detail => {
+            detail.classList.remove('show');
+            detail.style.display = 'none';
+        });
+
+        // Remove active states
+        document.querySelectorAll('.custom-card').forEach(card => {
+            card.classList.remove('active');
+        });
+
+        // Show selected speaker
+        const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+        const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+        
+        if (speakerDetails && speakerCard) {
+            speakerCard.classList.add('active');
+            speakerDetails.classList.add('show');
+            speakerDetails.style.display = 'block';
+            
+            // Smooth scroll with delay for animation
+            setTimeout(() => {
+                const offset = speakerDetails.offsetTop;
+                window.scrollTo({
+                    top: offset - 80,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        }
+    }
+
+    // Event listeners for speaker interactions
+    document.querySelectorAll('.custom-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const speakerId = this.getAttribute('data-speaker-id');
+            if (speakerId) showSpeakerDetails(speakerId);
+        });
+    });
+
+    // Event delegation for schedule speaker links
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('speaker-link')) {
             e.preventDefault();
             const speakerId = e.target.getAttribute('data-speaker-id');
-            if (speakerId) {
-                showSpeakerDetails(speakerId);
-            }
+            if (speakerId) showSpeakerDetails(speakerId);
         }
     });
 
-    // Click event listeners for speaker cards
-    const speakerCards = document.querySelectorAll('.custom-card');
-    speakerCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const speakerId = this.getAttribute('data-speaker-id');
-            if (speakerId) {
-                showSpeakerDetails(speakerId);
-            }
-        });
-    });
-
-    function showSpeakerDetails(speakerId) {
-        // Remove active class from all cards
-        document.querySelectorAll('.custom-card').forEach(card => {
-            card.classList.remove('active');
-        });
-        // Hide all speaker details
-        document.querySelectorAll('.speaker-details').forEach(detail => {
-            detail.classList.remove('show');
-        });
-        // Show selected speaker details
-        const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
-        const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-        if (speakerCard && speakerDetails) {
-            speakerCard.classList.add('active');
-            speakerDetails.classList.add('show');
-            speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    // Initialize first day as visible
+    const firstDayContent = document.querySelector('.schedule-day-content');
+    if (firstDayContent) {
+        firstDayContent.style.display = 'block';
     }
 });
 </script>
