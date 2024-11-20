@@ -297,20 +297,20 @@ body {
         </div>
         <!-- Speaker Details Section -->
         {% for speaker in site.data.winter_school_speakers %}
-        <div id="speaker-details-{{ forloop.index }}" class="speaker-details">
-            <h4>{{ speaker.name }}</h4>
-            <p class="text-muted">{{ speaker.affiliation }}</p>
-            <div class="mt-4">
-                <p>{{ speaker.bio }}</p>
-                {% if speaker.title %}
-                    <h5 class="mt-4">{{ speaker.title }}</h5>
-                {% endif %}
-                {% if speaker.abstract %}
-                    <p class="mt-3">{{ speaker.abstract }}</p>
-                {% endif %}
-            </div>
+    <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
+        <h4>{{ speaker.name }}</h4>
+        <p class="text-muted">{{ speaker.affiliation }}</p>
+        <div class="mt-4">
+            <p>{{ speaker.bio }}</p>
+            {% if speaker.title %}
+                <h5 class="mt-4">{{ speaker.title }}</h5>
+            {% endif %}
+            {% if speaker.abstract %}
+                <p class="mt-3">{{ speaker.abstract }}</p>
+            {% endif %}
         </div>
-        {% endfor %}
+    </div>
+{% endfor %}
     </div>
     <div class="row mb-4">
         <div class="col-md-12">
@@ -363,52 +363,52 @@ body {
         <div class="col-md-12">
             <div class="card-body">        
                 <section id="schedule">
-    <h5 class="section-title">Schedule</h5>
-    {% for day in site.data.winter_school_schedule %}
-        <div class="schedule-day">
-            <div class="schedule-day-header">
-                <h5>{{ day.date }}</h5>
-                <span class="expand-icon">▼</span>
-            </div>
-            <div class="schedule-day-content">
-    {% for session in day.sessions %}
-        <div class="schedule-session">
-            <p class="schedule-time">{{ session.time }}</p>
-            <h6>{{ session.title }}</h6>
-            {% for item in session.items %}
-                <p>
-                {% assign processed_item = item %}
-                {% for speaker in site.data.winter_school_speakers %}
-                    {% assign speaker_full_name = speaker.name %}
-                    {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
-                    {% if item contains speaker_full_name or item contains speaker_short_name %}
-                        {% capture speaker_link %}
-                            <a class="speaker-link" onclick="showSpeakerDetails('{{ forloop.index }}')" href="#">{{ speaker_short_name }}</a>
-                        {% endcapture %}
-                        {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link | replace: speaker_short_name, speaker_link %}
-                    {% endif %}
-                {% endfor %}
-                {{ processed_item }}
-                </p>
-            {% endfor %}
-        </div>
-    {% endfor %}
-</div>
-        </div>
-    {% endfor %}
-</section>
+                    <h5 class="section-title">Schedule</h5>
+                    {% for day in site.data.winter_school_schedule %}
+                        <div class="schedule-day">
+                            <div class="schedule-day-header">
+                                <h5>{{ day.date }}</h5>
+                                <span class="expand-icon">▼</span>
+                            </div>
+                            <div class="schedule-day-content">
+                                {% for session in day.sessions %}
+                                    <div class="schedule-session">
+                                        <p class="schedule-time">{{ session.time }}</p>
+                                        <h6>{{ session.title }}</h6>
+                                        {% for item in session.items %}
+                                            <p>
+                                            {% assign processed_item = item %}
+                                            {% for speaker in site.data.winter_school_speakers %}
+                                                {% assign speaker_full_name = speaker.name %}
+                                                {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
+                                                {% if item contains speaker_full_name or item contains speaker_short_name %}
+                                                    {% capture speaker_link %}
+                                                        <a class="speaker-link" data-speaker-id="{{ speaker.id }}" href="#">{{ speaker_short_name }}</a>
+                                                    {% endcapture %}
+                                                    {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link | replace: speaker_short_name, speaker_link %}
+                                                {% endif %}
+                                            {% endfor %}
+                                            {{ processed_item }}
+                                            </p>
+                                        {% endfor %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </section>
             </div>
         </div>
     </div>
 </div>    
 <br>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Schedule day toggles
+    // Schedule day toggle functionality
     const dayHeaders = document.querySelectorAll('.schedule-day-header');
     dayHeaders.forEach(header => {
-        header.addEventListener('click', function(e) {
-            e.preventDefault();
+        header.addEventListener('click', function() {
             this.classList.toggle('active');
             const content = this.nextElementSibling;
             if (content) {
@@ -421,16 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Speaker cards click handling
-    document.querySelectorAll('.custom-card').forEach((card, index) => {
-        card.setAttribute('data-speaker-id', index + 1);
-        card.addEventListener('click', (e) => {
-            e.preventDefault();
-            showSpeakerDetails(index + 1);
-        });
-    });
-
-    // Speaker links in schedule
+    // Event delegation for speaker links in schedule
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('speaker-link')) {
             e.preventDefault();
@@ -451,34 +442,26 @@ function showSpeakerDetails(speakerId) {
         document.querySelectorAll('.speaker-details').forEach(detail => {
             detail.classList.remove('show');
         });
-        
-        // Activate selected speaker
+
+        // Activate selected speaker card and details
         const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
         const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-        
+
         if (!speakerCard || !speakerDetails) {
-            console.error('Speaker card or details not found');
+            console.error('Speaker card or details not found for ID:', speakerId);
             return;
         }
 
         speakerCard.classList.add('active');
         speakerDetails.classList.add('show');
 
-        // Scroll to speaker section with offset for fixed headers
-        const speakerSection = document.querySelector('.speakers-section');
-        if (speakerSection) {
-            const headerOffset = 100; // Adjust based on your header height
-            const elementPosition = speakerSection.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
+        // Scroll to speaker details
+        speakerDetails.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     } catch (error) {
-        console.error('Error showing speaker details:', error);
-        // Optional: Show user-friendly error message
+        console.error('Error displaying speaker details:', error);
         alert('Sorry, there was an error displaying the speaker details.');
     }
 }
