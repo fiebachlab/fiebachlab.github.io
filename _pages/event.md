@@ -383,23 +383,23 @@ body {
                                     <h6>{{ session.title }}</h6>
                                     {% for item in session.items %}
                                         <p>
-                                        {% assign processed_item = item %}
-                                        {% for speaker in site.data.winter_school_speakers %}
-                                            {% assign speaker_full_name = speaker.name %}
-                                            {% assign speaker_short_name = speaker.name | remove: "Prof. Dr. " %}
-                                            {% if item contains speaker_full_name %}
-                                                {% capture speaker_link %}
-                                                    <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_full_name }}</a>
-                                                {% endcapture %}
-                                                {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link %}
-                                            {% elsif item contains speaker_short_name %}
-                                                {% capture speaker_link %}
-                                                    <p>Speaker: <a href="#" class="speaker-link" data-speaker-id="{{ session.speaker.id }}">{{ session.speaker.name }}</a></p>
-                                                {% endcapture %}
-                                                {% assign processed_item = processed_item | replace: speaker_short_name, speaker_link %}
-                                            {% endif %}
-                                        {% endfor %}
-                                        {{ processed_item }}
+                                            {% assign processed_item = item %}
+                                            {% for speaker in site.data.winter_school_speakers %}
+                                                {% assign speaker_full_name = speaker.name %}
+                                                {% assign speaker_short_name = speaker.short_name | default: speaker.name %}
+                                                {% if item contains speaker_full_name %}
+                                                    {% capture speaker_link %}
+                                                        <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_full_name }}</a>
+                                                    {% endcapture %}
+                                                    {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link %}
+                                                {% elsif item contains speaker_short_name %}
+                                                    {% capture speaker_link %}
+                                                        <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_short_name }}</a>
+                                                    {% endcapture %}
+                                                    {% assign processed_item = processed_item | replace: speaker_short_name, speaker_link %}
+                                                {% endif %}
+                                            {% endfor %}
+                                            {{ processed_item }}
                                         </p>
                                     {% endfor %}
                                 </div>
@@ -434,6 +434,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
     // Event delegation for speaker links in schedule
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('speaker-link')) {
@@ -444,6 +445,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
     // Click event listeners for speaker cards
     const speakerCards = document.querySelectorAll('.custom-card');
     speakerCards.forEach(card => {
@@ -454,6 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
     function showSpeakerDetails(speakerId) {
         // Remove active class from all cards
         document.querySelectorAll('.custom-card').forEach(card => {
@@ -472,17 +475,5 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.custom-card');
-    const details = document.querySelectorAll('.speaker-details');
-
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            const speakerId = this.dataset.speakerId;
-            details.forEach(detail => detail.style.display = 'none');
-            document.getElementById(`speaker-details-${speakerId}`).style.display = 'block';
-        });
-    });
 });
 </script>
