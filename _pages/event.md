@@ -280,7 +280,7 @@ body {
         <h5 class="section-title">Speakers</h5>
         <div class="row speaker-cards">
             {% for speaker in site.data.winter_school_speakers %}
-                <div class="col-md-3 mb-3">
+                <div class="col-sm-6 col-md-3 mb-3">
                     <div class="custom-card" data-speaker-id="{{ speaker.id }}">
                         <div class="card-body text-center">
                             {% if speaker.picture %}
