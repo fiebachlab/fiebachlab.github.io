@@ -75,6 +75,7 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     display: block;
 }
 
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -274,13 +275,13 @@ body {
             </p>
         </div>
     </div>
-<!-- Speakers Section -->
+    <!-- Speakers Grid Section -->
 <div class="row mb-4">
     <div class="col-md-12">
         <h5 class="section-title">Speakers</h5>
-        <div class="row speaker-cards">
+        <div class="row">
             {% for speaker in site.data.winter_school_speakers %}
-                <div class="col-sm-6 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="custom-card" data-speaker-id="{{ speaker.id }}">
                         <div class="card-body text-center">
                             {% if speaker.picture %}
@@ -295,23 +296,26 @@ body {
                 </div>
             {% endfor %}
         </div>
-        <!-- Speaker Details Section -->
-        {% for speaker in site.data.winter_school_speakers %}
-            <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
-                <h4>{{ speaker.name }}</h4>
-                <p class="text-muted">{{ speaker.affiliation }}</p>
-                <div class="mt-4">
-                    <p>{{ speaker.bio }}</p>
-                    {% if speaker.title %}
-                        <h5 class="mt-4">{{ speaker.title }}</h5>
-                    {% endif %}
-                    {% if speaker.abstract %}
-                        <p class="mt-3">{{ speaker.abstract }}</p>
-                    {% endif %}
-                </div>
-            </div>
-        {% endfor %}
     </div>
+</div>
+
+<!-- Speaker Details Section -->
+<div class="speaker-details-container">
+    {% for speaker in site.data.winter_school_speakers %}
+        <div id="speaker-details-{{ speaker.id }}" class="speaker-details" style="display: none;">
+            <h4>{{ speaker.name }}</h4>
+            <p class="text-muted">{{ speaker.affiliation }}</p>
+            <div class="mt-4">
+                <p>{{ speaker.bio }}</p>
+                {% if speaker.title %}
+                    <h5 class="mt-4">{{ speaker.title }}</h5>
+                {% endif %}
+                {% if speaker.abstract %}
+                    <p class="mt-3">{{ speaker.abstract }}</p>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
 </div>
         <div class="row mb-4">
             <div class="col-md-12">
