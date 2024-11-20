@@ -347,27 +347,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Speaker details functionality
     function showSpeakerDetails(speakerId) {
-        // Hide all details
-        document.querySelectorAll('.speaker-details').forEach(detail => {
-            detail.classList.remove('show');
-            detail.style.display = 'none';
-        });
+        try {
+            // Hide all details first
+            document.querySelectorAll('.speaker-details').forEach(detail => {
+                detail.classList.remove('show');
+                detail.style.display = 'none';
+            });
 
-        // Remove active states
-        document.querySelectorAll('.custom-card').forEach(card => {
-            card.classList.remove('active');
-        });
+            // Remove active states
+            document.querySelectorAll('.custom-card').forEach(card => {
+                card.classList.remove('active');
+            });
 
-        // Show selected speaker
-        const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
-        const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
-        
-        if (speakerDetails && speakerCard) {
+            // Show selected speaker
+            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+            const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+            
+            if (!speakerDetails || !speakerCard) {
+                console.warn(`Speaker with ID ${speakerId} not found`);
+                return;
+            }
+
             speakerCard.classList.add('active');
             speakerDetails.classList.add('show');
             speakerDetails.style.display = 'block';
             
-            // Smooth scroll with delay for animation
             setTimeout(() => {
                 const offset = speakerDetails.offsetTop;
                 window.scrollTo({
@@ -375,6 +379,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
             }, 100);
+        } catch (error) {
+            console.error('Error showing speaker details:', error);
         }
     }
 
