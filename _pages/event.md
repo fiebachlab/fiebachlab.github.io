@@ -30,7 +30,9 @@ excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe Unive
     align-items: center;
     justify-content: center;
 }
-
+.speaker-details.active {
+    display: block;
+}
 .custom-card {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -470,5 +472,17 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.custom-card');
+    const details = document.querySelectorAll('.speaker-details');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            const speakerId = this.dataset.speakerId;
+            details.forEach(detail => detail.style.display = 'none');
+            document.getElementById(`speaker-details-${speakerId}`).style.display = 'block';
+        });
+    });
 });
 </script>
