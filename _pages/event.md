@@ -394,7 +394,7 @@ body {
                                                 {% assign processed_item = processed_item | replace: speaker_full_name, speaker_link %}
                                             {% elsif item contains speaker_short_name %}
                                                 {% capture speaker_link %}
-                                                    <a href="#" class="speaker-link" data-speaker-id="{{ speaker.id }}">{{ speaker_short_name }}</a>
+                                                    <p>Speaker: <a href="#" class="speaker-link" data-speaker-id="{{ session.speaker.id }}">{{ session.speaker.name }}</a></p>
                                                 {% endcapture %}
                                                 {% assign processed_item = processed_item | replace: speaker_short_name, speaker_link %}
                                             {% endif %}
