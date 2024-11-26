@@ -1,5 +1,5 @@
 ---
-permalink: /winter-school-2024/
+permalink: /winter-school-2024-2/
 layout: splash
 author_profile: false
 header:
