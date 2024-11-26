@@ -1,5 +1,5 @@
 ---
-permalink: /winter-school-2024-2/
+permalink: /winter-school-2024/
 layout: splash
 author_profile: false
 header:
@@ -8,68 +8,82 @@ title: "<b><center>Goethe University - Tel Aviv University Winterschool <br> Ada
 excerpt: <p style="color:white;text-align:center;font-weight:bold;">Goethe University Frankfurt, Dec. 2 - Dec. 5 2024</p>
 ---
 <style>
-:root {
-    --primary-color: #00618F;
-    --secondary-color: #00618F;
-    --accent-color: #00618F;
-    --bg-color: #f4f4f4;
-}
+/* Base Styles */
 body {
     line-height: 1.5;
-    font-size: 80%; 
+    font-size: 80%;
     background-color: var(--bg-color);
 }
-.custom-card {
-    height: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: none;
-    transition: transform 0.3s ease-in-out;
+
+.container {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.custom-card a:visited{
-    color:00618F;
+/* Card Styles */
+.custom-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 1rem;
 }
 
 .custom-card:hover {
     transform: translateY(-5px);
-}
-.custom-table th {
-    background-color: var(--primary-color);
-    color: white;
-}
-.custom-table tr:nth-child(even) {
-    background-color: var(--secondary-color);
-}
-.section-title {
-    border-left: 5px solid var(--accent-color);
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-.list-group-item {
-    transition: background-color 0.3s ease;
-}
-.list-group-item:hover {
-    background-color: var(--secondary-color);
-}
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-.btn-primary:hover {
-    background-color: #004d70;
-    border-color: #004d70;
-}
-.icon-feature {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.custom-card.active {
+    border-color: var(--primary-color);
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.1rem;
+}
+
+/* Speaker Styles */
+.speaker-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.speaker-link:hover {
+    text-decoration: underline;
+}
+
+.speaker-details {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.speaker-details.show {
+    display: block;
+}
+
+.speaker-image {
+    margin: 0.5rem auto;
+    width: auto;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+/* Schedule Styles */
 .schedule-container {
-    max-width: 900px; /* Increased the width for more space */
+    max-width: 900px;
     margin: 0 auto;
-    padding-left: 20px;  /* Added padding for extra space on the left */
-    padding-right: 20px; /* Added padding for extra space on the right */
+    padding: 0 20px;
 }
 
 .schedule-day {
@@ -77,7 +91,7 @@ body {
 }
 
 .schedule-day-header {
-    background-color: #00618F;
+    background-color: var(--primary-color);
     color: white;
     padding: 15px;
     cursor: pointer;
@@ -96,7 +110,7 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px; /* Added extra padding for a more spacious look */
+    padding: 20px;
     display: none;
 }
 
@@ -106,9 +120,9 @@ body {
 
 .schedule-session {
     margin-bottom: 15px;
-    padding: 20px; /* Increased padding for a more open look */
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 10px; /* Increased radius for smoother borders */
+    border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -119,38 +133,40 @@ body {
     margin-bottom: 10px;
 }
 
-.schedule-session h5 {
-    margin: 10px 0;
-    color: #333;
+/* Utility Classes */
+.section-title {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 .image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%; /* Replaces fixed margins for better responsiveness */
-  max-width: 100%;
-  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .image-container img {
-  width: 250px; /* You can adjust the size as needed */
-  height: auto;
+    width: 250px;
+    height: auto;
 }
 
-.container {
-    padding-left: 60px;  /* Adjust the values as needed */
-    padding-right: 60px;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .container {
-        padding-left: 120px;  /* For larger screens, increase the padding */
+        padding-left: 120px;
         padding-right: 120px;
     }
 }
-
-
 </style>
 
 
@@ -199,110 +215,54 @@ body {
             </p>
         </div>
     </div>
+    <!-- Speakers Grid Section -->
     <div class="row mb-4">
         <div class="col-md-12">
             <h5 class="section-title">Speakers</h5>
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
+                {% for speaker in site.data.winter_school_speakers %}
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="custom-card" data-speaker-id="{{ speaker.id }}">
                         <div class="card-body text-center">
+                            {% if speaker.picture %}
+                            <img src="{{ speaker.picture }}" class="img-fluid rounded-circle speaker-image mb-3" alt="{{ speaker.name }}">
+                            {% else %}
                             <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Erwan David</h6>
-                            <p class="text-muted">Le Mans University, Computer Science Laboratory</p>
+                            {% endif %}
+                            <h6>{{ speaker.name }}</h6>
+                            <p class="text-muted">{{ speaker.affiliation }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Stefan Debener</h6>
-                            <p class="text-muted">University of Oldenburg, Dept. of Psychology</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Christian Fiebach</h6>
-                            <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Chris Kell</h6>
-                            <p class="text-muted">Goethe University Frankfurt, Dept. of Neurology</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Aya Meltzer-Asscher</h6>
-                            <p class="text-muted">Tel Aviv University, Dept. of Linguistics & Sagol School of Neuroscience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Roy Mukamel</h6>
-                            <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Dr. Marieke Schölvinck</h6>
-                            <p class="text-muted">Ernst Strüngmann Institute for Neuroscience, Frankfurt</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Tom Schonberg</h6>
-                            <p class="text-muted">Tel Aviv University, School of Biochemistry, Neurobiology, & Biophysics</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Melissa Vo</h6>
-                            <p class="text-muted">Goethe University Frankfurt, Dept. of Psychology</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card custom-card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-user-circle icon-feature"></i>
-                            <h6>Prof. Dr. Shlomit Yuval Greenberg</h6>
-                            <p class="text-muted">Tel Aviv University, School of Psychological Sciences</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <h5 class="section-title">Sponsors</h5>        
-            <div class="image-container">
-                <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
-                <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
-                <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
+    <!-- Speaker Details Container -->
+    <div class="speaker-details-container">
+        {% for speaker in site.data.winter_school_speakers %}
+        <div id="speaker-details-{{ speaker.id }}" class="speaker-details">
+            <h4>{{ speaker.name }}</h4>
+            <p class="text-muted">{{ speaker.affiliation }}</p>
+            <div class="mt-4">
+                <p>{{ speaker.bio }}</p>
+                {% if speaker.title %}
+                <h5 class="mt-4">{{ speaker.title }}</h5>
+                {% endif %}
+                {% if speaker.abstract %}
+                <p class="mt-3">{{ speaker.abstract }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h5 class="section-title">Sponsors</h5>        
+                <div class="image-container">
+                    <a href="https://www.german-u15.de/"><img src="/assets/images/winterschool/German_U15.png" alt="GermanU15 Logo" ></a>
+                    <a href="https://www.gif.org.il/"><img src="/assets/images/winterschool/giflogo.png" alt="GIF Logo"></a>
+                    <a href="https://www.minerva.mpg.de/80020/minerva-center-for-human-intelligence-in-immersive-augmented-and-mixed-realities"><img src="/assets/images/winterschool/minervacenter.png" alt="minervacenter Logo"></a>
             </div>
         </div>
     </div>    
@@ -343,49 +303,108 @@ body {
             </div>
         </div>
     </div>
-  <div class="row mb-4">
-        <div class="col-md-12">
-            <div class="card-body">        
-                <section id="schedule">
-                    <h5 class="section-title">Schedule</h5>
-                    {% for day in site.data.winter_school_schedule %}
-                    <div class="schedule-day">
-                        <div class="schedule-day-header">
-                            <h5>{{ day.date }}</h5>
-                            <span class="expand-icon">▼</span>
-                        </div>
-                        <div class="schedule-day-content">
-                            {% for session in day.sessions %}
-                            <div class="schedule-session">
-                                <p class="schedule-time">{{ session.time }}</p>
-                                <h6>{{ session.title }}</h6>
-                                {% for item in session.items %}
-                                <p>{{ item }}</p>
-                                {% endfor %}
-                            </div>
-                        {% endfor %}
-                        </div>
-                    </div>
+    <div class="schedule-container">
+        {% for day in site.data.winter_school_schedule %}
+        <div class="schedule-day">
+            <div class="schedule-day-header">
+                <h5>{{ day.date }}</h5>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="schedule-day-content" style="display: none;">
+                {% for session in day.sessions %}
+                <div class="schedule-session">
+                    <p class="schedule-time">{{ session.time }}</p>
+                    <h6>{{ session.title }}</h6>
+                    {% for item in session.items %}
+                    <p>{{ item }}</p>
                     {% endfor %}
-                </section>
+                </div>
+                {% endfor %}
             </div>
         </div>
+        {% endfor %}
     </div>
-</div>    
+</div>
 <br>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const dayHeaders = document.querySelectorAll('.schedule-day-header');
-
-  dayHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      this.classList.toggle('active');
-      const content = this.nextElementSibling;
-      content.classList.toggle('show');
-      const icon = this.querySelector('.expand-icon');
-      icon.textContent = icon.textContent === '▼' ? '▲' : '▼';
+    // Schedule day toggle functionality
+    const dayHeaders = document.querySelectorAll('.schedule-day-header');
+    dayHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.expand-icon');
+            
+            if (content) {
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                if (icon) {
+                    icon.textContent = content.style.display === 'none' ? '▼' : '▲';
+                }
+            }
+        });
     });
-  });
+
+    // Speaker details functionality
+    function showSpeakerDetails(speakerId) {
+        try {
+            // Hide all details first
+            document.querySelectorAll('.speaker-details').forEach(detail => {
+                detail.classList.remove('show');
+                detail.style.display = 'none';
+            });
+
+            // Remove active states
+            document.querySelectorAll('.custom-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // Show selected speaker
+            const speakerDetails = document.getElementById(`speaker-details-${speakerId}`);
+            const speakerCard = document.querySelector(`.custom-card[data-speaker-id="${speakerId}"]`);
+            
+            if (!speakerDetails || !speakerCard) {
+                console.warn(`Speaker with ID ${speakerId} not found`);
+                return;
+            }
+
+            speakerCard.classList.add('active');
+            speakerDetails.classList.add('show');
+            speakerDetails.style.display = 'block';
+            
+            setTimeout(() => {
+                const offset = speakerDetails.offsetTop;
+                window.scrollTo({
+                    top: offset - 80,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        } catch (error) {
+            console.error('Error showing speaker details:', error);
+        }
+    }
+
+    // Event listeners for speaker interactions
+    document.querySelectorAll('.custom-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const speakerId = this.getAttribute('data-speaker-id');
+            if (speakerId) showSpeakerDetails(speakerId);
+        });
+    });
+
+    // Event delegation for schedule speaker links
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('speaker-link')) {
+            e.preventDefault();
+            const speakerId = e.target.getAttribute('data-speaker-id');
+            if (speakerId) showSpeakerDetails(speakerId);
+        }
+    });
+
+    // Initialize first day as visible
+    const firstDayContent = document.querySelector('.schedule-day-content');
+    if (firstDayContent) {
+        firstDayContent.style.display = 'block';
+    }
 });
 </script>

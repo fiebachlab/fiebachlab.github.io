@@ -80,6 +80,9 @@
   affiliation: Goethe University Frankfurt, Dept. of Psychology
   bio: >
     Melissa Vo is a professor for Cognitive Psychology at the Goethe University in Frankfurt and head of the Scene Grammar Lab (SGL). Her lab is interested in a wide variety of aspects in visual cognition, particularly visual attention and visual memory during scene perception. The lab’s core research areas therefore include top-down guidance in scene search, neural representation and development of scene knowledge, as well as action-perception interactions in real-world scenarios.
+  titel: Using VR to Study Visual Attention in Real-World Environments 
+  abstract: >
+    The sources that guide attention are manifold and interact in complex ways. Internal goals, task rules, or salient external stimuli have shown to be some of the strongholds of attentional control. But what guides attention in complex, real-world environments? To answer this question, we have increasingly turned to virtual reality (VR) as a method that provides high ecological validity while at the same time allowing for a high degree of experimental control. In my talk, I will highlight some recent projects from the lab using VR to study the deployment of visual attention in real-world environments, hopefully triggering some discussions about the pros and cons of this approach and how real one should try to get.
   picture: ../assets/images/winterschool/Melissa_Vo.jpg
 
 - id: 10
