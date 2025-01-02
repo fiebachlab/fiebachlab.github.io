@@ -56,7 +56,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - bootstrap
+#  - bootstrap
   - jekyll/scholar
   
 #theme: minimal-mistakes-jekyll

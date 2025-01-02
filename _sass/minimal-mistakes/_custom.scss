@@ -1,5 +1,326 @@
 
-  /* ==========================================================================
+/* ==========================================================================
+Teams
+========================================================================== */
+.teamImage{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.centeralign {
+  text-align: center;
+}
+#boxcolor {
+  background-color: #00618F ;
+  padding: 20px;
+  border-radius: 20px;
+} 
+.white {
+  color: white;
+}
+.centeralign2 {
+  font-weight: bold;
+  color: white;
+}
+
+.teamImageSmall{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+transition: all 500ms;
+        }
+.teamImageSmall:hover {
+      scale:1.08;
+        }
+
+/* ==========================================================================
+  Projects
+   ========================================================================== */
+.projname {
+	text-align: center;
+	font-weight: bold;
+	color: #F8F6F5;
+}
+.projimage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+} 
+.centeralign2 {
+	text-align: center;
+	font-weight: bold;
+}
+a:link { 
+	text-decoration: none; 
+} 
+a:visited { 
+	text-decoration: none; 
+} 
+a:hover { 
+	text-decoration: none; 
+} 
+a:active { 
+	text-decoration: none; 
+}
+
+/* ==========================================================================
+Research
+   ========================================================================== */
+.background {
+	padding: 20px;
+	box-sizing: border-box;
+	border: 15px solid transparent;
+	background-clip:padding-box;
+	background-color: #f8f6f5;
+	border-radius: 20px;
+  }
+  .box {
+    padding: 20px;
+    box-sizing: border-box;
+    border: 15px solid transparent;
+    background-clip: padding-box;
+    background-color: #00618F;
+    border-radius: 20px;
+    color: #F8F6F5;
+    cursor: pointer;
+    transition: all 300ms ease;
+    clear: both;
+    height: 120px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: line-height 1s, width 1s, height 1s, opacity 1s, border-radius 3s, scale .5s, background-color 0.5s ease;
+}
+
+.box:hover,
+.box.expanded {
+    height: auto;
+    line-height: auto;
+    scale: 1.05;
+}
+
+.box a,
+.box ul {
+    display: none;
+    text-align: left;
+}
+
+.box:hover a,
+.box.expanded a, 
+.box:hover ul,
+.box.expanded ul {
+    display: block;
+}
+
+.box h6 {
+    margin: 0;
+}
+
+.box.expanded h6 {
+    margin-bottom: 10px;
+}
+  
+  .box a:link,
+  .box a:visited,
+  .box a:hover,
+  .box a:active {
+	text-decoration: none;
+  }
+
+  .link-style {
+	color:white;
+  
+  }
+  
+  .projimage{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+  } 
+
+  
+  .text {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  }
+
+
+/* ==========================================================================
+Events
+   ========================================================================== */
+/* Base Styles */
+body {
+    line-height: 1.5;
+    font-size: 80%;
+    background-color: var(--bg-color);
+}
+
+.container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* Card Styles */
+.custom-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 1rem;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-card.active {
+    border-color: var(--primary-color);
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.1rem;
+}
+
+/* Speaker Styles */
+.speaker-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.speaker-link:hover {
+    text-decoration: underline;
+}
+
+.speaker-details {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.speaker-details.show {
+    display: block;
+}
+
+.speaker-image {
+    margin: 0.5rem auto;
+    width: auto;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+/* Schedule Styles */
+.schedule-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.schedule-day {
+    margin-bottom: 20px;
+}
+
+.schedule-day-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-day-header:hover {
+    background-color: #3280a5;
+}
+
+.schedule-day-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+
+.schedule-day-content.show {
+    display: block;
+}
+
+.schedule-session {
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule-time {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Utility Classes */
+.section-title {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}  
+/* ==========================================================================
   Add-Ins
    ========================================================================== */
    
@@ -61,3 +382,6 @@ body {
     background-color: var(--bg-color);
 }
 .katex { font-size: 1em !important; }
+
+
+

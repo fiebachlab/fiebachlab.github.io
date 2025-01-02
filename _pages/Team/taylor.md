@@ -4,35 +4,6 @@ permalink: /team/taylor
 classes: wide
 ---
 
-<style> 
-.teamImage{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-.centeralign {
-  text-align: center;
-}
-#boxcolor {
-  background-color: #1F416F ;
-  padding: 50px;
-    border-radius: 10px;
-} 
-.white {
-  color: white;
-}
-.centeralign2 {
-  font-weight: bold;
-  color: white;
-}
-</style>
-
-
 
 {% for member in site.data.team_members %}
 {% if member.name == "Dr. Jack Taylor" %}

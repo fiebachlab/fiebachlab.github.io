@@ -1,10 +1,11 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
+
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -72,16 +73,69 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    /* Add your custom styles here */
+    :root {
+        --primary-color: #00618F;
+        --secondary-color: #00618F;
+        --accent-color: #00618F;
+    }
+    /* ... rest of your custom styles ... */
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize Bootstrap tooltips and popovers (if used)
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
 
 
 
     <!-- start custom head snippets -->
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    /* Add your custom styles here */
+    :root {
+        --primary-color: #00618F;
+        --secondary-color: #00618F;
+        --accent-color: #00618F;
+    }
+    /* ... rest of your custom styles ... */
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize Bootstrap tooltips and popovers (if used)
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
@@ -97,17 +151,50 @@
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
+<style>
+.box_mast {
+  background-color: #00618F;
+  border-radius: 15px;
+  padding: 10px 10px;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1;
+}
 
+.masthead__menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.masthead__menu-item a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.visible-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Remove any margins or padding from the paragraph inside the box */
+.box_mast p {
+  color: #F8F6F5;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+
+</style>
 
 <div class="masthead sticky">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/FiebachLabLogo.png" alt="Fiebach Lab"></a>
         
         <a class="site-title" href="/">
           Fiebach Lab
@@ -121,7 +208,12 @@
               <a href="/publications/">Publications</a>
             </li><li class="masthead__menu-item">
               <a href="/teaching/">Teaching</a>
-            </li></ul>
+            </li><li class="masthead__menu-item">
+              <a href="/calendar/">Calendar</a>
+            </li><li class="masthead__menu-item">
+            <a class="box_mast" href="https://www.fiebachlab.org/winter-school-2024-2/" title="Winterschool"><p style="color:white">Winterschool</p></a>
+          </li>
+        </ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -142,6 +234,8 @@
 
     <div class="initial-content">
       
+
+
 
 
 
@@ -167,7 +261,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>Higher cognitive functions such as language, working memory, cognitive control, or intelligence are the result of complex processes in our brains.<br /></p>
+        <p>The Fiebach Lab investigates the neural underpinnings of human cognition, specializing in areas such as perception, memory, decision-making, and their implications for education and cognitive training. <br /></p>
 
       </div>
     
@@ -272,37 +366,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <style> 
-#boxcolor {
-  background-color: #1F416F ;
-  border-radius: 20px;
-  padding: 50px;
-} 
-.teamImage{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-transition: all 500ms;
-        }
-.teamImage:hover {
-      scale:1.08;
-        }
-.centeralign {
-  text-align: center;
-  color: white;
-}
-.centeralign2 {
-  text-align: center;
-  color: #1F416F;
-}
-
-</style>
-
-<h1 class="centeralign2"> <b>Team </b></h1>
+        <h1 class="centeralign2"> <b>Team </b></h1>
 
 <div class="container">
 <div id="boxcolor">
@@ -311,80 +375,80 @@ transition: all 500ms;
   <div class="col-md-4" style="height:300px;">
     <a href="fiebach">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/fiebach.jpg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/fiebach.jpg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Prof. Dr. Christian Fiebach</b>
+      <p class="centeralign" style="color:white;"> <b>Prof. Dr. Christian Fiebach</b>
       <br /> Principle Investigator </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="tuchtfeld">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/tuchtfeld.jpeg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/tuchtfeld.jpeg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Sabine Tuchtfeld</b>
+      <p class="centeralign" style="color:white;"> <b>Sabine Tuchtfeld</b>
       <br /> Secretary and Administrative Lab Coordinator </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="dadvar">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/dadvar.jpg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/dadvar.jpg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Dr. Maral Dadvar</b>
+      <p class="centeralign" style="color:white;"> <b>Dr. Maral Dadvar</b>
       <br /> Scientific Coordinator </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="tavano">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/tavano.jpg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/tavano.jpg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Dr. Alessandro Tavano</b>
+      <p class="centeralign" style="color:white;"> <b>Dr. Alessandro Tavano</b>
       <br /> Senior Scientist </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="taylor">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/taylor.jpg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/taylor.jpg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Dr. Jack Taylor</b>
+      <p class="centeralign" style="color:white;"> <b>Dr. Jack Taylor</b>
       <br /> Postdoctoral Researcher </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="iaia">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/iaia.jpg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/iaia.jpg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Dr. Cosimo Iaia</b>
+      <p class="centeralign" style="color:white;"> <b>Dr. Cosimo Iaia</b>
       <br /> Postdoctoral Researcher </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="ernst">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/ernst.jpeg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/ernst.jpeg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Michael Ernst, M.Sc.</b>
+      <p class="centeralign" style="color:white;"> <b>Michael Ernst, M.Sc.</b>
       <br /> PhD student </p>
   </div>
   
   <div class="col-md-4" style="height:300px;">
     <a href="wehrheim">
     <div class="mask">
-      <img src="/flab-test/assets/images/teampic/wehrheim.jpeg" width="25%" class="image teamImage" />
+      <img src="../assets/images/teampic/wehrheim.jpeg" width="25%" class="image teamImageSmall" />
     </div>
     </a>
-      <p class="centeralign"> <b>Maren Wehrheim, M.Sc.</b>
+      <p class="centeralign" style="color:white;"> <b>Maren Wehrheim, M.Sc.</b>
       <br /> PhD student </p>
   </div>
   
@@ -425,6 +489,7 @@ transition: all 500ms;
   
 </div>
 
+      
     </div>
 
     
@@ -470,10 +535,10 @@ transition: all 500ms;
         </ul>
       </div>
       <div class= "page__footer-copyright" > 
-        <a href=impressum>Impressum</a> 
+        <a href=impressum>Impressum</a> <br>
         <a href=datenschutzhinweise>Datenschutzhinweise</a>
       </div>
-      <div class="page__footer-copyright">&copy; 2024 Fiebach Lab
+      <div class="page__footer-copyright">&copy; 2025 Fiebach Lab
       </div>
     </div>
     <div class="col-md-3">
@@ -487,7 +552,7 @@ transition: all 500ms;
       </div>
     </div>
     <div class="col-md-3">
-      <img src = "/flab-test/assets/images/Goethe_University_logo.jpg" alt="Goethe Uni Logo" style="width:auto; height:75%;"/>
+      <img src = "../assets/images/Goethe_University_logo.png" alt="Goethe Uni Logo" style="width:auto; height:60%;"/>
     </div>  
   </div>
 </div>
@@ -517,7 +582,6 @@ transition: all 500ms;
 <script src="/assets/js/lunr/lunr.min.js"></script>
 <script src="/assets/js/lunr/lunr-store.js"></script>
 <script src="/assets/js/lunr/lunr-en.js"></script>
-
 
 
 

@@ -2,48 +2,6 @@
 permalink: /projects/
 classes: wide
 ---
-<style>
-#boxcolor {
-  background-color: #00618F ;
-  border-radius:20px;
-  padding: 10px;
-} 
-.white {
-  color: #F8F6F5;
-}
-.centeralign {
-  text-align: center;
-  color: #F8F6F5;
-}
-.projname {
-    text-align: center;
-    font-weight: bold;
-    color: #F8F6F5;
-}
-.projimage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} 
-.centeralign2 {
-  text-align: center;
-  font-weight: bold;
-}
-a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
-</style>
-
-
 
 <h5 class="centeralign2"> <b>Projects </b></h5>
 

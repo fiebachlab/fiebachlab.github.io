@@ -24,7 +24,7 @@ author_profile: true
 .linkImage:hover {
       scale:1.05;
         }  
-.box {
+.box_index {
   padding: 15px;
   box-sizing: border-box;
   border: 15px solid transparent;
@@ -51,15 +51,15 @@ author_profile: true
   <div class="row">
   <div class="col-md-1" >
   </div>
-    <div class="col-md-3 box" >
+    <div class="col-md-3 box-index" >
     <a href="research/index.html"><img class="linkImage" src="./assets/images/labpic/image2.png" alt="Italian Trulli">
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Ongoing Research</h6></a>
     </div>
-        <div class="col-md-3 box" >
+        <div class="col-md-3 box-index" >
     <a href="team/index.html"><img class="linkImage" src="./assets/images/labpic/eegselfie1.jpg" alt="Italian Trulli"> 
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Our Team </h6></a>
     </div>
-    <div class="col-md-3 box" >
+    <div class="col-md-3 box-index" >
     <a href="publications/index.html"><img class="linkImage" src="./assets/images/labpic/image2.png" alt="Italian Trulli">
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Publications</h6></a>
     </div>

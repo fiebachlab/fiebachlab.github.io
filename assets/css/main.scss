@@ -73,4 +73,4 @@ $type-size-8 : 0.625em;  // ~10px
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import "bootstrap-5.3.3/scss/bootstrap.scss";
+//@import "bootstrap-5.3.3/scss/bootstrap.scss";

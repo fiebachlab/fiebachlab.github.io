@@ -1,149 +1,65 @@
 ---
+
 ---
-<div class="publication-entry">
-  <div class="reference">
-    {{reference}}
-  </div>
 
-  <div class="action-buttons">
-    <button class="pub-btn bibtex-btn" onclick="toggleSection('bibtex-{{entry.key}}')">
-      BibTeX
-    </button>
 
-    {% if entry.abstract %}
-    <button class="pub-btn abstract-btn" onclick="toggleSection('abstract-{{entry.key}}')">
-      Abstract
-    </button>
-    {% endif %}
+<div class="text-justify"><small>{{reference}}</small></div>
+<button class="button0"  onclick="toggleBibtex{{entry.key}}()">Bibtex</button>
+{% if entry.abstract %}
+    <button class="button3" onclick="showText{{entry.key}}()">Abstract</button>
+{% endif %}
 
-    {% if entry.doi %}
-    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" class="pub-btn doi-btn">
-      DOI
-    </a>
-    {% endif %}
 
-    {% if entry.preprint %}
-    <a href="{{ entry.preprint }}" class="pub-btn preprint-btn">
-      Preprint
-    </a>
-    {% endif %}
-
-    {% if entry.link %}
-    <a href="{{ entry.link }}" class="pub-btn link-btn">
-      Link
-    </a>
-    {% endif %}
-
-    {% if entry.code %}
-    <a href="{{ entry.code }}" class="pub-btn code-btn">
-      Code
-    </a>
-    {% endif %}
-  </div>
-
-  <div id="bibtex-{{entry.key}}" class="collapsible bibtex-section">
-    <pre>{{entry.bibtex}}</pre>
-  </div>
-
-  {% if entry.abstract %}
-  <div id="abstract-{{entry.key}}" class="collapsible abstract-section">
-    <h4>Abstract</h4>
-    <p>{{entry.abstract}}</p>
-  </div>
-  {% endif %}
+{% if entry.doi %}
+    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="doi" /></a>
+{% endif %}
+ 
+{% if entry.preprint %}
+    <a href="{{ entry.preprint }}"><input class="button2" type="button" value="preprint" /></a>
+{% endif %}
+ 
+{% if entry.link %}
+    <a href="{{ entry.link }}"><input class="button4" type="button" value="link" /></a>
+{% endif %}
+ 
+{% if entry.code %}
+    <a href="{{ entry.code }}"><input class="button3" type="button" value="code" /></a>
+{% endif %}
+<div id="a{{entry.key}}" style="display: none;">
+<pre>{{entry.bibtex}}</pre>
 </div>
 
-<style>
-  .publication-entry {
-    margin-bottom: 1.2em;  /* Reduced from 2em */
-    padding: 0.7em;        /* Reduced from 1em */
-    border-left: 2px solid #1F416F;
-    background: #fff;
-    transition: background-color 0.2s;
-  }
-  
-  .publication-entry:hover {
-    background: #f8f9fa;
-  }
-  
-  .reference {
-    margin-bottom: 0.5em;  /* Reduced from 1em */
-    line-height: 1.3;      /* Tighter line height */
-    font-size: 0.95em;     /* Slightly smaller text */
-  }
-  
-  .action-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3em;            /* Reduced from 0.5em */
-    margin: 0.5em 0;       /* Reduced from 1em */
-  }
-  
-  .pub-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.3em 0.6em;  /* Reduced from 0.5em 1em */
-    border: 1px solid #1F416F;
-    border-radius: 3px;    /* Slightly reduced */
-    background: transparent;
-    color: #1F416F;
-    font-size: 0.85em;     /* Smaller button text */
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    line-height: 1.2;      /* Tighter button text */
-  }
-
-.pub-btn:hover {
-  background: #1F416F;
-  color: white;
-}
-
-.collapsible {
-  display: none;
-  margin-top: 1em;
-  padding: 1em;
-  background: #f5f5f5;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.collapsible.active {
-  display: block;
-  opacity: 1;
-}
-
-.abstract-section h4 {
-  margin-top: 0;
-  color: #1F416F;
-}
-
-.bibtex-section pre {
-  margin: 0;
-  padding: 1em;
-  background: white;
-  border-radius: 3px;
-  font-size: 0.9em;
-  overflow-x: auto;
-}
-</style>
+<div id="b{{entry.key}}" style="display: none;">
+    <div id="boxcolor">
+        <h4><b>Abstract</b></h4>
+        <small>{{entry.abstract}}</small>
+    </div>
+</div>
 
 <script>
-function toggleSection(id) {
-  const section = document.getElementById(id);
-  const isActive = section.classList.contains('active');
-  
-  if (isActive) {
-    section.classList.remove('active');
-    setTimeout(() => {
-      section.style.display = 'none';
-    }, 300);
-  } else {
-    section.style.display = 'block';
-    requestAnimationFrame(() => {
-      section.classList.add('active');
-    });
-  }
+function toggleBibtex{{entry.key}}(parameter) {
+    var x= document.getElementById('a{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
 }
+function showText{{entry.key}}(parameter) {
+    var x= document.getElementById('b{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 </script>
+<style>
+    #boxcolor {
+      background-color: #f9f9f9 ;
+      border-radius:1%;
+      padding: 10px;
+    } 
+   
+    </style>
