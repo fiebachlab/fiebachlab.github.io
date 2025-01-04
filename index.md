@@ -60,7 +60,7 @@ author_profile: true
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Our Team </h6></a>
     </div>
     <div class="col-md-3 box-index" >
-    <a href="publications/index.html"><img class="linkImage" src="./assets/images/labpic/image2.png" alt="Italian Trulli">
+    <a href="publications/index.html"><img class="linkImage" src="./assets/images/labpic/image3.png" alt="Italian Trulli">
     <h6 style="font-weight:bold;color:#00618F;text-align: center;">Publications</h6></a>
     </div>
   </div>
