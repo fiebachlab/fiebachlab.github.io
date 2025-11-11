@@ -1,39 +1,37 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 <style>
-.box_mast {
-  background-color: #00618F;
-  border-radius: 15px;
-  padding: 10px 10px;
-  display: inline-block;
-  margin-bottom: 0;
-  line-height: 1;
-}
+  .box_mast {
+    background-color: #00618F;
+    border-radius: 15px;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1;
+  }
 
-.masthead__menu-item {
-  display: flex;
-  align-items: center;
-}
+  .masthead__menu-item {
+    display: flex;
+    align-items: center;
+  }
 
-.masthead__menu-item a {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+  .masthead__menu-item a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
-.visible-links {
-  display: flex;
-  align-items: center;
-}
+  .visible-links {
+    display: flex;
+    align-items: center;
+  }
 
-/* Remove any margins or padding from the paragraph inside the box */
-.box_mast p {
-  color: #F8F6F5;
-  margin-bottom: 0;
-  padding: 0;
-  line-height: 1;
-}
-
-
+  /* Remove any margins or padding from the paragraph inside the box */
+  .box_mast p {
+    color: #F8F6F5;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 1;
+  }
 </style>
 
 <div class="masthead sticky">
@@ -41,7 +39,8 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}"
+            alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
@@ -49,17 +48,16 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
           <li class="masthead__menu-item">
-            <a class="box_mast" href="https://www.fiebachlab.org/winter-school-2024-2/" title="Winterschool"><p style="color:white">Winterschool</p></a>
+            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif
+              %}>{{ link.title }}</a>
           </li>
+          {%- endfor -%}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search"
+            }}</span>
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
@@ -72,4 +70,3 @@
     </div>
   </div>
 </div>
-
