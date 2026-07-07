@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem "jekyll"
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", "4.27.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
